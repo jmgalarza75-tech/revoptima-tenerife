@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { BarChart2, MapPin, BedDouble, CalendarDays, TrendingUp, Info, Building, LineChart, FileSpreadsheet, Clock, Home } from 'lucide-react';
+import { BarChart2, MapPin, BedDouble, CalendarDays, TrendingUp, Info, Building, LineChart, FileSpreadsheet, Clock, Home, RefreshCw } from 'lucide-react';
 
 // Generador de datos simulados para el prototipo (Semanas de Abril a Diciembre)
 const generateMockData = () => {
@@ -168,6 +168,33 @@ export default function App() {
 
     fetchMcpData();
   }, [selectedLocation]);
+
+  const forceRefresh = async () => {
+    setIsLoading(true);
+    try {
+      const apiBase = import.meta.env.PROD ? '/api/market-data' : 'http://localhost:3001/api/market-data';
+      const params = new URLSearchParams();
+      if (selectedLocation !== 'Todas') params.append('location', selectedLocation);
+      
+      const response = await fetch(`${apiBase}?${params.toString()}`, { signal: AbortSignal.timeout(120000) });
+      const json = await response.json();
+      
+      if (json.success && json.data) {
+        setMarketData(prev => {
+          const combined = [...json.data];
+          const ids = new Set(combined.map(d => `${d.location}-${d.type}-${d.beds}-${d.week}`));
+          prev.forEach(p => {
+            if (!ids.has(`${p.location}-${p.type}-${p.beds}-${p.week}`)) combined.push(p);
+          });
+          return combined;
+        });
+      }
+    } catch (e) {
+      console.error('Error refreshing:', e);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   // Filtrado de datos y aplicación de estrategia de precios por Length of Stay (LOS)
   const filteredData = useMemo(() => {
@@ -373,6 +400,17 @@ export default function App() {
                 </select>
               </div>
             </div>
+
+            {/* Botón Refrescar */}
+            <button 
+              onClick={forceRefresh}
+              disabled={isLoading}
+              className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all disabled:opacity-50 border border-slate-700 active:scale-95"
+              title="Obtener datos frescos del servidor"
+            >
+              <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`} />
+              <span className="hidden sm:inline">Actualizar en Vivo</span>
+            </button>
 
             {/* Botón Exportar */}
             <button 
