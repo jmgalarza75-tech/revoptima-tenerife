@@ -1,15 +1,17 @@
-name: Actualización Diaria de Precios
+name: Actualización Automática RevOptima (4:00 AM)
 
 on:
   schedule:
-    # Se ejecuta todos los días a las 04:00 AM UTC
+    # Se ejecuta todos los días a las 04:00 AM UTC (Horario Canarias aprox)
     - cron: '0 4 * * *'
   workflow_dispatch:
-    # Permite ejecutarlo manualmente desde GitHub
+    # Permite ejecución manual desde la pestaña Actions
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necesario para que el bot pueda hacer push
     steps:
       - name: Checkout repositorio
         uses: actions/checkout@v4
@@ -18,19 +20,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - name: Instalar dependencias
-        run: |
-          cd revoptima-backend
-          npm install
-          cd ..
-
-      - name: Ejecutar script de extracción
+      - name: Actualizar Datos de Mercado (Airbnb)
         run: node scripts/update-market-data.js
+        timeout-minutes: 30
+
+      - name: Actualizar Datos Históricos (ISTAC)
+        run: node scripts/update-istac-data.js
 
       - name: Commit y Push de cambios
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: actualización automática de precios [skip ci]"
-          file_pattern: 'revoptima-frontend/src/data/market-data.json'
+          commit_message: "chore: actualización automática de datos (Mercado e ISTAC) [skip ci]"
+          file_pattern: 'revoptima-frontend/src/data/*.json'
+

@@ -73,95 +73,86 @@ export default function App() {
 
   // Integración con el MCP Server y Datos Estáticos
   useEffect(() => {
-    const fetchMcpData = async () => {
+    const fetchMcpData = async (isManual = false) => {
       setIsLoading(true);
       try {
-        // 1. Intentamos cargar primero los datos estáticos (GitHub Actions)
-        // Esto es instantáneo y gratuito
-        try {
-          const staticData = await import('./data/market-data.json');
-          if (staticData && staticData.data && staticData.data.length > 0) {
-            console.log(`[RevOptima] Datos estáticos cargados: ${staticData.count} registros`);
-            setMarketData(staticData.data);
-            setLastUpdate(staticData.lastUpdate);
-            hasLoadedRef.current = true;
-            
-            // Si los datos estáticos ya cubren la zona seleccionada, terminamos aquí
-            if (selectedLocation === 'Todas' || staticData.data.some(d => d.location === selectedLocation)) {
-              setIsLoading(false);
-              return;
-            }
-          }
-        } catch {
-          console.log('[RevOptima] No se encontraron datos estáticos, consultando API...');
-        }
-
-        // 2. Si no hay datos estáticos o falta una zona, consultamos la API (Vercel)
         const apiBase = import.meta.env.PROD
           ? '/api/market-data'
           : 'http://localhost:3001/api/market-data';
 
         const params = new URLSearchParams();
         if (selectedLocation !== 'Todas') params.append('location', selectedLocation);
+        params.append('_t', Date.now()); // Evitar cache del navegador
         
-        const url = `${apiBase}${params.toString() ? '?' + params.toString() : ''}`;
-        console.log(`[RevOptima] Fetching live data from: ${url}`);
+        const url = `${apiBase}?${params.toString()}`;
+        console.log(`[RevOptima] ${isManual ? 'Manual' : 'Auto'} refresh: ${url}`);
         
-        const response = await fetch(url, { signal: AbortSignal.timeout(90000) });
-        if (!response.ok) throw new Error(`API error ${response.status}`);
+        const response = await fetch(url, { 
+          signal: AbortSignal.timeout(120000),
+          cache: 'no-store'
+        });
+        
+        console.log(`[RevOptima] Status: ${response.status} ${response.statusText}`);
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(`API error ${response.status}: ${errorText.substring(0, 100)}`);
+        }
+        
         const json = await response.json();
+        console.log(`[RevOptima] Respuesta Recibida:`, json);
 
-        if (json.success && Array.isArray(json.data) && json.data.length > 0) {
-          console.log(`[RevOptima] Datos reales (API) cargados: ${json.count} registros`);
+        if (json.success && Array.isArray(json.data)) {
+          if (json.data.length === 0) {
+            console.warn('[RevOptima] La API no devolvió registros para esta selección.');
+          }
+          console.log(`[RevOptima] Datos cargados: ${json.data.length} registros`);
           hasLoadedRef.current = true;
+          
           setMarketData(prev => {
-            const combined = [...json.data];
-            const ids = new Set(combined.map(d => `${d.location}-${d.type}-${d.beds}-${d.week}`));
-            prev.forEach(p => {
-              const id = `${p.location}-${p.type}-${p.beds}-${p.week}`;
-              if (!ids.has(id)) combined.push(p);
-            });
-            return combined;
+            const incoming = json.data;
+            const incomingIds = new Set(incoming.map(d => `${d.location}-${d.type}-${d.beds}-${d.week}`));
+            const existingFiltered = prev.filter(p => !incomingIds.has(`${p.location}-${p.type}-${p.beds}-${p.week}`));
+            return [...existingFiltered, ...incoming];
           });
         }
       } catch (err) {
-        console.warn('[RevOptima] Error fetching data:', err.message);
+        console.warn('[RevOptima] Fetch error:', err.message);
       } finally {
         setIsLoading(false);
       }
     };
 
-    if (!hasLoadedRef.current || selectedLocation !== 'Todas') {
-      fetchMcpData();
-    }
-  }, [selectedLocation]);
-
-  const forceRefresh = async () => {
-    setIsLoading(true);
-    try {
-      const apiBase = import.meta.env.PROD ? '/api/market-data' : 'http://localhost:3001/api/market-data';
-      const params = new URLSearchParams();
-      if (selectedLocation !== 'Todas') params.append('location', selectedLocation);
-      
-      const response = await fetch(`${apiBase}?${params.toString()}`, { signal: AbortSignal.timeout(120000) });
-      const json = await response.json();
-      
-      if (json.success && json.data) {
-        setMarketData(prev => {
-          const combined = [...json.data];
-          const ids = new Set(combined.map(d => `${d.location}-${d.type}-${d.beds}-${d.week}`));
-          prev.forEach(p => {
-            if (!ids.has(`${p.location}-${p.type}-${p.beds}-${p.week}`)) combined.push(p);
-          });
-          return combined;
-        });
+    const init = async () => {
+      // 1. Intentamos cargar primero los datos estáticos
+      try {
+        const staticData = await import('./data/market-data.json');
+        if (staticData && staticData.data && staticData.data.length > 0) {
+          console.log(`[RevOptima] Datos estáticos cargados: ${staticData.count} registros`);
+          setMarketData(staticData.data);
+          setLastUpdate(staticData.lastUpdate);
+          hasLoadedRef.current = true;
+          
+          if (selectedLocation === 'Todas' || staticData.data.some(d => d.location === selectedLocation)) {
+            setIsLoading(false);
+            return;
+          }
+        }
+      } catch (err) {
+        console.log('[RevOptima] Sin datos estáticos o error en import:', err.message);
       }
-    } catch (e) {
-      console.error('Error refreshing:', e);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+
+      // 2. Si no hay datos estáticos o falta zona, fetch live data
+      if (!hasLoadedRef.current || selectedLocation !== 'Todas') {
+        fetchMcpData();
+      }
+    };
+
+    init();
+    setRefreshFn(() => () => fetchMcpData(true));
+  }, [selectedLocation]); // Solo dependemos de la zona para el fetch real // Añadimos dependencias relevantes
+
+  const [refreshFn, setRefreshFn] = useState(null);
+  const forceRefresh = () => refreshFn && refreshFn();
 
   // Filtrado de datos y cálculos inteligentes (KPIs, Gráficas, ISTAC)
   const filteredData = useMemo(() => {
@@ -446,11 +437,11 @@ export default function App() {
             <button 
               onClick={forceRefresh}
               disabled={isLoading}
-              className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all disabled:opacity-50 border border-slate-700 active:scale-95"
-              title="Obtener datos frescos del servidor"
+              className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all disabled:opacity-50 border border-slate-700 active:scale-95 group"
+              title="Obtener datos frescos del servidor (Tarda 30-60s)"
             >
               <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`} />
-              <span className="hidden sm:inline">Actualizar en Vivo</span>
+              <span className="hidden sm:inline">{isLoading ? 'Escaneando...' : 'Actualizar en Vivo'}</span>
             </button>
 
             {/* Botón ISTAC */}
@@ -510,10 +501,14 @@ export default function App() {
             </p>
             <button 
               onClick={forceRefresh}
-              className="flex items-center gap-3 bg-slate-900 hover:bg-slate-800 text-white px-10 py-5 rounded-2xl font-black transition-all shadow-2xl shadow-slate-900/20 active:scale-95 group"
+              disabled={isLoading}
+              className="flex flex-col items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-10 py-5 rounded-2xl font-black transition-all shadow-2xl shadow-slate-900/20 active:scale-95 group disabled:opacity-70"
             >
-              <RefreshCw className={`w-5 h-5 group-hover:rotate-180 transition-transform duration-500 ${isLoading ? 'animate-spin' : ''}`} />
-              Obtener Datos en Tiempo Real
+              <div className="flex items-center gap-3">
+                <RefreshCw className={`w-5 h-5 group-hover:rotate-180 transition-transform duration-500 ${isLoading ? 'animate-spin' : ''}`} />
+                <span>{isLoading ? 'Escaneando Airbnb...' : 'Obtener Datos en Tiempo Real'}</span>
+              </div>
+              {isLoading && <span className="text-[10px] text-slate-400 font-medium animate-pulse">Esto puede tardar hasta 60 segundos</span>}
             </button>
           </div>
         ) : (
