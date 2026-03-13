@@ -94,9 +94,8 @@ function parseNightlyPrice(priceDetails) {
   
   const price = parseFloat(cleanPrice);
   
-  // Filtro de Realismo: Menos de 40€ en Tenerife suele ser un error de scraping (tasas) o una habitación compartida.
-  // Como Otasa se enfoca en VV competitivas, precios de 10-20€ son ruido.
-  return (price >= 40) ? price : 0;
+  // Eliminamos el suelo de 40€ porque ahora categorizamos "Camas" por separado
+  return (price > 0) ? price : 0;
 }
 
 function parseBedroomsFromLine(primaryLine) {
@@ -105,11 +104,13 @@ function parseBedroomsFromLine(primaryLine) {
   return match ? Math.min(parseInt(match[1]), 3) : 1;
 }
 
-function parseUnitType(primaryLine) {
-  if (!primaryLine) return 'Apartamento';
-  const text = primaryLine.toLowerCase();
-  // Si contiene "room" o "habitación" es una habitación privada/compartida
-  if (text.includes('room') || text.includes('habitación')) return 'Habitación';
+function parseUnitType(primaryLine, secondaryLine) {
+  const text = (primaryLine + " " + (secondaryLine || "")).toLowerCase();
+  
+  if (text.includes('shared room') || text.includes('habitación compartida') || text.includes('cama')) return 'Cama';
+  if (text.includes('private room') || text.includes('habitación privada')) return 'Habitación';
+  if (text.includes('villa') || text.includes('house') || text.includes('casa') || text.includes('chalet')) return 'Villa';
+  
   return 'Apartamento';
 }
 
@@ -122,14 +123,17 @@ function adapt(mcpResult, zoneName, weekNum) {
 
   const byTypeBeds = { 
     'Apartamento': { 1: [], 2: [], 3: [] },
-    'Habitación': { 1: [], 2: [], 3: [] }
+    'Habitación': { 1: [], 2: [], 3: [] },
+    'Villa': { 1: [], 2: [], 3: [] },
+    'Cama': { 1: [], 2: [], 3: [] }
   };
 
   listings.forEach(l => {
     const price = parseNightlyPrice(l?.structuredDisplayPrice?.explanationData?.priceDetails);
-    const line = l?.structuredContent?.primaryLine;
-    const beds = parseBedroomsFromLine(line);
-    const type = parseUnitType(line);
+    const primary = l?.structuredContent?.primaryLine || "";
+    const secondary = l?.structuredContent?.secondaryLine || "";
+    const beds = parseBedroomsFromLine(primary);
+    const type = parseUnitType(primary, secondary);
     if (price > 0) byTypeBeds[type][Math.min(beds, 3)].push(price);
   });
 
@@ -144,7 +148,7 @@ function adapt(mcpResult, zoneName, weekNum) {
     return s.length % 2 !== 0 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
   };
 
-  ['Apartamento', 'Habitación'].forEach(type => {
+  ['Apartamento', 'Habitación', 'Villa', 'Cama'].forEach(type => {
     for (let beds = 1; beds <= 3; beds++) {
       let prices = byTypeBeds[type][beds];
       if (!prices.length) {

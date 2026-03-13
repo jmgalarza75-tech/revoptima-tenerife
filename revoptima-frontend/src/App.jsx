@@ -323,8 +323,10 @@ export default function App() {
                   value={selectedType}
                   onChange={(e) => setSelectedType(e.target.value)}
                 >
-                  <option value="Apartamento">Apartamento</option>
-                  <option value="Habitación">Habitación</option>
+                  <option value="Apartamento">Apartamento / Piso</option>
+                  <option value="Habitación">Habitación Privada</option>
+                  <option value="Villa">Villa / Casa / Chalet</option>
+                  <option value="Cama">Cama / Hab. Compartida</option>
                 </select>
               </div>
 
