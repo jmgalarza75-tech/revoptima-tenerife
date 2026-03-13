@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { BarChart2, MapPin, BedDouble, CalendarDays, TrendingUp, Info, Building, LineChart, FileSpreadsheet, Clock, Home, RefreshCw } from 'lucide-react';
+import istacData from './data/istac-data.json';
 
 export default function App() {
   const [selectedLocation, setSelectedLocation] = useState('Todas');
@@ -145,20 +146,17 @@ export default function App() {
     }
   };
 
-  // Filtrado de datos y aplicación de estrategia de precios por Length of Stay (LOS)
+  // Filtrado de datos y cálculos inteligentes (KPIs, Gráficas, ISTAC)
   const filteredData = useMemo(() => {
     const stayDays = parseInt(selectedStay);
-    
-    // Curva de descuento/premium por duración de estancia (LOS Strategy)
-    // Asumimos que el precio base devuelto por el MCP Server es semanal (7 días)
     const losMultiplier = 
-      stayDays === 1 ? (1/7) * 1.25 :   // 1 noche: +25% de recargo sobre el prorrateo semanal
-      stayDays === 5 ? (5/7) * 1.05 :   // 5 días: +5% de recargo
-      stayDays === 7 ? 1 :              // 7 días: Base
-      stayDays === 15 ? (15/7) * 0.90 : // 15 días: -10%
-      (30/7) * 0.75;                    // 30 días: -25%
+      stayDays === 1 ? (1/7) * 1.25 :
+      stayDays === 5 ? (5/7) * 1.05 :
+      stayDays === 7 ? 1 :
+      stayDays === 15 ? (15/7) * 0.90 :
+      (30/7) * 0.75;
 
-    return marketData.filter(item => {
+    const filtered = marketData.filter(item => {
       const matchLocation = selectedLocation === 'Todas' || item.location === selectedLocation;
       const matchBeds = selectedBeds === 'Todos' || item.beds === parseInt(selectedBeds);
       const matchMonth = selectedMonth === 'Todos' || item.month === selectedMonth;
@@ -170,12 +168,10 @@ export default function App() {
       avgPrice: Math.round(item.avgPrice * losMultiplier),
       maxPrice: Math.round(item.maxPrice * losMultiplier)
     }));
-  }, [selectedLocation, selectedBeds, selectedStay, selectedMonth, selectedType, marketData]);
 
-  // Agrupación por semana para la vista principal
-  const weeklyAggregatedData = useMemo(() => {
+    // Agrupación por semana para gráficas
     const grouped = {};
-    filteredData.forEach(item => {
+    filtered.forEach(item => {
       if (!grouped[item.week]) {
         grouped[item.week] = { week: item.week, month: item.month, minPrices: [], maxPrices: [], avgPrices: [], totalCount: 0 };
       }
@@ -189,42 +185,60 @@ export default function App() {
       const sortedMedian = [...group.avgPrices].sort((a, b) => a - b);
       const mid = Math.floor(sortedMedian.length / 2);
       const median = sortedMedian.length % 2 !== 0 ? sortedMedian[mid] : (sortedMedian[mid - 1] + sortedMedian[mid]) / 2;
-
       return {
         week: group.week,
         month: group.month,
         minPrice: Math.min(...group.minPrices),
         maxPrice: Math.max(...group.maxPrices),
-        avgPrice: Math.round(median), // Usamos la mediana como "Referencia Real"
+        avgPrice: Math.round(median),
         totalCount: group.totalCount
       };
     });
 
-    // Añadir tendencia comparando con la semana anterior
-    return items.map((item, index) => {
+    const withTrends = items.map((item, index) => {
       const prev = items[index - 1];
       const trend = prev ? (item.avgPrice > prev.avgPrice ? 'up' : (item.avgPrice < prev.avgPrice ? 'down' : 'stable')) : 'stable';
       return { ...item, trend };
     });
-  }, [filteredData]);
 
-  // KPIs Globales
-  const kpis = useMemo(() => {
-    if (weeklyAggregatedData.length === 0) {
-      return { min: 0, max: 0, avg: 0, avgCount: 0, occupancy: 0, pressure: 'Baja' };
+    // Cálculos de KPIs
+    const kpiRes = { min: 0, max: 0, avg: 0, avgCount: 0, occupancy: 0, pressure: 'Baja' };
+    if (withTrends.length > 0) {
+      kpiRes.min = Math.min(...withTrends.map(d => d.minPrice));
+      kpiRes.max = Math.max(...withTrends.map(d => d.maxPrice));
+      kpiRes.avg = Math.round(withTrends.reduce((a, b) => a + b.avgPrice, 0) / withTrends.length);
+      kpiRes.avgCount = Math.round(withTrends.reduce((a, b) => a + b.totalCount, 0) / withTrends.length);
+      
+      // Lógica simulada de negocio
+      kpiRes.occupancy = Math.min(98, Math.round(65 + (kpiRes.avg / 25))); 
+      kpiRes.pressure = kpiRes.avgCount > 120 ? 'Alta' : (kpiRes.avgCount > 60 ? 'Media' : 'Baja');
     }
-    
-    const min = Math.min(...weeklyAggregatedData.map(d => d.minPrice));
-    const max = Math.max(...weeklyAggregatedData.map(d => d.maxPrice));
-    const avg = Math.round(weeklyAggregatedData.reduce((acc, curr) => acc + curr.avgPrice, 0) / weeklyAggregatedData.length);
-    const avgCount = Math.round(weeklyAggregatedData.reduce((acc, curr) => acc + curr.totalCount, 0) / weeklyAggregatedData.length);
-    
-    // Lógica simulada de negocio
-    const occupancy = Math.min(98, Math.round(65 + (avg / 25))); 
-    const pressure = avgCount > 120 ? 'Alta' : (avgCount > 60 ? 'Media' : 'Baja');
 
-    return { min, max, avg, avgCount, occupancy, pressure };
-  }, [weeklyAggregatedData]);
+    // Referencia ISTAC Dinámica
+    let istacRef = { adr: 154.1, occupancy: 96, year: 2026 }; // Valores por defecto
+    if (selectedMonth !== 'Todos') {
+      const years = Object.keys(istacData.adr).sort((a, b) => b - a); // Ordenar años de más reciente a más antiguo
+      for (const year of years) {
+        if (istacData.adr[year] && istacData.adr[year][selectedMonth]) {
+          istacRef = {
+            adr: istacData.adr[year][selectedMonth],
+            occupancy: istacData.occupancy[year]?.[selectedMonth] || 0,
+            year: parseInt(year)
+          };
+          break; // Encontramos el dato más reciente para el mes, salimos
+        }
+      }
+    }
+
+    return { 
+      data: filtered, 
+      withTrends,
+      kpis: kpiRes,
+      istacRef
+    };
+  }, [marketData, selectedLocation, selectedBeds, selectedMonth, selectedStay, selectedType]);
+
+  const { data: displayData, withTrends: weeklyAggregatedData, kpis, istacRef } = filteredData;
 
   // Configuraciones del gráfico de líneas SVG
   const chartHeight = 220;
@@ -471,12 +485,14 @@ export default function App() {
                   Referencia Oficial ISTAC <TrendingUp className="w-3 h-3" />
                 </span>
                 <div className="flex items-baseline gap-2 mt-3 z-10">
-                  <span className="text-3xl font-black text-white">96%</span>
+                  <span className="text-3xl font-black text-white">{Math.round(istacRef.occupancy)}%</span>
                   <span className="text-emerald-400 text-xs font-bold">Ocupación TN</span>
                 </div>
-                <p className="text-[10px] text-slate-400 mt-2 font-medium z-10">Enero 2026 ・ ADR Oficial: 154.1€</p>
+                <p className="text-[10px] text-slate-400 mt-2 font-medium z-10">
+                  {selectedMonth === 'Todos' ? 'Promedio Reciente' : selectedMonth} {istacRef.year} ・ ADR: {istacRef.adr}€
+                </p>
                 <div className="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between z-10">
-                  <span className="text-[10px] text-slate-500 font-bold uppercase">Fuente: eDatos ISTAC</span>
+                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Fuente: eDatos ISTAC</span>
                   <div className="flex gap-1">
                     <div className="w-1 h-1 rounded-full bg-emerald-500 animate-pulse"></div>
                     <div className="w-1 h-1 rounded-full bg-emerald-500/50"></div>
