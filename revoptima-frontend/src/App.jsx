@@ -150,23 +150,25 @@ export default function App() {
           console.log(`[RevOptima] Datos reales (API) cargados: ${json.count} registros`);
           hasLoadedRef.current = true;
           setMarketData(prev => {
-            if (selectedLocation === 'Todas') return json.data;
-            const otherZones = prev.filter(d => d.location !== selectedLocation);
-            return [...otherZones, ...json.data];
+            const combined = [...json.data];
+            const ids = new Set(combined.map(d => `${d.location}-${d.type}-${d.beds}-${d.week}`));
+            prev.forEach(p => {
+              const id = `${p.location}-${p.type}-${p.beds}-${p.week}`;
+              if (!ids.has(id)) combined.push(p);
+            });
+            return combined;
           });
         }
       } catch (err) {
         console.warn('[RevOptima] Error fetching data:', err.message);
-        if (!hasLoadedRef.current) {
-          setMarketData(generateMockData());
-          hasLoadedRef.current = true;
-        }
       } finally {
         setIsLoading(false);
       }
     };
 
-    fetchMcpData();
+    if (!hasLoadedRef.current || selectedLocation !== 'Todas') {
+      fetchMcpData();
+    }
   }, [selectedLocation]);
 
   const forceRefresh = async () => {
@@ -445,6 +447,25 @@ export default function App() {
               ))}
             </div>
             <p className="text-center text-slate-400 text-sm font-medium">Sincronizando con base de datos de inteligencia...</p>
+          </div>
+        ) : filteredData.length === 0 ? (
+          <div className="flex flex-col items-center justify-center py-24 bg-white rounded-[2.5rem] border-2 border-dashed border-slate-200 shadow-sm px-6 text-center animate-in zoom-in-95 duration-500">
+            <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mb-6 relative">
+               <div className="absolute inset-0 bg-emerald-100 rounded-full animate-ping opacity-20"></div>
+               <Info className="w-12 h-12 text-slate-300 relative z-10" />
+            </div>
+            <h2 className="text-2xl font-black text-slate-800 mb-2">Segmento sin datos acumulados</h2>
+            <p className="text-slate-500 max-w-sm mb-10 text-sm leading-relaxed">
+              Actualmente no tenemos registros para <strong>{selectedType}s</strong> en <strong>{selectedLocation === 'Todas' ? 'Tenerife' : selectedLocation}</strong>. 
+              Usa el botón de actualización para analizar el mercado en vivo.
+            </p>
+            <button 
+              onClick={forceRefresh}
+              className="flex items-center gap-3 bg-slate-900 hover:bg-slate-800 text-white px-10 py-5 rounded-2xl font-black transition-all shadow-2xl shadow-slate-900/20 active:scale-95 group"
+            >
+              <RefreshCw className={`w-5 h-5 group-hover:rotate-180 transition-transform duration-500 ${isLoading ? 'animate-spin' : ''}`} />
+              Obtener Datos en Tiempo Real
+            </button>
           </div>
         ) : (
           <>
