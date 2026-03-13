@@ -20,8 +20,12 @@
       "dest": "/api/$1"
     },
     {
+      "src": "/assets/(.*)",
+      "dest": "/revoptima-frontend/assets/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "/revoptima-frontend/index.html"
     }
   ]
 }
