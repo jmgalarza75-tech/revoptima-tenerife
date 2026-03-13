@@ -2,12 +2,29 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { BarChart2, MapPin, BedDouble, CalendarDays, TrendingUp, Info, Building, LineChart, FileSpreadsheet, Clock, Home, RefreshCw } from 'lucide-react';
 import istacData from './data/istac-data.json';
 
+// Mapeo de meses
+const getMonthFromWeek = (week) => {
+  if (week <= 4) return 'Enero';
+  if (week <= 8) return 'Febrero';
+  if (week <= 12) return 'Marzo';
+  if (week <= 17) return 'Abril';
+  if (week <= 21) return 'Mayo';
+  if (week <= 25) return 'Junio';
+  if (week <= 30) return 'Julio';
+  if (week <= 34) return 'Agosto';
+  if (week <= 38) return 'Septiembre';
+  if (week <= 43) return 'Octubre';
+  if (week <= 47) return 'Noviembre';
+  return 'Diciembre';
+};
+
 export default function App() {
   const [selectedLocation, setSelectedLocation] = useState('Todas');
   const [selectedBeds, setSelectedBeds] = useState('Todos');
   const [selectedType, setSelectedType] = useState('Apartamento'); // 'Apartamento' o 'Habitación'
   const [selectedStay, setSelectedStay] = useState('7');
   const [selectedMonth, setSelectedMonth] = useState('Todos');
+  const [activeView, setActiveView] = useState('live'); // 'live', 'prediction', 'comparison'
   const [hoveredData, setHoveredData] = useState(null);
   const [marketData, setMarketData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -230,15 +247,58 @@ export default function App() {
       }
     }
 
+    // --- ANALÍTICA AVANZADA ---
+    
+    // 1. Datos para COMPARATIVA (Benchmarks vs Realidad)
+    const withTrendsAndBenchmarks = withTrends.map(item => {
+      const year = istacRef.year.toString();
+      const benchmark = istacData.adr[year]?.[item.month] || istacRef.adr;
+      return { ...item, istacBenchmark: benchmark };
+    });
+
+    // 2. Datos para PREDICCIÓN (Forecasting AI)
+    let predictionData = [];
+    if (withTrends.length > 0) {
+      const lastPoint = withTrends[withTrends.length - 1];
+      const startWeekNum = parseInt(lastPoint.week.split(' ')[1]);
+      const currentMonth = lastPoint.month;
+      
+      // Generamos 12 semanas de predicción
+      for (let i = 1; i <= 12; i++) {
+        const nextWeekNum = ((startWeekNum + i - 1) % 52) + 1;
+        const nextMonth = getMonthFromWeek(nextWeekNum);
+        
+        // Calculamos factor estacional basado en ISTAC
+        const currentOfficial = istacData.adr["2025"]?.[currentMonth] || istacData.adr["2024"]?.[currentMonth] || 100;
+        const targetOfficial = istacData.adr["2025"]?.[nextMonth] || istacData.adr["2024"]?.[nextMonth] || 100;
+        const seasonalFactor = targetOfficial / currentOfficial;
+        
+        // La predicción asume que el mercado seguirá la estacionalidad del ISTAC sobre el precio actual
+        predictionData.push({
+          week: `Semana ${nextWeekNum}`,
+          month: nextMonth,
+          avgPrice: Math.round(lastPoint.avgPrice * seasonalFactor),
+          isPrediction: true
+        });
+      }
+    }
+
     return { 
       data: filtered, 
-      withTrends,
+      withTrends: withTrendsAndBenchmarks,
+      predictionData: [...withTrendsAndBenchmarks, ...predictionData],
       kpis: kpiRes,
       istacRef
     };
   }, [marketData, selectedLocation, selectedBeds, selectedMonth, selectedStay, selectedType]);
 
-  const { data: displayData, withTrends: weeklyAggregatedData, kpis, istacRef } = filteredData;
+  const { withTrends: weeklyAggregatedData, predictionData, kpis, istacRef } = filteredData;
+
+  // Elegir qué datos mostramos en la gráfica
+  const chartData = useMemo(() => {
+    if (activeView === 'prediction') return predictionData;
+    return weeklyAggregatedData;
+  }, [activeView, weeklyAggregatedData, predictionData]);
 
   // Configuraciones del gráfico de líneas SVG
   const chartHeight = 220;
@@ -503,70 +563,127 @@ export default function App() {
 
         {/* Chart Prototipo */}
         <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 mb-8 relative">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
-            <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-              <LineChart className="w-5 h-5 text-blue-500" />
-              Evolución de Bandas de Precios
-            </h2>
-            <div className="flex gap-4 text-sm font-medium">
-              <span className="flex items-center gap-1 text-emerald-600"><div className="w-3 h-3 rounded-full bg-emerald-500"></div> Máximo</span>
-              <span className="flex items-center gap-1 text-blue-600"><div className="w-3 h-3 rounded-full bg-blue-500"></div> Medio</span>
-              <span className="flex items-center gap-1 text-slate-500"><div className="w-3 h-3 rounded-full bg-slate-400"></div> Mínimo</span>
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 gap-6">
+            <div className="flex flex-col gap-1">
+              <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
+                <LineChart className="w-5 h-5 text-blue-500" />
+                {activeView === 'live' && 'Evolución de Bandas de Precios'}
+                {activeView === 'prediction' && 'Forecasting AI: Proyección 90 Días'}
+                {activeView === 'comparison' && 'Comparativa: Mercado vs Benchmark ISTAC'}
+              </h2>
+              <p className="text-xs text-slate-500">Visualización de inteligencia competitiva dinámica</p>
+            </div>
+            
+            {/* View Selector Swiper-like */}
+            <div className="flex bg-slate-100 p-1 rounded-xl border border-slate-200">
+              <button 
+                onClick={() => setActiveView('live')}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'live' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+              >
+                En Vivo
+              </button>
+              <button 
+                onClick={() => setActiveView('prediction')}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'prediction' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+              >
+                Predicción
+              </button>
+              <button 
+                onClick={() => setActiveView('comparison')}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'comparison' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+              >
+                Comparativa
+              </button>
+            </div>
+
+            <div className="flex gap-4 text-[10px] font-black uppercase tracking-wider">
+              {activeView !== 'comparison' && (
+                <>
+                  <span className="flex items-center gap-1 text-emerald-600"><div className="w-2 h-2 rounded-full bg-emerald-500"></div> Máx</span>
+                  <span className="flex items-center gap-1 text-blue-600"><div className="w-2 h-2 rounded-full bg-blue-500"></div> Mediana</span>
+                  <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Mín</span>
+                </>
+              )}
+              {activeView === 'comparison' && (
+                <>
+                  <span className="flex items-center gap-1 text-blue-600"><div className="w-2 h-2 rounded-full bg-blue-500"></div> Mercado Real</span>
+                  <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400 border-2 border-slate-300"></div> Benchmark ISTAC</span>
+                </>
+              )}
             </div>
           </div>
           
           <div className="relative w-full overflow-x-auto pb-4">
-            <div className="min-w-[700px] h-[280px] relative">
+            <div className="min-w-[700px] h-[300px] relative">
                <svg viewBox={`0 0 ${chartWidth} ${chartHeight + 40}`} className="w-full h-full overflow-visible">
-                  {/* Grid lines horizontales (referencias de precio) */}
+                  {/* Grid lines horizontales */}
                   {[0, 0.25, 0.5, 0.75, 1].map(ratio => {
                     const yPos = chartHeight * ratio;
                     const priceLabel = Math.round(maxPriceInChart - (maxPriceInChart * ratio));
                     return (
                       <g key={ratio}>
-                        <line x1="0" y1={yPos} x2={chartWidth} y2={yPos} stroke="#f1f5f9" strokeDasharray="4 4" />
-                        <text x="0" y={yPos - 5} fontSize="10" fill="#94a3b8">{priceLabel}€</text>
+                        <line x1="0" y1={yPos} x2={chartWidth} y2={yPos} stroke="#f8fafc" strokeDasharray="4 4" />
+                        <text x="-10" y={yPos + 4} fontSize="10" fill="#94a3b8" textAnchor="end">{priceLabel}€</text>
                       </g>
                     );
                   })}
                   
-                  {/* Defs for gradients */}
                   <defs>
                     <linearGradient id="gradBlue" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 0.2 }} />
+                      <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 0.15 }} />
                       <stop offset="100%" style={{ stopColor: '#3b82f6', stopOpacity: 0 }} />
+                    </linearGradient>
+                    <linearGradient id="gradEmerald" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style={{ stopColor: '#10b981', stopOpacity: 0.1 }} />
+                      <stop offset="100%" style={{ stopColor: '#10b981', stopOpacity: 0 }} />
                     </linearGradient>
                   </defs>
 
-                  {/* Área sombreada bajo la línea media */}
-                  <path d={`M 0 ${chartHeight} L ${generatePath('avgPrice')} L ${chartWidth} ${chartHeight} Z`} fill="url(#gradBlue)" />
-                  
-                  {/* Líneas de Precios con efecto de brillo */}
-                  <polyline points={generatePath('maxPrice')} fill="none" stroke="#10b981" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" style={{ filter: 'drop-shadow(0 0 4px rgba(16,185,129,0.2))' }} />
-                  <polyline points={generatePath('avgPrice')} fill="none" stroke="#3b82f6" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round" style={{ filter: 'drop-shadow(0 0 8px rgba(59,130,246,0.3))' }} />
-                  <polyline points={generatePath('minPrice')} fill="none" stroke="#94a3b8" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" opacity="0.6" />
+                  {/* Lógica de Renderizado según Vista */}
+                  {activeView !== 'comparison' ? (
+                    <>
+                      <path d={`M 0 ${chartHeight} L ${generatePath('avgPrice')} L ${chartWidth} ${chartHeight} Z`} fill="url(#gradBlue)" />
+                      <polyline points={generatePath('maxPrice')} fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" opacity="0.6" />
+                      <polyline points={generatePath('avgPrice')} fill="none" stroke="#3b82f6" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round" />
+                      <polyline points={generatePath('minPrice')} fill="none" stroke="#94a3b8" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" opacity="0.4" />
+                      
+                      {/* Línea divisoria de predicción */}
+                      {activeView === 'prediction' && (
+                        <line 
+                          x1={(weeklyAggregatedData.length / chartData.length) * chartWidth} 
+                          y1="0" 
+                          x2={(weeklyAggregatedData.length / chartData.length) * chartWidth} 
+                          y2={chartHeight} 
+                          stroke="#3b82f6" 
+                          strokeWidth="2" 
+                          strokeDasharray="8 4"
+                        />
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      <path d={`M 0 ${chartHeight} L ${generatePath('avgPrice')} L ${chartWidth} ${chartHeight} Z`} fill="url(#gradBlue)" />
+                      <polyline points={generatePath('istacBenchmark')} fill="none" stroke="#94a3b8" strokeWidth="3" strokeDasharray="6 6" strokeLinejoin="round" />
+                      <polyline points={generatePath('avgPrice')} fill="none" stroke="#3b82f6" strokeWidth="4" strokeLinejoin="round" />
+                    </>
+                  )}
 
-                  {/* Áreas de interacción (Hover) */}
-                  {weeklyAggregatedData.map((d, i) => {
-                    const x = (i / (weeklyAggregatedData.length - 1)) * chartWidth;
+                  {/* Interacción */}
+                  {chartData.map((d, i) => {
+                    const x = (i / (chartData.length - 1)) * chartWidth;
                     return (
                       <g key={i} className="group cursor-pointer">
-                        {/* Barra invisible para detectar el ratón */}
-                        <rect x={x - (chartWidth / weeklyAggregatedData.length / 2)} y="0" width={chartWidth / weeklyAggregatedData.length} height={chartHeight} fill="transparent" 
+                        <rect x={x - 20} y="0" width="40" height={chartHeight} fill="transparent" 
                           onMouseEnter={() => setHoveredData(d)}
                           onMouseLeave={() => setHoveredData(null)}
                         />
-                        {/* Línea vertical que aparece al pasar el ratón */}
-                        <line x1={x} y1="0" x2={x} y2={chartHeight} stroke="#cbd5e1" strokeWidth="2" className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <line x1={x} y1="0" x2={x} y2={chartHeight} stroke="#e2e8f0" strokeWidth="1" className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <circle cx={x} cy={chartHeight - (d.avgPrice / maxPriceInChart) * chartHeight} r="5" fill="#3b82f6" className="opacity-0 group-hover:opacity-100 transition-opacity" />
                         
-                        {/* Puntos de intersección en hover */}
-                        <circle cx={x} cy={chartHeight - (d.maxPrice / maxPriceInChart) * chartHeight} r="4" fill="#10b981" className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <circle cx={x} cy={chartHeight - (d.avgPrice / maxPriceInChart) * chartHeight} r="4" fill="#3b82f6" className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <circle cx={x} cy={chartHeight - (d.minPrice / maxPriceInChart) * chartHeight} r="4" fill="#94a3b8" className="opacity-0 group-hover:opacity-100 transition-opacity" />
-
-                        {/* Etiquetas del Eje X */}
-                        {i % 2 === 0 && (
-                           <text x={x} y={chartHeight + 25} fontSize="11" fill="#64748b" textAnchor="middle" fontWeight="500">W{d.week.split(' ')[1]}</text>
+                        {(i % 2 === 0 || chartData.length < 10) && (
+                           <text x={x} y={chartHeight + 25} fontSize="10" fill="#94a3b8" textAnchor="middle" fontWeight="bold">
+                             {d.isPrediction ? '*' : ''}{d.week.split(' ')[1]}
+                           </text>
                         )}
                       </g>
                     )
@@ -575,14 +692,46 @@ export default function App() {
 
                {/* Tooltip Dinámico */}
                {hoveredData && (
-                 <div className="absolute top-0 right-0 bg-slate-900 text-white p-4 rounded-xl shadow-xl text-sm pointer-events-none z-10 transform -translate-y-2 border border-slate-700 min-w-[180px]">
-                   <p className="font-bold mb-3 border-b border-slate-700 pb-2 text-slate-200">{hoveredData.week} <span className="text-slate-400 font-normal">({hoveredData.month})</span></p>
-                   <div className="flex justify-between gap-4 text-emerald-400 mb-1"><span>Máximo:</span> <span className="font-semibold">{hoveredData.maxPrice}€</span></div>
-                   <div className="flex justify-between gap-4 text-blue-400 mb-1 font-bold"><span>Medio:</span> <span>{hoveredData.avgPrice}€</span></div>
-                   <div className="flex justify-between gap-4 text-slate-300 mb-3"><span>Mínimo:</span> <span className="font-semibold">{hoveredData.minPrice}€</span></div>
-                   <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex justify-between gap-2">
-                     <span>Oferta Activa:</span> <span className="font-medium text-slate-300">{hoveredData.totalCount} aptos</span>
-                   </div>
+                 <div className="absolute top-0 right-0 bg-slate-900 text-white p-4 rounded-xl shadow-xl text-sm pointer-events-none z-10 transform -translate-y-2 border border-slate-700 min-w-[200px]">
+                   <p className="font-bold mb-3 border-b border-slate-700 pb-2 text-slate-200 flex justify-between">
+                     <span>{hoveredData.week}</span>
+                     <span className="text-slate-400 font-normal">{hoveredData.month}</span>
+                   </p>
+                   
+                   {activeView === 'comparison' ? (
+                     <>
+                       <div className="flex justify-between gap-4 text-blue-400 mb-1 font-bold"><span>Mercado:</span> <span>{hoveredData.avgPrice}€</span></div>
+                       <div className="flex justify-between gap-4 text-slate-400 mb-3 font-medium"><span>Benchmark:</span> <span>{hoveredData.istacBenchmark}€</span></div>
+                       <div className="pt-2 border-t border-slate-700 text-[10px] text-emerald-400">
+                         {hoveredData.avgPrice > hoveredData.istacBenchmark 
+                           ? `+${Math.round((hoveredData.avgPrice/hoveredData.istacBenchmark - 1) * 100)}% sobre el histórico`
+                           : 'Por debajo del histórico'}
+                       </div>
+                     </>
+                   ) : (
+                     <>
+                       {!hoveredData.isPrediction && (
+                         <div className="flex justify-between gap-4 text-emerald-400 mb-1"><span>Máximo:</span> <span className="font-semibold">{hoveredData.maxPrice}€</span></div>
+                       )}
+                       <div className="flex justify-between gap-4 text-blue-400 mb-1 font-bold">
+                         <span>{hoveredData.isPrediction ? 'Previsto:' : 'Medio:'}</span> 
+                         <span>{hoveredData.avgPrice}€</span>
+                       </div>
+                       {!hoveredData.isPrediction && (
+                         <div className="flex justify-between gap-4 text-slate-300 mb-3"><span>Mínimo:</span> <span className="font-semibold">{hoveredData.minPrice}€</span></div>
+                       )}
+                       
+                       {hoveredData.isPrediction ? (
+                         <div className="pt-2 border-t border-slate-700 text-[10px] text-blue-400 italic">
+                           * Proyección basada en estacionalidad ISTAC
+                         </div>
+                       ) : (
+                         <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex justify-between gap-2">
+                           <span>Oferta Activa:</span> <span className="font-medium text-slate-300">{hoveredData.totalCount} aptos</span>
+                         </div>
+                       )}
+                     </>
+                   )}
                  </div>
                )}
             </div>
