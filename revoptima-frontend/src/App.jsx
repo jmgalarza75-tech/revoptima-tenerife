@@ -24,7 +24,7 @@ export default function App() {
   const [selectedType, setSelectedType] = useState('Apartamento'); // 'Apartamento' o 'Habitación'
   const [selectedStay, setSelectedStay] = useState('7');
   const [selectedMonth, setSelectedMonth] = useState('Todos');
-  const [activeView, setActiveView] = useState('live'); // 'live', 'prediction', 'comparison'
+  const [activeView, setActiveView] = useState('prevision'); // 'comparativo', 'historic', 'prevision'
   const [hoveredData, setHoveredData] = useState(null);
   const [marketData, setMarketData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -249,11 +249,17 @@ export default function App() {
 
     // --- ANALÍTICA AVANZADA ---
     
-    // 1. Datos para COMPARATIVA (Benchmarks vs Realidad)
+    // 1. Datos para COMPARATIVA (Media 2 años vs Realidad)
     const withTrendsAndBenchmarks = withTrends.map(item => {
-      const year = istacRef.year.toString();
-      const benchmark = istacData.adr[year]?.[item.month] || istacRef.adr;
-      return { ...item, istacBenchmark: benchmark };
+      // Calculamos la media de los últimos 2 años oficiales (2024 y 2025 o similar según datos)
+      const val2024 = istacData.adr["2024"]?.[item.month] || 0;
+      const val2025 = istacData.adr["2025"]?.[item.month] || 0;
+      
+      let benchmark = 0;
+      if (val2024 && val2025) benchmark = (val2024 + val2025) / 2;
+      else benchmark = val2025 || val2024 || istacRef.adr;
+
+      return { ...item, istacBenchmark: Math.round(benchmark) };
     });
 
     // 2. Datos para PREDICCIÓN (Forecasting AI)
@@ -268,10 +274,16 @@ export default function App() {
         const nextWeekNum = ((startWeekNum + i - 1) % 52) + 1;
         const nextMonth = getMonthFromWeek(nextWeekNum);
         
-        // Calculamos factor estacional basado en ISTAC
-        const currentOfficial = istacData.adr["2025"]?.[currentMonth] || istacData.adr["2024"]?.[currentMonth] || 100;
-        const targetOfficial = istacData.adr["2025"]?.[nextMonth] || istacData.adr["2024"]?.[nextMonth] || 100;
-        const seasonalFactor = targetOfficial / currentOfficial;
+        // Calculamos factor estacional basado en la MEDIA de los últimos 2 años
+        const get2YearAvg = (m) => {
+          const v1 = istacData.adr["2024"]?.[m] || 0;
+          const v2 = istacData.adr["2025"]?.[m] || 0;
+          return v1 && v2 ? (v1 + v2) / 2 : (v2 || v1 || 100);
+        };
+
+        const currentOfficialAvg = get2YearAvg(currentMonth);
+        const targetOfficialAvg = get2YearAvg(nextMonth);
+        const seasonalFactor = targetOfficialAvg / currentOfficialAvg;
         
         // La predicción asume que el mercado seguirá la estacionalidad del ISTAC sobre el precio actual
         predictionData.push({
@@ -296,7 +308,7 @@ export default function App() {
 
   // Elegir qué datos mostramos en la gráfica
   const chartData = useMemo(() => {
-    if (activeView === 'prediction') return predictionData;
+    if (activeView === 'prevision') return predictionData;
     return weeklyAggregatedData;
   }, [activeView, weeklyAggregatedData, predictionData]);
 
@@ -567,47 +579,50 @@ export default function App() {
             <div className="flex flex-col gap-1">
               <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
                 <LineChart className="w-5 h-5 text-blue-500" />
-                {activeView === 'live' && 'Evolución de Bandas de Precios'}
-                {activeView === 'prediction' && 'Forecasting AI: Proyección 90 Días'}
-                {activeView === 'comparison' && 'Comparativa: Mercado vs Benchmark ISTAC'}
+                {activeView === 'comparativo' && 'Comparativa: Mercado vs Benchmark ISTAC'}
+                {activeView === 'historic' && 'Histórico: Serie Oficial ISTAC'}
+                {activeView === 'prevision' && 'Previsión AI: Proyección de Mercado'}
               </h2>
-              <p className="text-xs text-slate-500">Visualización de inteligencia competitiva dinámica</p>
+              <p className="text-xs text-slate-500">Inteligencia de mercado para Canarias</p>
             </div>
-            
-            {/* View Selector Swiper-like */}
             <div className="flex bg-slate-100 p-1 rounded-xl border border-slate-200">
               <button 
-                onClick={() => setActiveView('live')}
-                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'live' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                onClick={() => setActiveView('comparativo')}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'comparativo' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
               >
-                En Vivo
+                Comparativo
               </button>
               <button 
-                onClick={() => setActiveView('prediction')}
-                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'prediction' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                onClick={() => setActiveView('historic')}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'historic' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
               >
-                Predicción
+                Histórico (ISTAC)
               </button>
               <button 
-                onClick={() => setActiveView('comparison')}
-                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'comparison' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                onClick={() => setActiveView('prevision')}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeView === 'prevision' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
               >
-                Comparativa
+                Previsión (Airbnb)
               </button>
             </div>
 
             <div className="flex gap-4 text-[10px] font-black uppercase tracking-wider">
-              {activeView !== 'comparison' && (
+              {activeView === 'prevision' && (
                 <>
                   <span className="flex items-center gap-1 text-emerald-600"><div className="w-2 h-2 rounded-full bg-emerald-500"></div> Máx</span>
                   <span className="flex items-center gap-1 text-blue-600"><div className="w-2 h-2 rounded-full bg-blue-500"></div> Mediana</span>
                   <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Mín</span>
                 </>
               )}
-              {activeView === 'comparison' && (
+              {activeView === 'comparativo' && (
                 <>
-                  <span className="flex items-center gap-1 text-blue-600"><div className="w-2 h-2 rounded-full bg-blue-500"></div> Mercado Real</span>
-                  <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400 border-2 border-slate-300"></div> Benchmark ISTAC</span>
+                  <span className="flex items-center gap-1 text-blue-600"><div className="w-2 h-2 rounded-full bg-blue-500"></div> Mercado Actual</span>
+                  <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400 border-2 border-slate-300"></div> Media Histórica (2 años)</span>
+                </>
+              )}
+              {activeView === 'historic' && (
+                <>
+                  <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400 border-2 border-slate-300"></div> Media ISTAC 2024-25</span>
                 </>
               )}
             </div>
@@ -633,14 +648,14 @@ export default function App() {
                       <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 0.15 }} />
                       <stop offset="100%" style={{ stopColor: '#3b82f6', stopOpacity: 0 }} />
                     </linearGradient>
-                    <linearGradient id="gradEmerald" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" style={{ stopColor: '#10b981', stopOpacity: 0.1 }} />
-                      <stop offset="100%" style={{ stopColor: '#10b981', stopOpacity: 0 }} />
+                    <linearGradient id="gradSlate" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style={{ stopColor: '#64748b', stopOpacity: 0.1 }} />
+                      <stop offset="100%" style={{ stopColor: '#64748b', stopOpacity: 0 }} />
                     </linearGradient>
                   </defs>
 
                   {/* Lógica de Renderizado según Vista */}
-                  {activeView !== 'comparison' ? (
+                  {activeView === 'prevision' && (
                     <>
                       <path d={`M 0 ${chartHeight} L ${generatePath('avgPrice')} L ${chartWidth} ${chartHeight} Z`} fill="url(#gradBlue)" />
                       <polyline points={generatePath('maxPrice')} fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" opacity="0.6" />
@@ -648,19 +663,19 @@ export default function App() {
                       <polyline points={generatePath('minPrice')} fill="none" stroke="#94a3b8" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" opacity="0.4" />
                       
                       {/* Línea divisoria de predicción */}
-                      {activeView === 'prediction' && (
-                        <line 
-                          x1={(weeklyAggregatedData.length / chartData.length) * chartWidth} 
-                          y1="0" 
-                          x2={(weeklyAggregatedData.length / chartData.length) * chartWidth} 
-                          y2={chartHeight} 
-                          stroke="#3b82f6" 
-                          strokeWidth="2" 
-                          strokeDasharray="8 4"
-                        />
-                      )}
+                      <line 
+                        x1={(weeklyAggregatedData.length / chartData.length) * chartWidth} 
+                        y1="0" 
+                        x2={(weeklyAggregatedData.length / chartData.length) * chartWidth} 
+                        y2={chartHeight} 
+                        stroke="#3b82f6" 
+                        strokeWidth="2" 
+                        strokeDasharray="8 4"
+                      />
                     </>
-                  ) : (
+                  )}
+
+                  {activeView === 'comparativo' && (
                     <>
                       <path d={`M 0 ${chartHeight} L ${generatePath('avgPrice')} L ${chartWidth} ${chartHeight} Z`} fill="url(#gradBlue)" />
                       <polyline points={generatePath('istacBenchmark')} fill="none" stroke="#94a3b8" strokeWidth="3" strokeDasharray="6 6" strokeLinejoin="round" />
@@ -668,9 +683,20 @@ export default function App() {
                     </>
                   )}
 
+                  {activeView === 'historic' && (
+                    <>
+                      <path d={`M 0 ${chartHeight} L ${generatePath('istacBenchmark')} L ${chartWidth} ${chartHeight} Z`} fill="url(#gradSlate)" />
+                      <polyline points={generatePath('istacBenchmark')} fill="none" stroke="#64748b" strokeWidth="4" strokeLinejoin="round" />
+                    </>
+                  )}
+
                   {/* Interacción */}
                   {chartData.map((d, i) => {
                     const x = (i / (chartData.length - 1)) * chartWidth;
+                    const yPoint = activeView === 'historic' 
+                      ? chartHeight - (d.istacBenchmark / maxPriceInChart) * chartHeight
+                      : chartHeight - (d.avgPrice / maxPriceInChart) * chartHeight;
+
                     return (
                       <g key={i} className="group cursor-pointer">
                         <rect x={x - 20} y="0" width="40" height={chartHeight} fill="transparent" 
@@ -678,14 +704,14 @@ export default function App() {
                           onMouseLeave={() => setHoveredData(null)}
                         />
                         <line x1={x} y1="0" x2={x} y2={chartHeight} stroke="#e2e8f0" strokeWidth="1" className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <circle cx={x} cy={chartHeight - (d.avgPrice / maxPriceInChart) * chartHeight} r="5" fill="#3b82f6" className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <circle cx={x} cy={yPoint} r="5" fill={activeView === 'historic' ? '#64748b' : '#3b82f6'} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                         
                         {(i % 2 === 0 || chartData.length < 10) && (
                            <text x={x} y={chartHeight + 25} fontSize="10" fill="#94a3b8" textAnchor="middle" fontWeight="bold">
                              {d.isPrediction ? '*' : ''}{d.week.split(' ')[1]}
                            </text>
                         )}
-                      </g>
+                       </g>
                     )
                   })}
                </svg>
@@ -698,16 +724,13 @@ export default function App() {
                      <span className="text-slate-400 font-normal">{hoveredData.month}</span>
                    </p>
                    
-                   {activeView === 'comparison' ? (
+                   {activeView === 'comparativo' ? (
                      <>
                        <div className="flex justify-between gap-4 text-blue-400 mb-1 font-bold"><span>Mercado:</span> <span>{hoveredData.avgPrice}€</span></div>
-                       <div className="flex justify-between gap-4 text-slate-400 mb-3 font-medium"><span>Benchmark:</span> <span>{hoveredData.istacBenchmark}€</span></div>
-                       <div className="pt-2 border-t border-slate-700 text-[10px] text-emerald-400">
-                         {hoveredData.avgPrice > hoveredData.istacBenchmark 
-                           ? `+${Math.round((hoveredData.avgPrice/hoveredData.istacBenchmark - 1) * 100)}% sobre el histórico`
-                           : 'Por debajo del histórico'}
-                       </div>
+                       <div className="flex justify-between gap-4 text-slate-400 mb-3 font-medium"><span>Media 2 años:</span> <span>{hoveredData.istacBenchmark}€</span></div>
                      </>
+                   ) : activeView === 'historic' ? (
+                     <div className="flex justify-between gap-4 text-slate-300 mb-1 font-bold"><span>Media ISTAC:</span> <span>{hoveredData.istacBenchmark}€</span></div>
                    ) : (
                      <>
                        {!hoveredData.isPrediction && (
@@ -720,17 +743,27 @@ export default function App() {
                        {!hoveredData.isPrediction && (
                          <div className="flex justify-between gap-4 text-slate-300 mb-3"><span>Mínimo:</span> <span className="font-semibold">{hoveredData.minPrice}€</span></div>
                        )}
-                       
-                       {hoveredData.isPrediction ? (
-                         <div className="pt-2 border-t border-slate-700 text-[10px] text-blue-400 italic">
-                           * Proyección basada en estacionalidad ISTAC
-                         </div>
-                       ) : (
-                         <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex justify-between gap-2">
-                           <span>Oferta Activa:</span> <span className="font-medium text-slate-300">{hoveredData.totalCount} aptos</span>
-                         </div>
-                       )}
                      </>
+                   )}
+
+                   {activeView === 'comparativo' && (
+                     <div className="pt-2 border-t border-slate-700 text-[10px] text-emerald-400">
+                       {hoveredData.avgPrice > hoveredData.istacBenchmark 
+                         ? `+${Math.round((hoveredData.avgPrice/hoveredData.istacBenchmark - 1) * 100)}% sobre el histórico`
+                         : 'Por debajo del histórico'}
+                     </div>
+                   )}
+
+                   {activeView === 'prevision' && hoveredData.isPrediction && (
+                     <div className="pt-2 border-t border-slate-700 text-[10px] text-blue-400 italic">
+                       * Proyección basada en estacionalidad ISTAC
+                     </div>
+                   )}
+
+                   {!hoveredData.isPrediction && activeView !== 'historic' && (
+                     <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex justify-between gap-2">
+                       <span>Oferta Activa:</span> <span className="font-medium text-slate-300">{hoveredData.totalCount} aptos</span>
+                     </div>
                    )}
                  </div>
                )}
