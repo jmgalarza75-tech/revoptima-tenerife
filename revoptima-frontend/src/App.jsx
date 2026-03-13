@@ -205,14 +205,20 @@ export default function App() {
       grouped[item.week].totalCount += item.availableCount;
     });
 
-    const items = Object.values(grouped).map(group => ({
-      week: group.week,
-      month: group.month,
-      minPrice: Math.min(...group.minPrices),
-      maxPrice: Math.max(...group.maxPrices),
-      avgPrice: Math.round(group.avgPrices.reduce((a, b) => a + b, 0) / group.avgPrices.length),
-      totalCount: group.totalCount
-    }));
+    const items = Object.values(grouped).map(group => {
+      const sortedMedian = [...group.avgPrices].sort((a, b) => a - b);
+      const mid = Math.floor(sortedMedian.length / 2);
+      const median = sortedMedian.length % 2 !== 0 ? sortedMedian[mid] : (sortedMedian[mid - 1] + sortedMedian[mid]) / 2;
+
+      return {
+        week: group.week,
+        month: group.month,
+        minPrice: Math.min(...group.minPrices),
+        maxPrice: Math.max(...group.maxPrices),
+        avgPrice: Math.round(median), // Usamos la mediana como "Referencia Real"
+        totalCount: group.totalCount
+      };
+    });
 
     // Añadir tendencia comparando con la semana anterior
     return items.map((item, index) => {
@@ -341,6 +347,7 @@ export default function App() {
                   value={selectedStay}
                   onChange={(e) => setSelectedStay(e.target.value)}
                 >
+                  <option value="1">Estancia: 1 Noche</option>
                   <option value="5">Estancia: 5 Días</option>
                   <option value="7">Estancia: 7 Días</option>
                   <option value="15">Estancia: 15 Días</option>
@@ -585,7 +592,7 @@ export default function App() {
                   <th className="p-6 font-black">Periodo</th>
                   <th className="p-6 font-black">Mes</th>
                   <th className="p-6 font-black text-right">Mínimo / Noche</th>
-                  <th className="p-6 font-black text-right">Target (Medio / Noche)</th>
+                  <th className="p-6 font-black text-right">Referencia Real (Mediana)</th>
                   <th className="p-6 font-black text-right">Premium (Máx / Noche)</th>
                   <th className="p-6 font-black text-right">Inventario Activo</th>
                 </tr>

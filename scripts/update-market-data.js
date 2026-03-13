@@ -136,6 +136,12 @@ function adapt(mcpResult, zoneName, weekNum) {
   const monthLabel = months[weekNum - 1] || 'Diciembre';
 
   const results = [];
+  const getMedian = (arr) => {
+    const s = [...arr].sort((a, b) => a - b);
+    const mid = Math.floor(s.length / 2);
+    return s.length % 2 !== 0 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
+  };
+
   for (let beds = 1; beds <= 3; beds++) {
     let prices = byBeds[beds];
     if (!prices.length) {
@@ -152,6 +158,7 @@ function adapt(mcpResult, zoneName, weekNum) {
       minPrice: Math.round(Math.min(...prices)),
       maxPrice: Math.round(Math.max(...prices)),
       avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
+      medianPrice: Math.round(getMedian(prices)),
       availableCount: beds === 1 ? listings.length : Math.max(1, Math.round(listings.length / beds))
     });
   }
