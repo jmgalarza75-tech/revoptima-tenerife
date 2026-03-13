@@ -183,7 +183,7 @@ function adaptToMarketData(mcpResult, zoneName, weekLabel, monthLabel) {
         week: weekLabel,
         month: monthLabel,
         minPrice: Math.round(getPercentile(finalPrices, 0.1)), // P10 como suelo real
-        maxPrice: Math.round(getPercentile(finalPrices, 0.9)), // P90 como techo real
+        maxPrice: Math.round(getPercentile(finalPrices, 0.7)), // P70 como techo real (más representativo)
         avgPrice: Math.round(finalPrices.reduce((a, b) => a + b, 0) / finalPrices.length),
         medianPrice: Math.round(getPercentile(finalPrices, 0.5)),
         availableCount: finalPrices.length

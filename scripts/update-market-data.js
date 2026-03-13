@@ -184,7 +184,7 @@ function adapt(mcpResult, zoneName, weekNum) {
         week: `Semana ${weekNum}`,
         month: monthLabel,
         minPrice: Math.round(getPercentile(finalPrices, 0.1)),
-        maxPrice: Math.round(getPercentile(finalPrices, 0.9)),
+        maxPrice: Math.round(getPercentile(finalPrices, 0.7)), // P70 como techo real (más representativo)
         avgPrice: Math.round(finalPrices.reduce((a, b) => a + b, 0) / finalPrices.length),
         medianPrice: Math.round(getPercentile(finalPrices, 0.5)),
         availableCount: finalPrices.length
