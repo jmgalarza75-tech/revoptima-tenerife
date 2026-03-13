@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { BarChart2, MapPin, BedDouble, CalendarDays, TrendingUp, Info, Building, LineChart, FileSpreadsheet, Clock } from 'lucide-react';
+import { BarChart2, MapPin, BedDouble, CalendarDays, TrendingUp, Info, Building, LineChart, FileSpreadsheet, Clock, Home } from 'lucide-react';
 
 // Generador de datos simulados para el prototipo (Semanas de Abril a Diciembre)
 const generateMockData = () => {
@@ -57,6 +57,7 @@ const getMonthFromWeek = (week) => {
 export default function App() {
   const [selectedLocation, setSelectedLocation] = useState('Todas');
   const [selectedBeds, setSelectedBeds] = useState('Todos');
+  const [selectedType, setSelectedType] = useState('Apartamento'); // 'Apartamento' o 'Habitación'
   const [selectedStay, setSelectedStay] = useState('7');
   const [selectedMonth, setSelectedMonth] = useState('Todos');
   const [hoveredData, setHoveredData] = useState(null);
@@ -68,7 +69,7 @@ export default function App() {
     if (marketData.length === 0) return;
 
     // Cabeceras estructuradas para base de datos
-    const headers = ['Fecha_Captura', 'Zona', 'Dormitorios', 'Semana', 'Mes', 'Precio_Minimo', 'Precio_Medio', 'Precio_Maximo', 'Oferta_Activa'];
+    const headers = ['Fecha_Captura', 'Zona', 'Tipo', 'Dormitorios', 'Semana', 'Mes', 'Precio_Minimo', 'Precio_Medio', 'Precio_Maximo', 'Oferta_Activa'];
     
     // Añadimos el "timestamp" para crear el histórico
     const today = new Date().toISOString().split('T')[0];
@@ -76,6 +77,7 @@ export default function App() {
     const rows = marketData.map(item => [
       today,
       item.location,
+      item.type || 'Apartamento',
       item.beds,
       item.week,
       item.month,
@@ -174,23 +176,25 @@ export default function App() {
     // Curva de descuento/premium por duración de estancia (LOS Strategy)
     // Asumimos que el precio base devuelto por el MCP Server es semanal (7 días)
     const losMultiplier = 
-      stayDays === 5 ? (5/7) * 1.05 :   // 5 días: 5% de recargo sobre el precio prorrateado (prima por estancia corta)
-      stayDays === 7 ? 1 :              // 7 días: Tarifa base de la semana
-      stayDays === 15 ? (15/7) * 0.90 : // 15 días: 10% de descuento estándar por quincena
-      (30/7) * 0.75;                    // 30 días: 25% de descuento por larga estancia mensual
+      stayDays === 1 ? (1/7) * 1.25 :   // 1 noche: +25% de recargo sobre el prorrateo semanal
+      stayDays === 5 ? (5/7) * 1.05 :   // 5 días: +5% de recargo
+      stayDays === 7 ? 1 :              // 7 días: Base
+      stayDays === 15 ? (15/7) * 0.90 : // 15 días: -10%
+      (30/7) * 0.75;                    // 30 días: -25%
 
     return marketData.filter(item => {
       const matchLocation = selectedLocation === 'Todas' || item.location === selectedLocation;
       const matchBeds = selectedBeds === 'Todos' || item.beds === parseInt(selectedBeds);
       const matchMonth = selectedMonth === 'Todos' || item.month === selectedMonth;
-      return matchLocation && matchBeds && matchMonth;
+      const matchType = (item.type || 'Apartamento') === selectedType;
+      return matchLocation && matchBeds && matchMonth && matchType;
     }).map(item => ({
       ...item,
       minPrice: Math.round(item.minPrice * losMultiplier),
       avgPrice: Math.round(item.avgPrice * losMultiplier),
       maxPrice: Math.round(item.maxPrice * losMultiplier)
     }));
-  }, [selectedLocation, selectedBeds, selectedStay, selectedMonth, marketData]);
+  }, [selectedLocation, selectedBeds, selectedStay, selectedMonth, selectedType, marketData]);
 
   // Agrupación por semana para la vista principal
   const weeklyAggregatedData = useMemo(() => {
@@ -309,6 +313,18 @@ export default function App() {
                   <option value="Los Gigantes">Los Gigantes</option>
                   <option value="El Médano">El Médano</option>
                   <option value="Abades">Abades</option>
+                </select>
+              </div>
+
+              <div className="bg-slate-800 rounded-lg p-1 flex items-center border border-slate-700">
+                <Home className="w-4 h-4 text-slate-400 ml-2" />
+                <select 
+                  className="bg-transparent text-white border-none focus:ring-0 text-sm p-2 outline-none font-bold"
+                  value={selectedType}
+                  onChange={(e) => setSelectedType(e.target.value)}
+                >
+                  <option value="Apartamento">Apartamento</option>
+                  <option value="Habitación">Habitación</option>
                 </select>
               </div>
 

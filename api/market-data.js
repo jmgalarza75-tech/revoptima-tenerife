@@ -92,6 +92,13 @@ function parseBedroomsFromLine(primaryLine) {
   return match ? Math.min(parseInt(match[1]), 3) : 1;
 }
 
+function parseUnitType(primaryLine) {
+  if (!primaryLine) return 'Apartamento';
+  const text = primaryLine.toLowerCase();
+  if (text.includes('room') || text.includes('habitación')) return 'Habitación';
+  return 'Apartamento';
+}
+
 // ─── Adapter ──────────────────────────────────────────────────────────────────
 function adaptToMarketData(mcpResult, zoneName, weekLabel, monthLabel) {
   let listings = [];
@@ -102,41 +109,50 @@ function adaptToMarketData(mcpResult, zoneName, weekLabel, monthLabel) {
 
   if (!listings.length) return [];
 
-  const byBeds = { 1: [], 2: [], 3: [] };
+  const byTypeBeds = { 
+    'Apartamento': { 1: [], 2: [], 3: [] },
+    'Habitación': { 1: [], 2: [], 3: [] }
+  };
+
   listings.forEach(l => {
     const price = parseNightlyPrice(l?.structuredDisplayPrice?.explanationData?.priceDetails);
-    const beds = parseBedroomsFromLine(l?.structuredContent?.primaryLine);
-    if (price > 0) byBeds[Math.min(beds, 3)].push(price);
+    const line = l?.structuredContent?.primaryLine;
+    const beds = parseBedroomsFromLine(line);
+    const type = parseUnitType(line);
+    if (price > 0) byTypeBeds[type][Math.min(beds, 3)].push(price);
   });
 
   const results = [];
   const getMedian = (arr) => {
     const s = [...arr].sort((a, b) => a - b);
+    if (s.length === 0) return 0;
     const mid = Math.floor(s.length / 2);
     return s.length % 2 !== 0 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
   };
 
-  for (let beds = 1; beds <= 3; beds++) {
-    let prices = byBeds[beds];
-    if (!prices.length) {
-      const src = byBeds[beds - 1]?.length ? byBeds[beds - 1] : byBeds[1];
-      const mult = beds === 2 ? 1.5 : 2.2;
-      prices = (src || []).map(p => Math.round(p * mult));
+  ['Apartamento', 'Habitación'].forEach(type => {
+    for (let beds = 1; beds <= 3; beds++) {
+      let prices = byTypeBeds[type][beds];
+      if (!prices.length) {
+        const src = byTypeBeds[type][beds - 1]?.length ? byTypeBeds[type][beds - 1] : byTypeBeds[type][1];
+        if (!src?.length) continue; 
+        const mult = beds === 2 ? 1.5 : 2.2;
+        prices = src.map(p => Math.round(p * mult));
+      }
+      results.push({
+        location: zoneName,
+        type,
+        beds,
+        week: weekLabel,
+        month: monthLabel,
+        minPrice: Math.round(Math.min(...prices)),
+        maxPrice: Math.round(Math.max(...prices)),
+        avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
+        medianPrice: Math.round(getMedian(prices)),
+        availableCount: prices.length
+      });
     }
-    if (!prices.length) continue;
-
-    results.push({
-      location: zoneName,
-      beds,
-      week: weekLabel,
-      month: monthLabel,
-      minPrice: Math.round(Math.min(...prices)),
-      maxPrice: Math.round(Math.max(...prices)),
-      avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
-      medianPrice: Math.round(getMedian(prices)),
-      availableCount: beds === 1 ? listings.length : Math.max(1, Math.round(listings.length / beds))
-    });
-  }
+  });
   return results;
 }
 
