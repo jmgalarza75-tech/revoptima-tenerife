@@ -1,0 +1,36 @@
+name: Actualización Diaria de Precios
+
+on:
+  schedule:
+    # Se ejecuta todos los días a las 04:00 AM UTC
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    # Permite ejecutarlo manualmente desde GitHub
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: |
+          cd revoptima-backend
+          npm install
+          cd ..
+
+      - name: Ejecutar script de extracción
+        run: node scripts/update-market-data.js
+
+      - name: Commit y Push de cambios
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: actualización automática de precios [skip ci]"
+          file_pattern: 'revoptima-frontend/src/data/market-data.json'
