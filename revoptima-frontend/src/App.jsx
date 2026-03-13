@@ -363,12 +363,12 @@ export default function App() {
 
             {/* Botón ISTAC */}
             <button 
-              onClick={() => window.open('https://datos.canarias.es/catalogos/estadisticas/dataset/viviendas-vacacionales-plazas-tasas-de-ocupacion-estancia-media-e-ingresos-islas-y-municipios-de-canarias-por-periodos', '_blank')}
+              onClick={() => window.open('https://www3.gobiernodecanarias.org/istac/statistical-visualizer/visualizer/data.html?resourceType=dataset&agencyId=ISTAC&resourceId=C00065A_000062&version=~latest', '_blank')}
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all border border-blue-400 active:scale-95"
-              title="Consultar históricos en ISTAC"
+              title="Consultar visualizador oficial ISTAC"
             >
               <BarChart2 className="w-4 h-4" />
-              <span className="hidden sm:inline">Contexto ISTAC</span>
+              <span className="hidden sm:inline">Visualizador ISTAC</span>
             </button>
 
             {/* Botón Exportar */}
@@ -468,13 +468,20 @@ export default function App() {
               <div className="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 flex flex-col relative overflow-hidden group hover:shadow-md transition-shadow">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-900/20 rounded-full -mr-12 -mt-12 transition-transform group-hover:scale-110"></div>
                 <span className="text-emerald-400/70 text-[10px] font-black uppercase tracking-widest flex items-center gap-1 z-10">
-                  Contexto Macroeconómico <TrendingUp className="w-3 h-3" />
+                  Referencia Oficial ISTAC <TrendingUp className="w-3 h-3" />
                 </span>
                 <div className="flex items-baseline gap-2 mt-3 z-10">
-                  <span className="text-3xl font-black text-white">82%</span>
+                  <span className="text-3xl font-black text-white">96%</span>
                   <span className="text-emerald-400 text-xs font-bold">Ocupación TN</span>
                 </div>
-                <p className="text-[10px] text-slate-400 mt-2 font-medium z-10">Ref. ISTAC Historico: ADR 94.2€</p>
+                <p className="text-[10px] text-slate-400 mt-2 font-medium z-10">Enero 2026 ・ ADR Oficial: 154.1€</p>
+                <div className="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between z-10">
+                  <span className="text-[10px] text-slate-500 font-bold uppercase">Fuente: eDatos ISTAC</span>
+                  <div className="flex gap-1">
+                    <div className="w-1 h-1 rounded-full bg-emerald-500 animate-pulse"></div>
+                    <div className="w-1 h-1 rounded-full bg-emerald-500/50"></div>
+                  </div>
+                </div>
               </div>
             </div>
 
