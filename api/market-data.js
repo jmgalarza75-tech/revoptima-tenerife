@@ -176,16 +176,30 @@ function getMonthFromWeek(week) {
   return months[week - 1] || 'Diciembre';
 }
 
-function getDateRangeForWeek(weekNumber, year = new Date().getFullYear()) {
-  const jan4 = new Date(year, 0, 4);
-  const dow = jan4.getDay() || 7;
-  const weekStart = new Date(jan4);
-  weekStart.setDate(jan4.getDate() - dow + 1 + (weekNumber - 1) * 7);
-  const weekEnd = new Date(weekStart);
-  weekEnd.setDate(weekStart.getDate() + 6);
+function getDateRangeForWeek(weekNumber) {
+  const currentYear = new Date().getFullYear();
+  const today = new Date();
+  
+  const getDates = (y) => {
+    const jan4 = new Date(y, 0, 4);
+    const dow = jan4.getDay() || 7;
+    const start = new Date(jan4);
+    start.setDate(jan4.getDate() - dow + 1 + (weekNumber - 1) * 7);
+    const end = new Date(start);
+    end.setDate(start.getDate() + 6);
+    return { start, end };
+  };
+
+  let dates = getDates(currentYear);
+  
+  // Si el fin de semana ya pasó, saltamos al año que viene
+  if (dates.end < today) {
+    dates = getDates(currentYear + 1);
+  }
+
   return {
-    checkin: weekStart.toISOString().split('T')[0],
-    checkout: weekEnd.toISOString().split('T')[0]
+    checkin: dates.start.toISOString().split('T')[0],
+    checkout: dates.end.toISOString().split('T')[0]
   };
 }
 

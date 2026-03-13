@@ -1,59 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { BarChart2, MapPin, BedDouble, CalendarDays, TrendingUp, Info, Building, LineChart, FileSpreadsheet, Clock, Home, RefreshCw } from 'lucide-react';
 
-// Generador de datos simulados para el prototipo (Semanas de Abril a Diciembre)
-const generateMockData = () => {
-  const locations = [
-    { name: 'Playa de las Américas', basePrice: 120, volatility: 40, baseCount: 150 },
-    { name: 'Los Gigantes', basePrice: 90, volatility: 20, baseCount: 80 },
-    { name: 'El Médano', basePrice: 100, volatility: 30, baseCount: 110 },
-    { name: 'Abades', basePrice: 70, volatility: 15, baseCount: 30 }
-  ];
-  
-  const data = [];
-  const startWeek = 14; // Aprox Abril
-  const endWeek = 52; // Fin de año
-
-  locations.forEach(loc => {
-    for (let beds = 1; beds <= 3; beds++) {
-      for (let week = startWeek; week <= endWeek; week++) {
-        // Simulamos estacionalidad (alta en verano y en invierno para Canarias)
-        const seasonality = (week > 28 && week < 35) || (week > 48) ? 1.4 : 1.0;
-        const bedMultiplier = beds === 1 ? 1 : beds === 2 ? 1.5 : 2.2;
-        
-        const avgPrice = Math.round(loc.basePrice * bedMultiplier * seasonality + (Math.random() * loc.volatility));
-        const minPrice = Math.round(avgPrice * 0.7);
-        const maxPrice = Math.round(avgPrice * 1.5);
-        // El número de apartamentos disponibles baja en temporada alta
-        const availableCount = Math.round((loc.baseCount / beds) * (2 - seasonality) * (0.8 + Math.random() * 0.4));
-
-        data.push({
-          location: loc.name,
-          beds: beds,
-          week: `Semana ${week}`,
-          month: getMonthFromWeek(week),
-          minPrice,
-          maxPrice,
-          avgPrice,
-          availableCount
-        });
-      }
-    }
-  });
-  return data;
-};
-
-const getMonthFromWeek = (week) => {
-  const months = ['Abril','Abril','Abril','Abril','Mayo','Mayo','Mayo','Mayo',
-                  'Junio','Junio','Junio','Junio','Junio','Julio','Julio','Julio',
-                  'Julio','Agosto','Agosto','Agosto','Agosto','Agosto','Septiembre',
-                  'Septiembre','Septiembre','Septiembre','Octubre','Octubre','Octubre',
-                  'Octubre','Octubre','Noviembre','Noviembre','Noviembre','Noviembre',
-                  'Diciembre','Diciembre','Diciembre','Diciembre'];
-  if (week < 14) return 'Abril';
-  return months[week - 14] || 'Diciembre';
-};
-
 export default function App() {
   const [selectedLocation, setSelectedLocation] = useState('Todas');
   const [selectedBeds, setSelectedBeds] = useState('Todos');
@@ -414,6 +361,16 @@ export default function App() {
               <span className="hidden sm:inline">Actualizar en Vivo</span>
             </button>
 
+            {/* Botón ISTAC */}
+            <button 
+              onClick={() => window.open('https://datos.canarias.es/catalogos/estadisticas/dataset/viviendas-vacacionales-plazas-tasas-de-ocupacion-estancia-media-e-ingresos-islas-y-municipios-de-canarias-por-periodos', '_blank')}
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all border border-blue-400 active:scale-95"
+              title="Consultar históricos en ISTAC"
+            >
+              <BarChart2 className="w-4 h-4" />
+              <span className="hidden sm:inline">Contexto ISTAC</span>
+            </button>
+
             {/* Botón Exportar */}
             <button 
               onClick={exportToCsv}
@@ -470,7 +427,7 @@ export default function App() {
         ) : (
           <>
             {/* KPIs Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col relative overflow-hidden group hover:shadow-md transition-shadow">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-slate-50 rounded-full -mr-12 -mt-12 transition-transform group-hover:scale-110"></div>
                 <span className="text-slate-500 text-xs font-bold uppercase tracking-wider flex items-center gap-1 z-10">
@@ -505,6 +462,19 @@ export default function App() {
                 </span>
                 <span className="text-4xl font-black text-indigo-600 mt-3 z-10">{kpis.avgCount}</span>
                 <span className="text-[10px] text-indigo-400 mt-2 font-medium z-10 uppercase tracking-tighter">Unidades activas promedio</span>
+              </div>
+
+              {/* Nueva Card Contexto Macro ISTAC */}
+              <div className="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 flex flex-col relative overflow-hidden group hover:shadow-md transition-shadow">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-900/20 rounded-full -mr-12 -mt-12 transition-transform group-hover:scale-110"></div>
+                <span className="text-emerald-400/70 text-[10px] font-black uppercase tracking-widest flex items-center gap-1 z-10">
+                  Contexto Macroeconómico <TrendingUp className="w-3 h-3" />
+                </span>
+                <div className="flex items-baseline gap-2 mt-3 z-10">
+                  <span className="text-3xl font-black text-white">82%</span>
+                  <span className="text-emerald-400 text-xs font-bold">Ocupación TN</span>
+                </div>
+                <p className="text-[10px] text-slate-400 mt-2 font-medium z-10">Ref. ISTAC Historico: ADR 94.2€</p>
               </div>
             </div>
 
