@@ -218,17 +218,23 @@ export default function App() {
       return { ...item, trend };
     });
 
-    // Cálculos de KPIs
+    // Cálculos de KPIs Robustos (Usamos medianas para evitar ruido de una sola semana)
     const kpiRes = { min: 0, max: 0, avg: 0, avgCount: 0, occupancy: 0, pressure: 'Baja' };
     if (withTrends.length > 0) {
-      kpiRes.min = Math.min(...withTrends.map(d => d.minPrice));
-      kpiRes.max = Math.max(...withTrends.map(d => d.maxPrice));
+      const allMin = [...withTrends].map(d => d.minPrice).sort((a,b) => a-b);
+      const allMax = [...withTrends].map(d => d.maxPrice).sort((a,b) => a-b);
+      
+      // El suelo es la mediana de los mínimos (muy robusto)
+      kpiRes.min = allMin[Math.floor(allMin.length / 2)] || 0;
+      // EL techo es la mediana de los máximos
+      kpiRes.max = allMax[Math.floor(allMax.length / 2)] || 0;
+      
       kpiRes.avg = Math.round(withTrends.reduce((a, b) => a + b.avgPrice, 0) / withTrends.length);
       kpiRes.avgCount = Math.round(withTrends.reduce((a, b) => a + b.totalCount, 0) / withTrends.length);
       
-      // Lógica simulada de negocio
-      kpiRes.occupancy = Math.min(98, Math.round(65 + (kpiRes.avg / 25))); 
-      kpiRes.pressure = kpiRes.avgCount > 120 ? 'Alta' : (kpiRes.avgCount > 60 ? 'Media' : 'Baja');
+      // Lógica simulada de negocio (Referenciada a ocupación de mercado)
+      kpiRes.occupancy = Math.min(98, Math.round(72 + (kpiRes.avg / 40))); 
+      kpiRes.pressure = kpiRes.avgCount > 100 ? 'Alta' : (kpiRes.avgCount > 40 ? 'Media' : 'Baja');
     }
 
     // Referencia ISTAC Dinámica

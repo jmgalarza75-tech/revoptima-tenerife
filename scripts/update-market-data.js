@@ -80,22 +80,27 @@ function callMcpTool(toolName, toolArgs) {
 // Lógica de transformación
 function parseNightlyPrice(priceDetails) {
   if (!priceDetails) return 0;
-  // Regex para capturar números con símbolos de moneda, manejando formatos como "123 €", "€123", "1.234 €"
+  
+  // Ignoramos si es un total de varios días para evitar inflar el ADR
+  const isTotal = priceDetails.toLowerCase().includes('total');
+  
   const match = priceDetails.match(/([€$£]\s*[\d,.]+)|([\d,.]+\s*[€$£])/);
   if (!match) return 0;
   
-  // Limpiar el string: quitar símbolos, espacios y convertir coma decimal si existe
   let cleanPrice = match[0].replace(/[€$£\s]/g, '').replace(',', '.');
   
-  // Manejar miles (ej: 1.200 -> 1200) - Si el punto no es decimal
+  // Manejar miles (ej: 1.200 -> 1200)
   if ((cleanPrice.match(/\./g) || []).length > 1 || (cleanPrice.includes('.') && cleanPrice.length - cleanPrice.indexOf('.') > 3)) {
     cleanPrice = cleanPrice.replace('.', '');
   }
   
-  const price = parseFloat(cleanPrice);
+  let price = parseFloat(cleanPrice);
   
-  // Eliminamos el suelo de 40€ porque ahora categorizamos "Camas" por separado
-  return (price > 0) ? price : 0;
+  // Si detectamos que es un total, no lo usamos como ADR nocturno
+  if (isTotal) return 0; 
+
+  // Filtro de "basura": Precios menores a 25€ suelen ser depósitos o fees
+  return (price >= 25) ? price : 0;
 }
 
 function parseBedroomsFromLine(primaryLine) {
@@ -134,40 +139,55 @@ function adapt(mcpResult, zoneName, weekNum) {
     const secondary = l?.structuredContent?.secondaryLine || "";
     const beds = parseBedroomsFromLine(primary);
     const type = parseUnitType(primary, secondary);
-    if (price > 0) byTypeBeds[type][Math.min(beds, 3)].push(price);
+    
+    // Filtro adicional: Si el precio es absurdamente alto lo ignoramos
+    if (price > 0) {
+      if (type !== 'Villa' && price > 1500) return;
+      if (price > 8000) return; // Seguridad
+      byTypeBeds[type][Math.min(beds, 3)].push(price);
+    }
   });
 
   const months = ['Enero','Enero','Enero','Enero','Enero','Febrero','Febrero','Febrero','Febrero','Marzo','Marzo','Marzo','Marzo','Marzo','Abril','Abril','Abril','Abril','Mayo','Mayo','Mayo','Mayo','Junio','Junio','Junio','Junio','Junio','Julio','Julio','Julio','Julio','Agosto','Agosto','Agosto','Agosto','Agosto','Septiembre','Septiembre','Septiembre','Septiembre','Octubre','Octubre','Octubre','Octubre','Octubre','Noviembre','Noviembre','Noviembre','Noviembre','Diciembre','Diciembre','Diciembre','Diciembre','Diciembre'];
   const monthLabel = months[weekNum - 1] || 'Diciembre';
 
   const results = [];
-  const getMedian = (arr) => {
+  const getPercentile = (arr, p) => {
+    if (arr.length === 0) return 0;
     const s = [...arr].sort((a, b) => a - b);
-    if (s.length === 0) return 0;
-    const mid = Math.floor(s.length / 2);
-    return s.length % 2 !== 0 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
+    const pos = (s.length - 1) * p;
+    const base = Math.floor(pos);
+    const rest = pos - base;
+    if (s[base + 1] !== undefined) {
+      return s[base] + rest * (s[base + 1] - s[base]);
+    } else {
+      return s[base];
+    }
   };
 
   ['Apartamento', 'Habitación', 'Villa', 'Cama'].forEach(type => {
     for (let beds = 1; beds <= 3; beds++) {
       let prices = byTypeBeds[type][beds];
-      if (!prices.length) {
-        const src = byTypeBeds[type][beds - 1]?.length ? byTypeBeds[type][beds - 1] : byTypeBeds[type][1];
-        if (!src?.length) continue; 
-        const mult = beds === 2 ? 1.5 : 2.2;
-        prices = src.map(p => Math.round(p * mult));
-      }
+      if (!prices.length) continue;
+      
+      // Limpieza interna IQ Range
+      const p25 = getPercentile(prices, 0.25);
+      const p75 = getPercentile(prices, 0.75);
+      const iqr = p75 - p25;
+      const cleanPrices = prices.filter(p => p >= (p25 - 1.5 * iqr) && p <= (p75 + 1.5 * iqr));
+      const finalPrices = cleanPrices.length > 0 ? cleanPrices : prices;
+
       results.push({
         location: zoneName,
         type,
         beds,
         week: `Semana ${weekNum}`,
         month: monthLabel,
-        minPrice: Math.round(Math.min(...prices)),
-        maxPrice: Math.round(Math.max(...prices)),
-        avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
-        medianPrice: Math.round(getMedian(prices)),
-        availableCount: prices.length
+        minPrice: Math.round(getPercentile(finalPrices, 0.1)),
+        maxPrice: Math.round(getPercentile(finalPrices, 0.9)),
+        avgPrice: Math.round(finalPrices.reduce((a, b) => a + b, 0) / finalPrices.length),
+        medianPrice: Math.round(getPercentile(finalPrices, 0.5)),
+        availableCount: finalPrices.length
       });
     }
   });
