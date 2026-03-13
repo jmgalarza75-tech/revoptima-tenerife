@@ -80,9 +80,23 @@ function callMcpTool(toolName, toolArgs) {
 // Lógica de transformación
 function parseNightlyPrice(priceDetails) {
   if (!priceDetails) return 0;
-  const match = priceDetails.match(/x\s*[€$£]\s*[\d,]+\.?\d*/);
+  // Regex para capturar números con símbolos de moneda, manejando formatos como "123 €", "€123", "1.234 €"
+  const match = priceDetails.match(/([€$£]\s*[\d,.]+)|([\d,.]+\s*[€$£])/);
   if (!match) return 0;
-  return parseFloat(match[0].replace(/[x€$£\s,]/g, '')) || 0;
+  
+  // Limpiar el string: quitar símbolos, espacios y convertir coma decimal si existe
+  let cleanPrice = match[0].replace(/[€$£\s]/g, '').replace(',', '.');
+  
+  // Manejar miles (ej: 1.200 -> 1200) - Si el punto no es decimal
+  if ((cleanPrice.match(/\./g) || []).length > 1 || (cleanPrice.includes('.') && cleanPrice.length - cleanPrice.indexOf('.') > 3)) {
+    cleanPrice = cleanPrice.replace('.', '');
+  }
+  
+  const price = parseFloat(cleanPrice);
+  
+  // Filtro de Realismo: Menos de 40€ en Tenerife suele ser un error de scraping (tasas) o una habitación compartida.
+  // Como Otasa se enfoca en VV competitivas, precios de 10-20€ son ruido.
+  return (price >= 40) ? price : 0;
 }
 
 function parseBedroomsFromLine(primaryLine) {

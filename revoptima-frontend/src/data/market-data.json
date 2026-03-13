@@ -214,16 +214,6 @@
     },
     {
       "location": "Playa de las Américas",
-      "beds": 1,
-      "week": "Semana 8",
-      "month": "Febrero",
-      "minPrice": 10,
-      "maxPrice": 54,
-      "avgPrice": 24,
-      "availableCount": 18
-    },
-    {
-      "location": "Playa de las Américas",
       "beds": 2,
       "week": "Semana 8",
       "month": "Febrero",
@@ -241,16 +231,6 @@
       "maxPrice": 91,
       "avgPrice": 91,
       "availableCount": 6
-    },
-    {
-      "location": "Playa de las Américas",
-      "beds": 1,
-      "week": "Semana 9",
-      "month": "Febrero",
-      "minPrice": 10,
-      "maxPrice": 54,
-      "avgPrice": 24,
-      "availableCount": 18
     },
     {
       "location": "Playa de las Américas",
@@ -1094,16 +1074,6 @@
     },
     {
       "location": "Playa de las Américas",
-      "beds": 2,
-      "week": "Semana 37",
-      "month": "Septiembre",
-      "minPrice": 29,
-      "maxPrice": 29,
-      "avgPrice": 29,
-      "availableCount": 9
-    },
-    {
-      "location": "Playa de las Américas",
       "beds": 3,
       "week": "Semana 37",
       "month": "Septiembre",
@@ -1301,16 +1271,6 @@
       "maxPrice": 77,
       "avgPrice": 42,
       "availableCount": 18
-    },
-    {
-      "location": "Playa de las Américas",
-      "beds": 2,
-      "week": "Semana 44",
-      "month": "Octubre",
-      "minPrice": 31,
-      "maxPrice": 31,
-      "avgPrice": 31,
-      "availableCount": 9
     },
     {
       "location": "Playa de las Américas",

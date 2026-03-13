@@ -267,7 +267,7 @@ export default function App() {
               RevOptima <span className="text-slate-400 font-light">Tenerife</span>
             </h1>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-1">
-              <p className="text-slate-400 text-sm font-medium">Inteligencia Competitiva de Viviendas Vacacionales</p>
+              <p className="text-slate-400 text-sm font-medium">Inteligencia de Precios por Noche — VV Tenerife</p>
               
               <div className="flex items-center gap-2">
                 <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider font-bold bg-slate-800 px-2.5 py-1 rounded-full text-emerald-400 border border-slate-700 w-max">
@@ -584,9 +584,9 @@ export default function App() {
                 <tr className="bg-slate-50/50 text-slate-400 text-[10px] uppercase tracking-widest border-b border-slate-100">
                   <th className="p-6 font-black">Periodo</th>
                   <th className="p-6 font-black">Mes</th>
-                  <th className="p-6 font-black text-right">Mínimo</th>
-                  <th className="p-6 font-black text-right">Target (Medio)</th>
-                  <th className="p-6 font-black text-right">Premium (Máx)</th>
+                  <th className="p-6 font-black text-right">Mínimo / Noche</th>
+                  <th className="p-6 font-black text-right">Target (Medio / Noche)</th>
+                  <th className="p-6 font-black text-right">Premium (Máx / Noche)</th>
                   <th className="p-6 font-black text-right">Inventario Activo</th>
                 </tr>
               </thead>

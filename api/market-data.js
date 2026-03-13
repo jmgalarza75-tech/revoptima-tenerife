@@ -76,9 +76,14 @@ function callMcpTool(toolName, toolArgs) {
 // ─── Price Parser ─────────────────────────────────────────────────────────────
 function parseNightlyPrice(priceDetails) {
   if (!priceDetails) return 0;
-  const match = priceDetails.match(/x\s*[€$£]\s*[\d,]+\.?\d*/);
+  const match = priceDetails.match(/([€$£]\s*[\d,.]+)|([\d,.]+\s*[€$£])/);
   if (!match) return 0;
-  return parseFloat(match[0].replace(/[x€$£\s,]/g, '')) || 0;
+  let cleanPrice = match[0].replace(/[€$£\s]/g, '').replace(',', '.');
+  if ((cleanPrice.match(/\./g) || []).length > 1 || (cleanPrice.includes('.') && cleanPrice.length - cleanPrice.indexOf('.') > 3)) {
+    cleanPrice = cleanPrice.replace('.', '');
+  }
+  const price = parseFloat(cleanPrice);
+  return (price >= 40) ? price : 0;
 }
 
 function parseBedroomsFromLine(primaryLine) {
