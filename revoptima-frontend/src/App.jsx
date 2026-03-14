@@ -312,8 +312,9 @@ export default function App() {
   // Configuraciones del gráfico de líneas SVG
   const chartHeight = 220;
   const chartWidth = 1000;
+  // Escalamos la gráfica respecto a la media o el benchmark para no desvirtuarla con máximos atípicos
   const maxPriceInChart = weeklyAggregatedData.length > 0 
-    ? Math.max(...weeklyAggregatedData.map(d => d.maxPrice)) * 1.1 
+    ? Math.max(...weeklyAggregatedData.map(d => Math.max(d.avgPrice, d.istacBenchmark || 0))) * 1.3 
     : 100;
 
   const generatePath = (key) => {
@@ -610,9 +611,8 @@ export default function App() {
             <div className="flex gap-4 text-[10px] font-black uppercase tracking-wider">
               {activeView === 'prevision' && (
                 <>
-                  <span className="flex items-center gap-1 text-emerald-600"><div className="w-2 h-2 rounded-full bg-emerald-500"></div> Máx</span>
                   <span className="flex items-center gap-1 text-blue-600"><div className="w-2 h-2 rounded-full bg-blue-500"></div> Mediana</span>
-                  <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Mín</span>
+                  <span className="flex items-center gap-1 text-slate-400"><div className="w-2 h-2 rounded-full bg-slate-400"></div> Mínimo</span>
                 </>
               )}
               {activeView === 'comparativo' && (
@@ -659,7 +659,6 @@ export default function App() {
                   {activeView === 'prevision' && (
                     <>
                       <path d={`M 0 ${chartHeight} L ${generatePath('avgPrice')} L ${chartWidth} ${chartHeight} Z`} fill="url(#gradBlue)" />
-                      <polyline points={generatePath('maxPrice')} fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" opacity="0.6" />
                       <polyline points={generatePath('avgPrice')} fill="none" stroke="#3b82f6" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round" />
                       <polyline points={generatePath('minPrice')} fill="none" stroke="#94a3b8" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" opacity="0.4" />
                       
@@ -734,9 +733,6 @@ export default function App() {
                      <div className="flex justify-between gap-4 text-slate-300 mb-1 font-bold"><span>Media ISTAC:</span> <span>{hoveredData.istacBenchmark}€</span></div>
                    ) : (
                      <>
-                       {!hoveredData.isPrediction && (
-                         <div className="flex justify-between gap-4 text-emerald-400 mb-1"><span>Máximo:</span> <span className="font-semibold">{hoveredData.maxPrice}€</span></div>
-                       )}
                        <div className="flex justify-between gap-4 text-blue-400 mb-1 font-bold">
                          <span>{hoveredData.isPrediction ? 'Previsto:' : 'Medio:'}</span> 
                          <span>{hoveredData.avgPrice}€</span>
