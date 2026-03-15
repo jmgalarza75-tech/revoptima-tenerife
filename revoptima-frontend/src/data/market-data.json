@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-03-14T05:15:27.585Z",
-  "count": 547,
+  "lastUpdate": "2026-03-15T05:34:04.734Z",
+  "count": 550,
   "data": [
     {
       "location": "Playa de las Américas",
@@ -8,10 +8,10 @@
       "beds": 1,
       "week": "Semana 1",
       "month": "Enero",
-      "minPrice": 178,
-      "maxPrice": 208,
-      "avgPrice": 224,
-      "medianPrice": 198,
+      "minPrice": 138,
+      "maxPrice": 198,
+      "avgPrice": 174,
+      "medianPrice": 178,
       "availableCount": 11
     },
     {
@@ -20,11 +20,11 @@
       "beds": 2,
       "week": "Semana 1",
       "month": "Enero",
-      "minPrice": 141,
-      "maxPrice": 222,
-      "avgPrice": 197,
-      "medianPrice": 183,
-      "availableCount": 5
+      "minPrice": 136,
+      "maxPrice": 155,
+      "avgPrice": 147,
+      "medianPrice": 154,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -32,10 +32,10 @@
       "beds": 3,
       "week": "Semana 1",
       "month": "Enero",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
+      "minPrice": 1050,
+      "maxPrice": 1050,
+      "avgPrice": 1050,
+      "medianPrice": 1050,
       "availableCount": 1
     },
     {
@@ -44,11 +44,11 @@
       "beds": 1,
       "week": "Semana 2",
       "month": "Enero",
-      "minPrice": 178,
+      "minPrice": 152,
       "maxPrice": 291,
-      "avgPrice": 244,
-      "medianPrice": 202,
-      "availableCount": 12
+      "avgPrice": 230,
+      "medianPrice": 186,
+      "availableCount": 11
     },
     {
       "location": "Playa de las Américas",
@@ -56,10 +56,10 @@
       "beds": 2,
       "week": "Semana 2",
       "month": "Enero",
-      "minPrice": 141,
-      "maxPrice": 221,
-      "avgPrice": 196,
-      "medianPrice": 181,
+      "minPrice": 140,
+      "maxPrice": 176,
+      "avgPrice": 165,
+      "medianPrice": 156,
       "availableCount": 5
     },
     {
@@ -68,11 +68,11 @@
       "beds": 3,
       "week": "Semana 2",
       "month": "Enero",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -80,11 +80,11 @@
       "beds": 1,
       "week": "Semana 3",
       "month": "Enero",
-      "minPrice": 186,
-      "maxPrice": 301,
-      "avgPrice": 253,
-      "medianPrice": 228,
-      "availableCount": 11
+      "minPrice": 87,
+      "maxPrice": 313,
+      "avgPrice": 227,
+      "medianPrice": 207,
+      "availableCount": 10
     },
     {
       "location": "Playa de las Américas",
@@ -92,11 +92,11 @@
       "beds": 2,
       "week": "Semana 3",
       "month": "Enero",
-      "minPrice": 146,
-      "maxPrice": 236,
-      "avgPrice": 206,
-      "medianPrice": 206,
-      "availableCount": 2
+      "minPrice": 145,
+      "maxPrice": 234,
+      "avgPrice": 205,
+      "medianPrice": 203,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -105,9 +105,9 @@
       "week": "Semana 3",
       "month": "Enero",
       "minPrice": 173,
-      "maxPrice": 456,
-      "avgPrice": 336,
-      "medianPrice": 376,
+      "maxPrice": 405,
+      "avgPrice": 322,
+      "medianPrice": 347,
       "availableCount": 4
     },
     {
@@ -116,10 +116,10 @@
       "beds": 1,
       "week": "Semana 4",
       "month": "Enero",
-      "minPrice": 172,
-      "maxPrice": 244,
-      "avgPrice": 237,
-      "medianPrice": 208,
+      "minPrice": 138,
+      "maxPrice": 208,
+      "avgPrice": 215,
+      "medianPrice": 186,
       "availableCount": 11
     },
     {
@@ -128,34 +128,34 @@
       "beds": 2,
       "week": "Semana 4",
       "month": "Enero",
-      "minPrice": 138,
-      "maxPrice": 237,
-      "avgPrice": 200,
-      "medianPrice": 193,
-      "availableCount": 4
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 4",
-      "month": "Enero",
-      "minPrice": 156,
-      "maxPrice": 350,
-      "avgPrice": 282,
-      "medianPrice": 297,
+      "minPrice": 152,
+      "maxPrice": 156,
+      "avgPrice": 154,
+      "medianPrice": 156,
       "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 4",
+      "month": "Enero",
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
+      "availableCount": 2
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
       "beds": 1,
       "week": "Semana 5",
       "month": "Enero",
-      "minPrice": 174,
-      "maxPrice": 282,
-      "avgPrice": 226,
-      "medianPrice": 206,
+      "minPrice": 138,
+      "maxPrice": 208,
+      "avgPrice": 213,
+      "medianPrice": 186,
       "availableCount": 11
     },
     {
@@ -164,11 +164,11 @@
       "beds": 2,
       "week": "Semana 5",
       "month": "Enero",
-      "minPrice": 150,
-      "maxPrice": 208,
-      "avgPrice": 192,
-      "medianPrice": 170,
-      "availableCount": 6
+      "minPrice": 148,
+      "maxPrice": 177,
+      "avgPrice": 168,
+      "medianPrice": 156,
+      "availableCount": 5
     },
     {
       "location": "Playa de las Américas",
@@ -176,11 +176,11 @@
       "beds": 3,
       "week": "Semana 5",
       "month": "Enero",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -188,10 +188,10 @@
       "beds": 1,
       "week": "Semana 6",
       "month": "Febrero",
-      "minPrice": 150,
+      "minPrice": 145,
       "maxPrice": 245,
-      "avgPrice": 226,
-      "medianPrice": 198,
+      "avgPrice": 224,
+      "medianPrice": 197,
       "availableCount": 13
     },
     {
@@ -200,11 +200,11 @@
       "beds": 2,
       "week": "Semana 6",
       "month": "Febrero",
-      "minPrice": 163,
-      "maxPrice": 237,
-      "avgPrice": 216,
-      "medianPrice": 218,
-      "availableCount": 4
+      "minPrice": 157,
+      "maxPrice": 204,
+      "avgPrice": 184,
+      "medianPrice": 203,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -212,11 +212,11 @@
       "beds": 3,
       "week": "Semana 6",
       "month": "Febrero",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -224,10 +224,10 @@
       "beds": 1,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 93,
-      "maxPrice": 228,
-      "avgPrice": 204,
-      "medianPrice": 196,
+      "minPrice": 91,
+      "maxPrice": 301,
+      "avgPrice": 216,
+      "medianPrice": 186,
       "availableCount": 11
     },
     {
@@ -236,11 +236,11 @@
       "beds": 2,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 159,
-      "maxPrice": 241,
-      "avgPrice": 213,
-      "medianPrice": 213,
-      "availableCount": 2
+      "minPrice": 157,
+      "maxPrice": 234,
+      "avgPrice": 210,
+      "medianPrice": 203,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -248,11 +248,11 @@
       "beds": 3,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 174,
-      "maxPrice": 534,
-      "avgPrice": 486,
-      "medianPrice": 387,
-      "availableCount": 4
+      "minPrice": 317,
+      "maxPrice": 429,
+      "avgPrice": 390,
+      "medianPrice": 398,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -260,11 +260,11 @@
       "beds": 1,
       "week": "Semana 8",
       "month": "Febrero",
-      "minPrice": 172,
-      "maxPrice": 266,
-      "avgPrice": 234,
-      "medianPrice": 206,
-      "availableCount": 11
+      "minPrice": 136,
+      "maxPrice": 206,
+      "avgPrice": 205,
+      "medianPrice": 185,
+      "availableCount": 10
     },
     {
       "location": "Playa de las Américas",
@@ -272,10 +272,10 @@
       "beds": 2,
       "week": "Semana 8",
       "month": "Febrero",
-      "minPrice": 150,
-      "maxPrice": 226,
-      "avgPrice": 203,
-      "medianPrice": 202,
+      "minPrice": 149,
+      "maxPrice": 193,
+      "avgPrice": 172,
+      "medianPrice": 156,
       "availableCount": 5
     },
     {
@@ -284,10 +284,10 @@
       "beds": 3,
       "week": "Semana 8",
       "month": "Febrero",
-      "minPrice": 314,
-      "maxPrice": 415,
-      "avgPrice": 381,
-      "medianPrice": 381,
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
       "availableCount": 2
     },
     {
@@ -296,11 +296,11 @@
       "beds": 1,
       "week": "Semana 9",
       "month": "Febrero",
-      "minPrice": 65,
-      "maxPrice": 213,
-      "avgPrice": 170,
+      "minPrice": 91,
+      "maxPrice": 301,
+      "avgPrice": 222,
       "medianPrice": 186,
-      "availableCount": 13
+      "availableCount": 11
     },
     {
       "location": "Playa de las Américas",
@@ -308,11 +308,11 @@
       "beds": 2,
       "week": "Semana 9",
       "month": "Febrero",
-      "minPrice": 159,
-      "maxPrice": 163,
-      "avgPrice": 162,
-      "medianPrice": 162,
-      "availableCount": 2
+      "minPrice": 168,
+      "maxPrice": 234,
+      "avgPrice": 214,
+      "medianPrice": 203,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -320,10 +320,10 @@
       "beds": 3,
       "week": "Semana 9",
       "month": "Febrero",
-      "minPrice": 626,
-      "maxPrice": 869,
-      "avgPrice": 798,
-      "medianPrice": 749,
+      "minPrice": 156,
+      "maxPrice": 337,
+      "avgPrice": 272,
+      "medianPrice": 297,
       "availableCount": 3
     },
     {
@@ -332,10 +332,10 @@
       "beds": 1,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 33,
-      "maxPrice": 74,
-      "avgPrice": 67,
-      "medianPrice": 61,
+      "minPrice": 38,
+      "maxPrice": 85,
+      "avgPrice": 68,
+      "medianPrice": 58,
       "availableCount": 15
     },
     {
@@ -344,11 +344,11 @@
       "beds": 2,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 225,
-      "maxPrice": 225,
-      "avgPrice": 225,
-      "medianPrice": 225,
-      "availableCount": 1
+      "minPrice": 48,
+      "maxPrice": 166,
+      "avgPrice": 127,
+      "medianPrice": 127,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -356,11 +356,11 @@
       "beds": 1,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 90,
-      "maxPrice": 169,
-      "avgPrice": 150,
-      "medianPrice": 156,
-      "availableCount": 12
+      "minPrice": 91,
+      "maxPrice": 151,
+      "avgPrice": 133,
+      "medianPrice": 148,
+      "availableCount": 5
     },
     {
       "location": "Playa de las Américas",
@@ -368,11 +368,11 @@
       "beds": 2,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 208,
-      "maxPrice": 478,
-      "avgPrice": 388,
-      "medianPrice": 388,
-      "availableCount": 2
+      "minPrice": 161,
+      "maxPrice": 251,
+      "avgPrice": 223,
+      "medianPrice": 185,
+      "availableCount": 11
     },
     {
       "location": "Playa de las Américas",
@@ -380,11 +380,11 @@
       "beds": 3,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 137,
-      "maxPrice": 371,
-      "avgPrice": 295,
-      "medianPrice": 285,
-      "availableCount": 3
+      "minPrice": 182,
+      "maxPrice": 182,
+      "avgPrice": 182,
+      "medianPrice": 182,
+      "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
@@ -392,9 +392,9 @@
       "beds": 1,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 64,
-      "maxPrice": 192,
-      "avgPrice": 160,
+      "minPrice": 82,
+      "maxPrice": 170,
+      "avgPrice": 150,
       "medianPrice": 151,
       "availableCount": 12
     },
@@ -404,11 +404,11 @@
       "beds": 2,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 103,
-      "maxPrice": 140,
-      "avgPrice": 130,
-      "medianPrice": 126,
-      "availableCount": 4
+      "minPrice": 116,
+      "maxPrice": 150,
+      "avgPrice": 139,
+      "medianPrice": 137,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -416,11 +416,11 @@
       "beds": 3,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 103,
-      "maxPrice": 126,
-      "avgPrice": 118,
-      "medianPrice": 118,
-      "availableCount": 2
+      "minPrice": 707,
+      "maxPrice": 707,
+      "avgPrice": 707,
+      "medianPrice": 707,
+      "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
@@ -428,11 +428,11 @@
       "beds": 1,
       "week": "Semana 13",
       "month": "Marzo",
-      "minPrice": 76,
-      "maxPrice": 188,
-      "avgPrice": 150,
-      "medianPrice": 161,
-      "availableCount": 9
+      "minPrice": 117,
+      "maxPrice": 174,
+      "avgPrice": 152,
+      "medianPrice": 143,
+      "availableCount": 13
     },
     {
       "location": "Playa de las Américas",
@@ -440,23 +440,11 @@
       "beds": 2,
       "week": "Semana 13",
       "month": "Marzo",
-      "minPrice": 114,
-      "maxPrice": 346,
-      "avgPrice": 283,
-      "medianPrice": 162,
-      "availableCount": 5
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 13",
-      "month": "Marzo",
-      "minPrice": 110,
-      "maxPrice": 192,
-      "avgPrice": 171,
-      "medianPrice": 137,
-      "availableCount": 3
+      "minPrice": 188,
+      "maxPrice": 338,
+      "avgPrice": 329,
+      "medianPrice": 255,
+      "availableCount": 4
     },
     {
       "location": "Playa de las Américas",
@@ -464,11 +452,23 @@
       "beds": 1,
       "week": "Semana 14",
       "month": "Marzo",
-      "minPrice": 108,
-      "maxPrice": 210,
-      "avgPrice": 182,
-      "medianPrice": 169,
-      "availableCount": 17
+      "minPrice": 112,
+      "maxPrice": 179,
+      "avgPrice": 156,
+      "medianPrice": 165,
+      "availableCount": 16
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 14",
+      "month": "Marzo",
+      "minPrice": 296,
+      "maxPrice": 296,
+      "avgPrice": 296,
+      "medianPrice": 296,
+      "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
@@ -476,11 +476,23 @@
       "beds": 1,
       "week": "Semana 15",
       "month": "Abril",
-      "minPrice": 101,
-      "maxPrice": 164,
-      "avgPrice": 143,
-      "medianPrice": 139,
-      "availableCount": 17
+      "minPrice": 131,
+      "maxPrice": 182,
+      "avgPrice": 167,
+      "medianPrice": 163,
+      "availableCount": 15
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 15",
+      "month": "Abril",
+      "minPrice": 164,
+      "maxPrice": 197,
+      "avgPrice": 186,
+      "medianPrice": 186,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -488,10 +500,10 @@
       "beds": 1,
       "week": "Semana 16",
       "month": "Abril",
-      "minPrice": 101,
-      "maxPrice": 158,
-      "avgPrice": 143,
-      "medianPrice": 133,
+      "minPrice": 105,
+      "maxPrice": 199,
+      "avgPrice": 164,
+      "medianPrice": 155,
       "availableCount": 12
     },
     {
@@ -500,215 +512,179 @@
       "beds": 2,
       "week": "Semana 16",
       "month": "Abril",
-      "minPrice": 163,
-      "maxPrice": 271,
-      "avgPrice": 231,
-      "medianPrice": 253,
-      "availableCount": 3
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 17",
-      "month": "Abril",
-      "minPrice": 122,
-      "maxPrice": 197,
-      "avgPrice": 176,
-      "medianPrice": 171,
-      "availableCount": 16
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 17",
-      "month": "Abril",
-      "minPrice": 292,
-      "maxPrice": 523,
-      "avgPrice": 446,
-      "medianPrice": 446,
-      "availableCount": 2
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 18",
-      "month": "Abril",
-      "minPrice": 118,
-      "maxPrice": 179,
-      "avgPrice": 154,
-      "medianPrice": 146,
-      "availableCount": 14
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 18",
-      "month": "Abril",
       "minPrice": 204,
-      "maxPrice": 261,
-      "avgPrice": 242,
-      "medianPrice": 243,
+      "maxPrice": 221,
+      "avgPrice": 218,
+      "medianPrice": 207,
       "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
-      "beds": 3,
+      "beds": 1,
+      "week": "Semana 17",
+      "month": "Abril",
+      "minPrice": 110,
+      "maxPrice": 275,
+      "avgPrice": 218,
+      "medianPrice": 194,
+      "availableCount": 17
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 17",
+      "month": "Abril",
+      "minPrice": 639,
+      "maxPrice": 639,
+      "avgPrice": 639,
+      "medianPrice": 639,
+      "availableCount": 1
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
       "week": "Semana 18",
       "month": "Abril",
-      "minPrice": 475,
-      "maxPrice": 475,
-      "avgPrice": 475,
-      "medianPrice": 475,
-      "availableCount": 1
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 19",
-      "month": "Mayo",
-      "minPrice": 109,
-      "maxPrice": 223,
-      "avgPrice": 195,
-      "medianPrice": 209,
-      "availableCount": 14
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 19",
-      "month": "Mayo",
-      "minPrice": 235,
-      "maxPrice": 287,
-      "avgPrice": 266,
-      "medianPrice": 264,
-      "availableCount": 4
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 20",
-      "month": "Mayo",
-      "minPrice": 108,
-      "maxPrice": 225,
-      "avgPrice": 199,
-      "medianPrice": 200,
-      "availableCount": 13
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 20",
-      "month": "Mayo",
-      "minPrice": 108,
-      "maxPrice": 241,
-      "avgPrice": 198,
-      "medianPrice": 187,
-      "availableCount": 4
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 20",
-      "month": "Mayo",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 21",
-      "month": "Mayo",
-      "minPrice": 106,
-      "maxPrice": 205,
-      "avgPrice": 171,
-      "medianPrice": 180,
-      "availableCount": 11
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 21",
-      "month": "Mayo",
-      "minPrice": 140,
-      "maxPrice": 300,
-      "avgPrice": 277,
-      "medianPrice": 266,
-      "availableCount": 4
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 21",
-      "month": "Mayo",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 22",
-      "month": "Mayo",
-      "minPrice": 127,
-      "maxPrice": 206,
-      "avgPrice": 184,
-      "medianPrice": 184,
-      "availableCount": 14
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 22",
-      "month": "Mayo",
-      "minPrice": 154,
-      "maxPrice": 360,
-      "avgPrice": 292,
-      "medianPrice": 292,
-      "availableCount": 2
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 23",
-      "month": "Junio",
       "minPrice": 134,
-      "maxPrice": 241,
-      "avgPrice": 228,
-      "medianPrice": 205,
+      "maxPrice": 213,
+      "avgPrice": 186,
+      "medianPrice": 174,
+      "availableCount": 14
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 18",
+      "month": "Abril",
+      "minPrice": 206,
+      "maxPrice": 419,
+      "avgPrice": 371,
+      "medianPrice": 254,
+      "availableCount": 3
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 19",
+      "month": "Mayo",
+      "minPrice": 111,
+      "maxPrice": 197,
+      "avgPrice": 177,
+      "medianPrice": 160,
       "availableCount": 15
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 2,
+      "week": "Semana 19",
+      "month": "Mayo",
+      "minPrice": 149,
+      "maxPrice": 391,
+      "avgPrice": 336,
+      "medianPrice": 208,
+      "availableCount": 3
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 20",
+      "month": "Mayo",
+      "minPrice": 113,
+      "maxPrice": 196,
+      "avgPrice": 174,
+      "medianPrice": 177,
+      "availableCount": 17
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 20",
+      "month": "Mayo",
+      "minPrice": 203,
+      "maxPrice": 203,
+      "avgPrice": 203,
+      "medianPrice": 203,
+      "availableCount": 1
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 21",
+      "month": "Mayo",
+      "minPrice": 101,
+      "maxPrice": 210,
+      "avgPrice": 180,
+      "medianPrice": 173,
+      "availableCount": 14
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 21",
+      "month": "Mayo",
+      "minPrice": 162,
+      "maxPrice": 315,
+      "avgPrice": 315,
+      "medianPrice": 242,
+      "availableCount": 4
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 22",
+      "month": "Mayo",
+      "minPrice": 102,
+      "maxPrice": 203,
+      "avgPrice": 178,
+      "medianPrice": 168,
+      "availableCount": 15
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 22",
+      "month": "Mayo",
+      "minPrice": 219,
+      "maxPrice": 453,
+      "avgPrice": 385,
+      "medianPrice": 333,
+      "availableCount": 3
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
       "week": "Semana 23",
       "month": "Junio",
-      "minPrice": 261,
-      "maxPrice": 261,
-      "avgPrice": 261,
-      "medianPrice": 261,
-      "availableCount": 1
+      "minPrice": 153,
+      "maxPrice": 207,
+      "avgPrice": 196,
+      "medianPrice": 197,
+      "availableCount": 12
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 23",
+      "month": "Junio",
+      "minPrice": 159,
+      "maxPrice": 374,
+      "avgPrice": 331,
+      "medianPrice": 275,
+      "availableCount": 4
     },
     {
       "location": "Playa de las Américas",
@@ -716,11 +692,11 @@
       "beds": 3,
       "week": "Semana 23",
       "month": "Junio",
-      "minPrice": 128,
-      "maxPrice": 240,
-      "avgPrice": 203,
-      "medianPrice": 203,
-      "availableCount": 2
+      "minPrice": 297,
+      "maxPrice": 297,
+      "avgPrice": 297,
+      "medianPrice": 297,
+      "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
@@ -728,83 +704,107 @@
       "beds": 1,
       "week": "Semana 24",
       "month": "Junio",
-      "minPrice": 151,
-      "maxPrice": 280,
-      "avgPrice": 252,
-      "medianPrice": 221,
-      "availableCount": 18
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 25",
-      "month": "Junio",
-      "minPrice": 132,
-      "maxPrice": 322,
-      "avgPrice": 245,
-      "medianPrice": 200,
-      "availableCount": 16
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 25",
-      "month": "Junio",
-      "minPrice": 255,
-      "maxPrice": 290,
-      "avgPrice": 278,
-      "medianPrice": 278,
-      "availableCount": 2
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 26",
-      "month": "Junio",
-      "minPrice": 107,
-      "maxPrice": 215,
-      "avgPrice": 188,
-      "medianPrice": 182,
-      "availableCount": 12
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 26",
-      "month": "Junio",
-      "minPrice": 209,
-      "maxPrice": 323,
-      "avgPrice": 300,
-      "medianPrice": 270,
-      "availableCount": 4
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 27",
-      "month": "Junio",
-      "minPrice": 91,
-      "maxPrice": 228,
-      "avgPrice": 202,
-      "medianPrice": 157,
+      "minPrice": 139,
+      "maxPrice": 267,
+      "avgPrice": 219,
+      "medianPrice": 215,
       "availableCount": 15
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 2,
+      "week": "Semana 24",
+      "month": "Junio",
+      "minPrice": 103,
+      "maxPrice": 170,
+      "avgPrice": 149,
+      "medianPrice": 144,
+      "availableCount": 3
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 25",
+      "month": "Junio",
+      "minPrice": 125,
+      "maxPrice": 207,
+      "avgPrice": 179,
+      "medianPrice": 169,
+      "availableCount": 15
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 25",
+      "month": "Junio",
+      "minPrice": 243,
+      "maxPrice": 503,
+      "avgPrice": 416,
+      "medianPrice": 416,
+      "availableCount": 2
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 26",
+      "month": "Junio",
+      "minPrice": 102,
+      "maxPrice": 186,
+      "avgPrice": 157,
+      "medianPrice": 132,
+      "availableCount": 11
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 26",
+      "month": "Junio",
+      "minPrice": 214,
+      "maxPrice": 480,
+      "avgPrice": 382,
+      "medianPrice": 343,
+      "availableCount": 4
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 26",
+      "month": "Junio",
+      "minPrice": 398,
+      "maxPrice": 398,
+      "avgPrice": 398,
+      "medianPrice": 398,
+      "availableCount": 1
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
       "week": "Semana 27",
       "month": "Junio",
-      "minPrice": 205,
-      "maxPrice": 258,
-      "avgPrice": 240,
-      "medianPrice": 240,
-      "availableCount": 2
+      "minPrice": 82,
+      "maxPrice": 190,
+      "avgPrice": 150,
+      "medianPrice": 144,
+      "availableCount": 13
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 27",
+      "month": "Junio",
+      "minPrice": 196,
+      "maxPrice": 196,
+      "avgPrice": 196,
+      "medianPrice": 196,
+      "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
@@ -824,11 +824,11 @@
       "beds": 1,
       "week": "Semana 28",
       "month": "Julio",
-      "minPrice": 95,
-      "maxPrice": 243,
-      "avgPrice": 216,
-      "medianPrice": 153,
-      "availableCount": 15
+      "minPrice": 134,
+      "maxPrice": 211,
+      "avgPrice": 186,
+      "medianPrice": 181,
+      "availableCount": 13
     },
     {
       "location": "Playa de las Américas",
@@ -836,23 +836,11 @@
       "beds": 2,
       "week": "Semana 28",
       "month": "Julio",
-      "minPrice": 275,
-      "maxPrice": 401,
-      "avgPrice": 359,
-      "medianPrice": 359,
-      "availableCount": 2
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 28",
-      "month": "Julio",
-      "minPrice": 284,
-      "maxPrice": 284,
-      "avgPrice": 284,
-      "medianPrice": 284,
-      "availableCount": 1
+      "minPrice": 213,
+      "maxPrice": 531,
+      "avgPrice": 415,
+      "medianPrice": 463,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -860,11 +848,11 @@
       "beds": 1,
       "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 146,
-      "maxPrice": 310,
-      "avgPrice": 243,
-      "medianPrice": 217,
-      "availableCount": 12
+      "minPrice": 124,
+      "maxPrice": 255,
+      "avgPrice": 224,
+      "medianPrice": 192,
+      "availableCount": 13
     },
     {
       "location": "Playa de las Américas",
@@ -872,10 +860,10 @@
       "beds": 2,
       "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 134,
-      "maxPrice": 288,
-      "avgPrice": 232,
-      "medianPrice": 220,
+      "minPrice": 160,
+      "maxPrice": 225,
+      "avgPrice": 205,
+      "medianPrice": 191,
       "availableCount": 4
     },
     {
@@ -884,59 +872,59 @@
       "beds": 3,
       "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 178,
-      "maxPrice": 257,
-      "avgPrice": 231,
-      "medianPrice": 231,
+      "minPrice": 297,
+      "maxPrice": 297,
+      "avgPrice": 297,
+      "medianPrice": 297,
+      "availableCount": 1
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 30",
+      "month": "Julio",
+      "minPrice": 141,
+      "maxPrice": 345,
+      "avgPrice": 262,
+      "medianPrice": 254,
+      "availableCount": 16
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 30",
+      "month": "Julio",
+      "minPrice": 132,
+      "maxPrice": 153,
+      "avgPrice": 146,
+      "medianPrice": 146,
       "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 30",
+      "week": "Semana 31",
       "month": "Julio",
-      "minPrice": 147,
-      "maxPrice": 393,
-      "avgPrice": 312,
-      "medianPrice": 279,
+      "minPrice": 124,
+      "maxPrice": 306,
+      "avgPrice": 231,
+      "medianPrice": 178,
       "availableCount": 15
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 30",
-      "month": "Julio",
-      "minPrice": 175,
-      "maxPrice": 404,
-      "avgPrice": 319,
-      "medianPrice": 365,
-      "availableCount": 3
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
       "week": "Semana 31",
       "month": "Julio",
-      "minPrice": 100,
-      "maxPrice": 283,
-      "avgPrice": 232,
-      "medianPrice": 177,
-      "availableCount": 14
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 31",
-      "month": "Julio",
-      "minPrice": 179,
-      "maxPrice": 338,
-      "avgPrice": 293,
-      "medianPrice": 254,
-      "availableCount": 3
+      "minPrice": 161,
+      "maxPrice": 163,
+      "avgPrice": 162,
+      "medianPrice": 162,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -956,59 +944,59 @@
       "beds": 1,
       "week": "Semana 32",
       "month": "Agosto",
-      "minPrice": 81,
-      "maxPrice": 255,
-      "avgPrice": 205,
-      "medianPrice": 174,
-      "availableCount": 14
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 32",
-      "month": "Agosto",
-      "minPrice": 191,
-      "maxPrice": 373,
-      "avgPrice": 312,
-      "medianPrice": 312,
-      "availableCount": 2
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 32",
-      "month": "Agosto",
-      "minPrice": 257,
-      "maxPrice": 444,
-      "avgPrice": 382,
-      "medianPrice": 382,
-      "availableCount": 2
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 33",
-      "month": "Agosto",
-      "minPrice": 148,
-      "maxPrice": 308,
-      "avgPrice": 246,
-      "medianPrice": 207,
+      "minPrice": 111,
+      "maxPrice": 256,
+      "avgPrice": 210,
+      "medianPrice": 192,
       "availableCount": 13
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 2,
+      "week": "Semana 32",
+      "month": "Agosto",
+      "minPrice": 165,
+      "maxPrice": 191,
+      "avgPrice": 182,
+      "medianPrice": 182,
+      "availableCount": 2
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 32",
+      "month": "Agosto",
+      "minPrice": 281,
+      "maxPrice": 516,
+      "avgPrice": 422,
+      "medianPrice": 502,
+      "availableCount": 3
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
       "week": "Semana 33",
       "month": "Agosto",
-      "minPrice": 148,
-      "maxPrice": 328,
-      "avgPrice": 276,
-      "medianPrice": 237,
-      "availableCount": 3
+      "minPrice": 133,
+      "maxPrice": 192,
+      "avgPrice": 171,
+      "medianPrice": 163,
+      "availableCount": 11
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 33",
+      "month": "Agosto",
+      "minPrice": 162,
+      "maxPrice": 200,
+      "avgPrice": 188,
+      "medianPrice": 188,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -1016,11 +1004,11 @@
       "beds": 3,
       "week": "Semana 33",
       "month": "Agosto",
-      "minPrice": 233,
-      "maxPrice": 275,
-      "avgPrice": 261,
-      "medianPrice": 261,
-      "availableCount": 2
+      "minPrice": 240,
+      "maxPrice": 427,
+      "avgPrice": 382,
+      "medianPrice": 297,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -1028,10 +1016,10 @@
       "beds": 1,
       "week": "Semana 34",
       "month": "Agosto",
-      "minPrice": 150,
-      "maxPrice": 353,
-      "avgPrice": 251,
-      "medianPrice": 200,
+      "minPrice": 119,
+      "maxPrice": 356,
+      "avgPrice": 264,
+      "medianPrice": 208,
       "availableCount": 14
     },
     {
@@ -1040,11 +1028,11 @@
       "beds": 2,
       "week": "Semana 34",
       "month": "Agosto",
-      "minPrice": 298,
-      "maxPrice": 408,
-      "avgPrice": 372,
-      "medianPrice": 372,
-      "availableCount": 2
+      "minPrice": 280,
+      "maxPrice": 280,
+      "avgPrice": 280,
+      "medianPrice": 280,
+      "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
@@ -1052,11 +1040,11 @@
       "beds": 3,
       "week": "Semana 34",
       "month": "Agosto",
-      "minPrice": 233,
-      "maxPrice": 275,
-      "avgPrice": 261,
-      "medianPrice": 261,
-      "availableCount": 2
+      "minPrice": 240,
+      "maxPrice": 365,
+      "avgPrice": 330,
+      "medianPrice": 297,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -1064,11 +1052,11 @@
       "beds": 1,
       "week": "Semana 35",
       "month": "Agosto",
-      "minPrice": 100,
-      "maxPrice": 344,
-      "avgPrice": 261,
+      "minPrice": 152,
+      "maxPrice": 355,
+      "avgPrice": 266,
       "medianPrice": 261,
-      "availableCount": 15
+      "availableCount": 13
     },
     {
       "location": "Playa de las Américas",
@@ -1077,10 +1065,10 @@
       "week": "Semana 35",
       "month": "Agosto",
       "minPrice": 156,
-      "maxPrice": 361,
-      "avgPrice": 293,
-      "medianPrice": 293,
-      "availableCount": 2
+      "maxPrice": 156,
+      "avgPrice": 156,
+      "medianPrice": 156,
+      "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
@@ -1088,11 +1076,11 @@
       "beds": 3,
       "week": "Semana 35",
       "month": "Agosto",
-      "minPrice": 538,
-      "maxPrice": 538,
-      "avgPrice": 538,
-      "medianPrice": 538,
-      "availableCount": 1
+      "minPrice": 247,
+      "maxPrice": 453,
+      "avgPrice": 391,
+      "medianPrice": 366,
+      "availableCount": 4
     },
     {
       "location": "Playa de las Américas",
@@ -1100,11 +1088,11 @@
       "beds": 1,
       "week": "Semana 36",
       "month": "Agosto",
-      "minPrice": 106,
-      "maxPrice": 334,
-      "avgPrice": 244,
-      "medianPrice": 246,
-      "availableCount": 16
+      "minPrice": 102,
+      "maxPrice": 208,
+      "avgPrice": 178,
+      "medianPrice": 176,
+      "availableCount": 14
     },
     {
       "location": "Playa de las Américas",
@@ -1112,10 +1100,10 @@
       "beds": 2,
       "week": "Semana 36",
       "month": "Agosto",
-      "minPrice": 122,
-      "maxPrice": 122,
-      "avgPrice": 122,
-      "medianPrice": 122,
+      "minPrice": 377,
+      "maxPrice": 377,
+      "avgPrice": 377,
+      "medianPrice": 377,
       "availableCount": 1
     },
     {
@@ -1124,11 +1112,11 @@
       "beds": 3,
       "week": "Semana 36",
       "month": "Agosto",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 496,
+      "maxPrice": 581,
+      "avgPrice": 553,
+      "medianPrice": 553,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -1137,8 +1125,8 @@
       "week": "Semana 37",
       "month": "Septiembre",
       "minPrice": 145,
-      "maxPrice": 218,
-      "avgPrice": 200,
+      "maxPrice": 245,
+      "avgPrice": 222,
       "medianPrice": 200,
       "availableCount": 12
     },
@@ -1148,10 +1136,10 @@
       "beds": 2,
       "week": "Semana 37",
       "month": "Septiembre",
-      "minPrice": 134,
-      "maxPrice": 236,
-      "avgPrice": 197,
-      "medianPrice": 194,
+      "minPrice": 135,
+      "maxPrice": 169,
+      "avgPrice": 162,
+      "medianPrice": 160,
       "availableCount": 4
     },
     {
@@ -1172,10 +1160,10 @@
       "beds": 1,
       "week": "Semana 38",
       "month": "Septiembre",
-      "minPrice": 129,
-      "maxPrice": 234,
-      "avgPrice": 202,
-      "medianPrice": 186,
+      "minPrice": 160,
+      "maxPrice": 231,
+      "avgPrice": 219,
+      "medianPrice": 198,
       "availableCount": 13
     },
     {
@@ -1184,10 +1172,10 @@
       "beds": 2,
       "week": "Semana 38",
       "month": "Septiembre",
-      "minPrice": 144,
-      "maxPrice": 324,
-      "avgPrice": 272,
-      "medianPrice": 232,
+      "minPrice": 162,
+      "maxPrice": 180,
+      "avgPrice": 176,
+      "medianPrice": 165,
       "availableCount": 3
     },
     {
@@ -1196,11 +1184,11 @@
       "beds": 3,
       "week": "Semana 38",
       "month": "Septiembre",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 222,
+      "maxPrice": 272,
+      "avgPrice": 255,
+      "medianPrice": 255,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -1208,11 +1196,11 @@
       "beds": 1,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 184,
-      "maxPrice": 299,
-      "avgPrice": 256,
-      "medianPrice": 276,
-      "availableCount": 11
+      "minPrice": 156,
+      "maxPrice": 291,
+      "avgPrice": 239,
+      "medianPrice": 231,
+      "availableCount": 14
     },
     {
       "location": "Playa de las Américas",
@@ -1220,11 +1208,11 @@
       "beds": 2,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 140,
-      "maxPrice": 234,
-      "avgPrice": 201,
-      "medianPrice": 218,
-      "availableCount": 6
+      "minPrice": 138,
+      "maxPrice": 214,
+      "avgPrice": 189,
+      "medianPrice": 189,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -1232,11 +1220,11 @@
       "beds": 3,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 222,
+      "maxPrice": 272,
+      "avgPrice": 255,
+      "medianPrice": 255,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -1244,11 +1232,11 @@
       "beds": 1,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 161,
-      "maxPrice": 265,
-      "avgPrice": 241,
-      "medianPrice": 210,
-      "availableCount": 12
+      "minPrice": 178,
+      "maxPrice": 205,
+      "avgPrice": 200,
+      "medianPrice": 190,
+      "availableCount": 8
     },
     {
       "location": "Playa de las Américas",
@@ -1256,10 +1244,10 @@
       "beds": 2,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 123,
-      "maxPrice": 218,
-      "avgPrice": 184,
-      "medianPrice": 161,
+      "minPrice": 166,
+      "maxPrice": 229,
+      "avgPrice": 211,
+      "medianPrice": 203,
       "availableCount": 5
     },
     {
@@ -1280,11 +1268,11 @@
       "beds": 1,
       "week": "Semana 41",
       "month": "Octubre",
-      "minPrice": 85,
-      "maxPrice": 259,
-      "avgPrice": 214,
-      "medianPrice": 193,
-      "availableCount": 13
+      "minPrice": 167,
+      "maxPrice": 285,
+      "avgPrice": 245,
+      "medianPrice": 214,
+      "availableCount": 12
     },
     {
       "location": "Playa de las Américas",
@@ -1292,11 +1280,11 @@
       "beds": 2,
       "week": "Semana 41",
       "month": "Octubre",
-      "minPrice": 134,
-      "maxPrice": 201,
-      "avgPrice": 172,
-      "medianPrice": 179,
-      "availableCount": 4
+      "minPrice": 202,
+      "maxPrice": 206,
+      "avgPrice": 205,
+      "medianPrice": 204,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -1316,11 +1304,11 @@
       "beds": 1,
       "week": "Semana 42",
       "month": "Octubre",
-      "minPrice": 145,
-      "maxPrice": 310,
-      "avgPrice": 252,
-      "medianPrice": 192,
-      "availableCount": 11
+      "minPrice": 117,
+      "maxPrice": 232,
+      "avgPrice": 203,
+      "medianPrice": 193,
+      "availableCount": 16
     },
     {
       "location": "Playa de las Américas",
@@ -1328,23 +1316,11 @@
       "beds": 2,
       "week": "Semana 42",
       "month": "Octubre",
-      "minPrice": 184,
-      "maxPrice": 256,
-      "avgPrice": 229,
-      "medianPrice": 223,
-      "availableCount": 6
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 42",
-      "month": "Octubre",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 204,
+      "maxPrice": 210,
+      "avgPrice": 208,
+      "medianPrice": 208,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -1352,9 +1328,9 @@
       "beds": 1,
       "week": "Semana 43",
       "month": "Octubre",
-      "minPrice": 96,
-      "maxPrice": 284,
-      "avgPrice": 224,
+      "minPrice": 151,
+      "maxPrice": 273,
+      "avgPrice": 232,
       "medianPrice": 189,
       "availableCount": 14
     },
@@ -1364,137 +1340,125 @@
       "beds": 2,
       "week": "Semana 43",
       "month": "Octubre",
-      "minPrice": 173,
-      "maxPrice": 205,
-      "avgPrice": 194,
-      "medianPrice": 197,
-      "availableCount": 4
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 44",
-      "month": "Octubre",
-      "minPrice": 114,
-      "maxPrice": 231,
-      "avgPrice": 219,
-      "medianPrice": 182,
-      "availableCount": 14
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 44",
-      "month": "Octubre",
-      "minPrice": 166,
-      "maxPrice": 223,
-      "avgPrice": 207,
-      "medianPrice": 202,
-      "availableCount": 4
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 45",
-      "month": "Octubre",
-      "minPrice": 99,
-      "maxPrice": 201,
-      "avgPrice": 162,
-      "medianPrice": 177,
-      "availableCount": 9
-    },
-    {
-      "location": "Playa de las Américas",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 45",
-      "month": "Octubre",
-      "minPrice": 96,
-      "maxPrice": 231,
-      "avgPrice": 182,
-      "medianPrice": 170,
-      "availableCount": 6
+      "minPrice": 168,
+      "maxPrice": 370,
+      "avgPrice": 328,
+      "medianPrice": 203,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 3,
-      "week": "Semana 45",
+      "week": "Semana 43",
       "month": "Octubre",
-      "minPrice": 365,
-      "maxPrice": 365,
-      "avgPrice": 365,
-      "medianPrice": 365,
+      "minPrice": 366,
+      "maxPrice": 366,
+      "avgPrice": 366,
+      "medianPrice": 366,
       "availableCount": 1
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 46",
-      "month": "Noviembre",
-      "minPrice": 212,
-      "maxPrice": 334,
-      "avgPrice": 281,
-      "medianPrice": 231,
-      "availableCount": 11
+      "week": "Semana 44",
+      "month": "Octubre",
+      "minPrice": 134,
+      "maxPrice": 223,
+      "avgPrice": 205,
+      "medianPrice": 180,
+      "availableCount": 15
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 46",
-      "month": "Noviembre",
-      "minPrice": 133,
-      "maxPrice": 315,
-      "avgPrice": 294,
-      "medianPrice": 213,
+      "week": "Semana 44",
+      "month": "Octubre",
+      "minPrice": 209,
+      "maxPrice": 248,
+      "avgPrice": 235,
+      "medianPrice": 235,
+      "availableCount": 2
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 44",
+      "month": "Octubre",
+      "minPrice": 537,
+      "maxPrice": 537,
+      "avgPrice": 537,
+      "medianPrice": 537,
+      "availableCount": 1
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 45",
+      "month": "Octubre",
+      "minPrice": 123,
+      "maxPrice": 210,
+      "avgPrice": 180,
+      "medianPrice": 185,
+      "availableCount": 10
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 45",
+      "month": "Octubre",
+      "minPrice": 85,
+      "maxPrice": 184,
+      "avgPrice": 145,
+      "medianPrice": 155,
       "availableCount": 4
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 3,
-      "week": "Semana 46",
-      "month": "Noviembre",
-      "minPrice": 155,
-      "maxPrice": 364,
-      "avgPrice": 293,
-      "medianPrice": 297,
-      "availableCount": 3
+      "week": "Semana 45",
+      "month": "Octubre",
+      "minPrice": 375,
+      "maxPrice": 432,
+      "avgPrice": 413,
+      "medianPrice": 413,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 47",
+      "week": "Semana 46",
       "month": "Noviembre",
-      "minPrice": 143,
-      "maxPrice": 207,
-      "avgPrice": 192,
-      "medianPrice": 192,
-      "availableCount": 9
+      "minPrice": 177,
+      "maxPrice": 308,
+      "avgPrice": 251,
+      "medianPrice": 210,
+      "availableCount": 13
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 47",
+      "week": "Semana 46",
       "month": "Noviembre",
-      "minPrice": 149,
-      "maxPrice": 226,
-      "avgPrice": 203,
-      "medianPrice": 204,
-      "availableCount": 5
+      "minPrice": 168,
+      "maxPrice": 197,
+      "avgPrice": 186,
+      "medianPrice": 193,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 3,
-      "week": "Semana 47",
+      "week": "Semana 46",
       "month": "Noviembre",
       "minPrice": 297,
       "maxPrice": 297,
@@ -1506,13 +1470,49 @@
       "location": "Playa de las Américas",
       "type": "Apartamento",
       "beds": 1,
+      "week": "Semana 47",
+      "month": "Noviembre",
+      "minPrice": 155,
+      "maxPrice": 216,
+      "avgPrice": 199,
+      "medianPrice": 198,
+      "availableCount": 12
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 47",
+      "month": "Noviembre",
+      "minPrice": 91,
+      "maxPrice": 195,
+      "avgPrice": 153,
+      "medianPrice": 189,
+      "availableCount": 3
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 47",
+      "month": "Noviembre",
+      "minPrice": 361,
+      "maxPrice": 361,
+      "avgPrice": 361,
+      "medianPrice": 361,
+      "availableCount": 1
+    },
+    {
+      "location": "Playa de las Américas",
+      "type": "Apartamento",
+      "beds": 1,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 194,
-      "maxPrice": 292,
-      "avgPrice": 269,
-      "medianPrice": 223,
-      "availableCount": 9
+      "minPrice": 198,
+      "maxPrice": 324,
+      "avgPrice": 277,
+      "medianPrice": 228,
+      "availableCount": 8
     },
     {
       "location": "Playa de las Américas",
@@ -1520,10 +1520,10 @@
       "beds": 2,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 186,
-      "maxPrice": 529,
-      "avgPrice": 392,
-      "medianPrice": 400,
+      "minPrice": 163,
+      "maxPrice": 315,
+      "avgPrice": 313,
+      "medianPrice": 242,
       "availableCount": 4
     },
     {
@@ -1532,11 +1532,11 @@
       "beds": 3,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 173,
-      "maxPrice": 379,
-      "avgPrice": 320,
-      "medianPrice": 331,
-      "availableCount": 4
+      "minPrice": 190,
+      "maxPrice": 392,
+      "avgPrice": 335,
+      "medianPrice": 366,
+      "availableCount": 5
     },
     {
       "location": "Playa de las Américas",
@@ -1544,11 +1544,11 @@
       "beds": 1,
       "week": "Semana 49",
       "month": "Noviembre",
-      "minPrice": 144,
-      "maxPrice": 312,
-      "avgPrice": 250,
+      "minPrice": 180,
+      "maxPrice": 254,
+      "avgPrice": 242,
       "medianPrice": 207,
-      "availableCount": 10
+      "availableCount": 13
     },
     {
       "location": "Playa de las Américas",
@@ -1557,10 +1557,10 @@
       "week": "Semana 49",
       "month": "Noviembre",
       "minPrice": 146,
-      "maxPrice": 214,
-      "avgPrice": 196,
-      "medianPrice": 187,
-      "availableCount": 6
+      "maxPrice": 377,
+      "avgPrice": 331,
+      "medianPrice": 177,
+      "availableCount": 3
     },
     {
       "location": "Playa de las Américas",
@@ -1568,11 +1568,11 @@
       "beds": 3,
       "week": "Semana 49",
       "month": "Noviembre",
-      "minPrice": 297,
-      "maxPrice": 297,
-      "avgPrice": 297,
-      "medianPrice": 297,
-      "availableCount": 1
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
+      "availableCount": 2
     },
     {
       "location": "Playa de las Américas",
@@ -1580,11 +1580,11 @@
       "beds": 1,
       "week": "Semana 50",
       "month": "Diciembre",
-      "minPrice": 178,
-      "maxPrice": 216,
-      "avgPrice": 209,
-      "medianPrice": 206,
-      "availableCount": 9
+      "minPrice": 156,
+      "maxPrice": 269,
+      "avgPrice": 240,
+      "medianPrice": 207,
+      "availableCount": 12
     },
     {
       "location": "Playa de las Américas",
@@ -1592,11 +1592,11 @@
       "beds": 2,
       "week": "Semana 50",
       "month": "Diciembre",
-      "minPrice": 155,
-      "maxPrice": 220,
-      "avgPrice": 200,
-      "medianPrice": 175,
-      "availableCount": 5
+      "minPrice": 165,
+      "maxPrice": 211,
+      "avgPrice": 205,
+      "medianPrice": 189,
+      "availableCount": 4
     },
     {
       "location": "Playa de las Américas",
@@ -1604,10 +1604,10 @@
       "beds": 3,
       "week": "Semana 50",
       "month": "Diciembre",
-      "minPrice": 137,
-      "maxPrice": 244,
-      "avgPrice": 208,
-      "medianPrice": 208,
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
       "availableCount": 2
     },
     {
@@ -1616,11 +1616,11 @@
       "beds": 1,
       "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 174,
-      "maxPrice": 373,
-      "avgPrice": 281,
-      "medianPrice": 234,
-      "availableCount": 11
+      "minPrice": 176,
+      "maxPrice": 322,
+      "avgPrice": 257,
+      "medianPrice": 223,
+      "availableCount": 12
     },
     {
       "location": "Playa de las Américas",
@@ -1628,10 +1628,10 @@
       "beds": 2,
       "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 161,
-      "maxPrice": 237,
-      "avgPrice": 211,
-      "medianPrice": 204,
+      "minPrice": 157,
+      "maxPrice": 211,
+      "avgPrice": 200,
+      "medianPrice": 182,
       "availableCount": 4
     },
     {
@@ -1640,10 +1640,10 @@
       "beds": 3,
       "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 137,
-      "maxPrice": 244,
-      "avgPrice": 208,
-      "medianPrice": 208,
+      "minPrice": 372,
+      "maxPrice": 824,
+      "avgPrice": 673,
+      "medianPrice": 673,
       "availableCount": 2
     },
     {
@@ -1652,10 +1652,10 @@
       "beds": 1,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 141,
-      "maxPrice": 293,
-      "avgPrice": 245,
-      "medianPrice": 212,
+      "minPrice": 152,
+      "maxPrice": 292,
+      "avgPrice": 244,
+      "medianPrice": 203,
       "availableCount": 11
     },
     {
@@ -1664,11 +1664,11 @@
       "beds": 2,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 170,
-      "maxPrice": 289,
-      "avgPrice": 241,
-      "medianPrice": 281,
-      "availableCount": 3
+      "minPrice": 166,
+      "maxPrice": 266,
+      "avgPrice": 226,
+      "medianPrice": 205,
+      "availableCount": 5
     },
     {
       "location": "Playa de las Américas",
@@ -1676,11 +1676,11 @@
       "beds": 3,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 297,
-      "maxPrice": 375,
-      "avgPrice": 362,
-      "medianPrice": 298,
-      "availableCount": 3
+      "minPrice": 316,
+      "maxPrice": 432,
+      "avgPrice": 394,
+      "medianPrice": 394,
+      "availableCount": 2
     },
     {
       "location": "Los Gigantes",
@@ -1688,11 +1688,35 @@
       "beds": 1,
       "week": "Semana 1",
       "month": "Enero",
-      "minPrice": 127,
-      "maxPrice": 236,
-      "avgPrice": 197,
-      "medianPrice": 204,
-      "availableCount": 18
+      "minPrice": 190,
+      "maxPrice": 252,
+      "avgPrice": 232,
+      "medianPrice": 235,
+      "availableCount": 11
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 1",
+      "month": "Enero",
+      "minPrice": 228,
+      "maxPrice": 277,
+      "avgPrice": 276,
+      "medianPrice": 267,
+      "availableCount": 4
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 1",
+      "month": "Enero",
+      "minPrice": 363,
+      "maxPrice": 363,
+      "avgPrice": 363,
+      "medianPrice": 363,
+      "availableCount": 1
     },
     {
       "location": "Los Gigantes",
@@ -1701,9 +1725,9 @@
       "week": "Semana 2",
       "month": "Enero",
       "minPrice": 192,
-      "maxPrice": 248,
-      "avgPrice": 228,
-      "medianPrice": 235,
+      "maxPrice": 253,
+      "avgPrice": 234,
+      "medianPrice": 242,
       "availableCount": 14
     },
     {
@@ -1712,11 +1736,11 @@
       "beds": 2,
       "week": "Semana 2",
       "month": "Enero",
-      "minPrice": 266,
-      "maxPrice": 378,
-      "avgPrice": 363,
-      "medianPrice": 313,
-      "availableCount": 4
+      "minPrice": 284,
+      "maxPrice": 359,
+      "avgPrice": 328,
+      "medianPrice": 358,
+      "availableCount": 3
     },
     {
       "location": "Los Gigantes",
@@ -1724,11 +1748,11 @@
       "beds": 1,
       "week": "Semana 3",
       "month": "Enero",
-      "minPrice": 193,
-      "maxPrice": 248,
-      "avgPrice": 230,
-      "medianPrice": 242,
-      "availableCount": 14
+      "minPrice": 194,
+      "maxPrice": 251,
+      "avgPrice": 234,
+      "medianPrice": 247,
+      "availableCount": 15
     },
     {
       "location": "Los Gigantes",
@@ -1736,59 +1760,71 @@
       "beds": 2,
       "week": "Semana 3",
       "month": "Enero",
-      "minPrice": 229,
-      "maxPrice": 378,
-      "avgPrice": 349,
-      "medianPrice": 313,
-      "availableCount": 4
+      "minPrice": 359,
+      "maxPrice": 440,
+      "avgPrice": 426,
+      "medianPrice": 360,
+      "availableCount": 3
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 1,
       "week": "Semana 4",
+      "month": "Enero",
+      "minPrice": 192,
+      "maxPrice": 250,
+      "avgPrice": 235,
+      "medianPrice": 240,
+      "availableCount": 14
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 4",
+      "month": "Enero",
+      "minPrice": 288,
+      "maxPrice": 359,
+      "avgPrice": 330,
+      "medianPrice": 358,
+      "availableCount": 3
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 5",
       "month": "Enero",
       "minPrice": 182,
-      "maxPrice": 248,
-      "avgPrice": 227,
-      "medianPrice": 233,
-      "availableCount": 14
+      "maxPrice": 247,
+      "avgPrice": 225,
+      "medianPrice": 236,
+      "availableCount": 13
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 4",
+      "week": "Semana 5",
       "month": "Enero",
       "minPrice": 228,
-      "maxPrice": 378,
-      "avgPrice": 349,
-      "medianPrice": 313,
+      "maxPrice": 353,
+      "avgPrice": 298,
+      "medianPrice": 310,
       "availableCount": 4
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
-      "beds": 1,
+      "beds": 3,
       "week": "Semana 5",
       "month": "Enero",
-      "minPrice": 144,
-      "maxPrice": 239,
-      "avgPrice": 206,
-      "medianPrice": 204,
-      "availableCount": 14
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 5",
-      "month": "Enero",
-      "minPrice": 202,
-      "maxPrice": 277,
-      "avgPrice": 259,
-      "medianPrice": 239,
-      "availableCount": 4
+      "minPrice": 363,
+      "maxPrice": 363,
+      "avgPrice": 363,
+      "medianPrice": 363,
+      "availableCount": 1
     },
     {
       "location": "Los Gigantes",
@@ -1798,9 +1834,9 @@
       "month": "Febrero",
       "minPrice": 141,
       "maxPrice": 248,
-      "avgPrice": 210,
+      "avgPrice": 214,
       "medianPrice": 202,
-      "availableCount": 13
+      "availableCount": 11
     },
     {
       "location": "Los Gigantes",
@@ -1809,10 +1845,10 @@
       "week": "Semana 6",
       "month": "Febrero",
       "minPrice": 213,
-      "maxPrice": 273,
-      "avgPrice": 255,
-      "medianPrice": 241,
-      "availableCount": 4
+      "maxPrice": 318,
+      "avgPrice": 281,
+      "medianPrice": 289,
+      "availableCount": 6
     },
     {
       "location": "Los Gigantes",
@@ -1832,11 +1868,11 @@
       "beds": 1,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 119,
-      "maxPrice": 250,
-      "avgPrice": 206,
-      "medianPrice": 198,
-      "availableCount": 14
+      "minPrice": 144,
+      "maxPrice": 260,
+      "avgPrice": 216,
+      "medianPrice": 201,
+      "availableCount": 12
     },
     {
       "location": "Los Gigantes",
@@ -1845,10 +1881,22 @@
       "week": "Semana 7",
       "month": "Febrero",
       "minPrice": 212,
-      "maxPrice": 277,
-      "avgPrice": 262,
-      "medianPrice": 240,
-      "availableCount": 4
+      "maxPrice": 337,
+      "avgPrice": 281,
+      "medianPrice": 267,
+      "availableCount": 5
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 7",
+      "month": "Febrero",
+      "minPrice": 363,
+      "maxPrice": 363,
+      "avgPrice": 363,
+      "medianPrice": 363,
+      "availableCount": 1
     },
     {
       "location": "Los Gigantes",
@@ -1856,9 +1904,33 @@
       "beds": 1,
       "week": "Semana 8",
       "month": "Febrero",
-      "minPrice": 182,
-      "maxPrice": 252,
-      "avgPrice": 233,
+      "minPrice": 197,
+      "maxPrice": 253,
+      "avgPrice": 242,
+      "medianPrice": 249,
+      "availableCount": 14
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 8",
+      "month": "Febrero",
+      "minPrice": 277,
+      "maxPrice": 359,
+      "avgPrice": 322,
+      "medianPrice": 330,
+      "availableCount": 4
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 9",
+      "month": "Febrero",
+      "minPrice": 189,
+      "maxPrice": 257,
+      "avgPrice": 235,
       "medianPrice": 248,
       "availableCount": 13
     },
@@ -1866,37 +1938,25 @@
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 8",
+      "week": "Semana 9",
       "month": "Febrero",
-      "minPrice": 228,
-      "maxPrice": 336,
-      "avgPrice": 293,
-      "medianPrice": 300,
-      "availableCount": 4
+      "minPrice": 359,
+      "maxPrice": 360,
+      "avgPrice": 360,
+      "medianPrice": 360,
+      "availableCount": 3
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
-      "beds": 1,
+      "beds": 3,
       "week": "Semana 9",
       "month": "Febrero",
-      "minPrice": 148,
-      "maxPrice": 250,
-      "avgPrice": 217,
-      "medianPrice": 239,
-      "availableCount": 13
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 9",
-      "month": "Febrero",
-      "minPrice": 208,
-      "maxPrice": 354,
-      "avgPrice": 294,
-      "medianPrice": 336,
-      "availableCount": 5
+      "minPrice": 475,
+      "maxPrice": 475,
+      "avgPrice": 475,
+      "medianPrice": 475,
+      "availableCount": 1
     },
     {
       "location": "Los Gigantes",
@@ -1904,47 +1964,47 @@
       "beds": 1,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 137,
-      "maxPrice": 264,
+      "minPrice": 130,
+      "maxPrice": 253,
       "avgPrice": 216,
-      "medianPrice": 239,
-      "availableCount": 13
+      "medianPrice": 244,
+      "availableCount": 14
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
       "week": "Semana 10",
+      "month": "Marzo",
+      "minPrice": 203,
+      "maxPrice": 209,
+      "avgPrice": 207,
+      "medianPrice": 208,
+      "availableCount": 3
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 11",
+      "month": "Marzo",
+      "minPrice": 129,
+      "maxPrice": 266,
+      "avgPrice": 218,
+      "medianPrice": 236,
+      "availableCount": 15
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 11",
       "month": "Marzo",
       "minPrice": 205,
-      "maxPrice": 310,
-      "avgPrice": 262,
+      "maxPrice": 269,
+      "avgPrice": 256,
       "medianPrice": 212,
-      "availableCount": 5
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 11",
-      "month": "Marzo",
-      "minPrice": 152,
-      "maxPrice": 244,
-      "avgPrice": 223,
-      "medianPrice": 243,
-      "availableCount": 13
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 11",
-      "month": "Marzo",
-      "minPrice": 238,
-      "maxPrice": 349,
-      "avgPrice": 317,
-      "medianPrice": 287,
-      "availableCount": 5
+      "availableCount": 3
     },
     {
       "location": "Los Gigantes",
@@ -1952,11 +2012,11 @@
       "beds": 1,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 120,
-      "maxPrice": 213,
-      "avgPrice": 185,
-      "medianPrice": 173,
-      "availableCount": 9
+      "minPrice": 190,
+      "maxPrice": 297,
+      "avgPrice": 267,
+      "medianPrice": 254,
+      "availableCount": 5
     },
     {
       "location": "Los Gigantes",
@@ -1964,11 +2024,11 @@
       "beds": 2,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 175,
-      "maxPrice": 225,
-      "avgPrice": 215,
-      "medianPrice": 192,
-      "availableCount": 7
+      "minPrice": 171,
+      "maxPrice": 216,
+      "avgPrice": 203,
+      "medianPrice": 193,
+      "availableCount": 8
     },
     {
       "location": "Los Gigantes",
@@ -1976,11 +2036,11 @@
       "beds": 3,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 223,
-      "maxPrice": 223,
-      "avgPrice": 223,
-      "medianPrice": 223,
-      "availableCount": 1
+      "minPrice": 202,
+      "maxPrice": 256,
+      "avgPrice": 243,
+      "medianPrice": 219,
+      "availableCount": 3
     },
     {
       "location": "Los Gigantes",
@@ -1988,11 +2048,11 @@
       "beds": 1,
       "week": "Semana 13",
       "month": "Marzo",
-      "minPrice": 133,
-      "maxPrice": 271,
+      "minPrice": 168,
+      "maxPrice": 253,
       "avgPrice": 225,
-      "medianPrice": 225,
-      "availableCount": 10
+      "medianPrice": 222,
+      "availableCount": 9
     },
     {
       "location": "Los Gigantes",
@@ -2001,10 +2061,22 @@
       "week": "Semana 13",
       "month": "Marzo",
       "minPrice": 189,
-      "maxPrice": 280,
-      "avgPrice": 251,
-      "medianPrice": 254,
-      "availableCount": 8
+      "maxPrice": 263,
+      "avgPrice": 235,
+      "medianPrice": 239,
+      "availableCount": 7
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 13",
+      "month": "Marzo",
+      "minPrice": 471,
+      "maxPrice": 471,
+      "avgPrice": 471,
+      "medianPrice": 471,
+      "availableCount": 1
     },
     {
       "location": "Los Gigantes",
@@ -2012,11 +2084,11 @@
       "beds": 1,
       "week": "Semana 14",
       "month": "Marzo",
-      "minPrice": 202,
+      "minPrice": 179,
       "maxPrice": 256,
-      "avgPrice": 232,
-      "medianPrice": 230,
-      "availableCount": 13
+      "avgPrice": 221,
+      "medianPrice": 211,
+      "availableCount": 11
     },
     {
       "location": "Los Gigantes",
@@ -2024,11 +2096,11 @@
       "beds": 2,
       "week": "Semana 14",
       "month": "Marzo",
-      "minPrice": 213,
-      "maxPrice": 247,
-      "avgPrice": 234,
-      "medianPrice": 232,
-      "availableCount": 4
+      "minPrice": 215,
+      "maxPrice": 271,
+      "avgPrice": 261,
+      "medianPrice": 233,
+      "availableCount": 7
     },
     {
       "location": "Los Gigantes",
@@ -2036,10 +2108,10 @@
       "beds": 1,
       "week": "Semana 15",
       "month": "Abril",
-      "minPrice": 174,
-      "maxPrice": 250,
-      "avgPrice": 238,
-      "medianPrice": 239,
+      "minPrice": 180,
+      "maxPrice": 251,
+      "avgPrice": 235,
+      "medianPrice": 238,
       "availableCount": 10
     },
     {
@@ -2048,23 +2120,11 @@
       "beds": 2,
       "week": "Semana 15",
       "month": "Abril",
-      "minPrice": 225,
-      "maxPrice": 390,
-      "avgPrice": 354,
-      "medianPrice": 296,
-      "availableCount": 7
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 15",
-      "month": "Abril",
-      "minPrice": 434,
-      "maxPrice": 434,
-      "avgPrice": 434,
-      "medianPrice": 434,
-      "availableCount": 1
+      "minPrice": 171,
+      "maxPrice": 357,
+      "avgPrice": 337,
+      "medianPrice": 308,
+      "availableCount": 8
     },
     {
       "location": "Los Gigantes",
@@ -2072,10 +2132,10 @@
       "beds": 1,
       "week": "Semana 16",
       "month": "Abril",
-      "minPrice": 135,
-      "maxPrice": 222,
-      "avgPrice": 188,
-      "medianPrice": 195,
+      "minPrice": 150,
+      "maxPrice": 231,
+      "avgPrice": 203,
+      "medianPrice": 208,
       "availableCount": 12
     },
     {
@@ -2084,11 +2144,11 @@
       "beds": 2,
       "week": "Semana 16",
       "month": "Abril",
-      "minPrice": 203,
-      "maxPrice": 252,
-      "avgPrice": 235,
-      "medianPrice": 241,
-      "availableCount": 5
+      "minPrice": 230,
+      "maxPrice": 251,
+      "avgPrice": 247,
+      "medianPrice": 244,
+      "availableCount": 6
     },
     {
       "location": "Los Gigantes",
@@ -2096,11 +2156,11 @@
       "beds": 1,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 145,
-      "maxPrice": 228,
-      "avgPrice": 200,
-      "medianPrice": 215,
-      "availableCount": 10
+      "minPrice": 137,
+      "maxPrice": 233,
+      "avgPrice": 201,
+      "medianPrice": 221,
+      "availableCount": 9
     },
     {
       "location": "Los Gigantes",
@@ -2108,10 +2168,10 @@
       "beds": 2,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 216,
-      "maxPrice": 270,
-      "avgPrice": 269,
-      "medianPrice": 242,
+      "minPrice": 215,
+      "maxPrice": 247,
+      "avgPrice": 238,
+      "medianPrice": 237,
       "availableCount": 7
     },
     {
@@ -2120,23 +2180,11 @@
       "beds": 1,
       "week": "Semana 18",
       "month": "Abril",
-      "minPrice": 167,
-      "maxPrice": 237,
-      "avgPrice": 212,
-      "medianPrice": 222,
-      "availableCount": 11
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 18",
-      "month": "Abril",
-      "minPrice": 190,
-      "maxPrice": 343,
-      "avgPrice": 293,
-      "medianPrice": 234,
-      "availableCount": 7
+      "minPrice": 191,
+      "maxPrice": 232,
+      "avgPrice": 216,
+      "medianPrice": 214,
+      "availableCount": 15
     },
     {
       "location": "Los Gigantes",
@@ -2144,21 +2192,93 @@
       "beds": 1,
       "week": "Semana 19",
       "month": "Mayo",
-      "minPrice": 183,
-      "maxPrice": 241,
-      "avgPrice": 218,
+      "minPrice": 172,
+      "maxPrice": 231,
+      "avgPrice": 210,
+      "medianPrice": 209,
+      "availableCount": 13
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 19",
+      "month": "Mayo",
+      "minPrice": 166,
+      "maxPrice": 231,
+      "avgPrice": 214,
       "medianPrice": 219,
+      "availableCount": 4
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 20",
+      "month": "Mayo",
+      "minPrice": 161,
+      "maxPrice": 232,
+      "avgPrice": 211,
+      "medianPrice": 207,
       "availableCount": 14
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 19",
+      "week": "Semana 20",
       "month": "Mayo",
-      "minPrice": 244,
-      "maxPrice": 498,
-      "avgPrice": 380,
+      "minPrice": 341,
+      "maxPrice": 359,
+      "avgPrice": 352,
+      "medianPrice": 358,
+      "availableCount": 3
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 21",
+      "month": "Mayo",
+      "minPrice": 202,
+      "maxPrice": 248,
+      "avgPrice": 229,
+      "medianPrice": 245,
+      "availableCount": 11
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 21",
+      "month": "Mayo",
+      "minPrice": 200,
+      "maxPrice": 423,
+      "avgPrice": 316,
+      "medianPrice": 226,
+      "availableCount": 5
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 22",
+      "month": "Mayo",
+      "minPrice": 201,
+      "maxPrice": 246,
+      "avgPrice": 235,
+      "medianPrice": 240,
+      "availableCount": 13
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 22",
+      "month": "Mayo",
+      "minPrice": 253,
+      "maxPrice": 466,
+      "avgPrice": 369,
       "medianPrice": 390,
       "availableCount": 4
     },
@@ -2166,145 +2286,73 @@
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 20",
-      "month": "Mayo",
-      "minPrice": 164,
-      "maxPrice": 229,
+      "week": "Semana 23",
+      "month": "Junio",
+      "minPrice": 173,
+      "maxPrice": 235,
       "avgPrice": 212,
       "medianPrice": 207,
-      "availableCount": 15
+      "availableCount": 13
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 20",
-      "month": "Mayo",
-      "minPrice": 256,
-      "maxPrice": 404,
-      "avgPrice": 353,
-      "medianPrice": 360,
+      "week": "Semana 23",
+      "month": "Junio",
+      "minPrice": 248,
+      "maxPrice": 310,
+      "avgPrice": 286,
+      "medianPrice": 302,
       "availableCount": 3
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 21",
-      "month": "Mayo",
-      "minPrice": 200,
-      "maxPrice": 248,
-      "avgPrice": 225,
-      "medianPrice": 232,
+      "week": "Semana 24",
+      "month": "Junio",
+      "minPrice": 153,
+      "maxPrice": 279,
+      "avgPrice": 227,
+      "medianPrice": 209,
       "availableCount": 12
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 21",
-      "month": "Mayo",
-      "minPrice": 219,
-      "maxPrice": 472,
-      "avgPrice": 347,
-      "medianPrice": 349,
-      "availableCount": 4
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 22",
-      "month": "Mayo",
-      "minPrice": 206,
-      "maxPrice": 248,
-      "avgPrice": 238,
-      "medianPrice": 236,
-      "availableCount": 10
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 22",
-      "month": "Mayo",
-      "minPrice": 260,
-      "maxPrice": 390,
-      "avgPrice": 345,
-      "medianPrice": 307,
+      "week": "Semana 24",
+      "month": "Junio",
+      "minPrice": 214,
+      "maxPrice": 562,
+      "avgPrice": 401,
+      "medianPrice": 407,
       "availableCount": 6
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 23",
+      "week": "Semana 25",
       "month": "Junio",
-      "minPrice": 182,
-      "maxPrice": 224,
-      "avgPrice": 218,
-      "medianPrice": 212,
+      "minPrice": 204,
+      "maxPrice": 323,
+      "avgPrice": 274,
+      "medianPrice": 243,
       "availableCount": 12
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 23",
-      "month": "Junio",
-      "minPrice": 181,
-      "maxPrice": 309,
-      "avgPrice": 301,
-      "medianPrice": 259,
-      "availableCount": 4
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 24",
-      "month": "Junio",
-      "minPrice": 166,
-      "maxPrice": 274,
-      "avgPrice": 232,
-      "medianPrice": 217,
-      "availableCount": 13
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 24",
-      "month": "Junio",
-      "minPrice": 213,
-      "maxPrice": 489,
-      "avgPrice": 361,
-      "medianPrice": 261,
-      "availableCount": 5
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 1,
       "week": "Semana 25",
       "month": "Junio",
-      "minPrice": 200,
-      "maxPrice": 268,
-      "avgPrice": 255,
-      "medianPrice": 239,
-      "availableCount": 13
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 25",
-      "month": "Junio",
-      "minPrice": 267,
-      "maxPrice": 530,
-      "avgPrice": 418,
-      "medianPrice": 311,
-      "availableCount": 5
+      "minPrice": 272,
+      "maxPrice": 581,
+      "avgPrice": 444,
+      "medianPrice": 443,
+      "availableCount": 6
     },
     {
       "location": "Los Gigantes",
@@ -2312,11 +2360,11 @@
       "beds": 1,
       "week": "Semana 26",
       "month": "Junio",
-      "minPrice": 162,
-      "maxPrice": 354,
+      "minPrice": 157,
+      "maxPrice": 346,
       "avgPrice": 277,
-      "medianPrice": 255,
-      "availableCount": 13
+      "medianPrice": 285,
+      "availableCount": 12
     },
     {
       "location": "Los Gigantes",
@@ -2324,23 +2372,35 @@
       "beds": 2,
       "week": "Semana 26",
       "month": "Junio",
-      "minPrice": 267,
-      "maxPrice": 392,
-      "avgPrice": 353,
+      "minPrice": 261,
+      "maxPrice": 430,
+      "avgPrice": 386,
       "medianPrice": 377,
       "availableCount": 5
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 26",
+      "month": "Junio",
+      "minPrice": 308,
+      "maxPrice": 308,
+      "avgPrice": 308,
+      "medianPrice": 308,
+      "availableCount": 1
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
       "beds": 1,
       "week": "Semana 27",
       "month": "Junio",
-      "minPrice": 156,
-      "maxPrice": 422,
-      "avgPrice": 301,
-      "medianPrice": 251,
-      "availableCount": 11
+      "minPrice": 148,
+      "maxPrice": 431,
+      "avgPrice": 303,
+      "medianPrice": 241,
+      "availableCount": 10
     },
     {
       "location": "Los Gigantes",
@@ -2348,11 +2408,11 @@
       "beds": 2,
       "week": "Semana 27",
       "month": "Junio",
-      "minPrice": 353,
-      "maxPrice": 591,
-      "avgPrice": 506,
-      "medianPrice": 502,
-      "availableCount": 7
+      "minPrice": 356,
+      "maxPrice": 571,
+      "avgPrice": 492,
+      "medianPrice": 473,
+      "availableCount": 8
     },
     {
       "location": "Los Gigantes",
@@ -2360,47 +2420,47 @@
       "beds": 1,
       "week": "Semana 28",
       "month": "Julio",
-      "minPrice": 139,
-      "maxPrice": 255,
-      "avgPrice": 234,
-      "medianPrice": 192,
+      "minPrice": 144,
+      "maxPrice": 353,
+      "avgPrice": 257,
+      "medianPrice": 213,
+      "availableCount": 13
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 28",
+      "month": "Julio",
+      "minPrice": 245,
+      "maxPrice": 594,
+      "avgPrice": 473,
+      "medianPrice": 466,
+      "availableCount": 5
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 29",
+      "month": "Julio",
+      "minPrice": 157,
+      "maxPrice": 270,
+      "avgPrice": 239,
+      "medianPrice": 236,
       "availableCount": 15
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 28",
+      "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 195,
-      "maxPrice": 454,
-      "avgPrice": 375,
-      "medianPrice": 339,
+      "minPrice": 224,
+      "maxPrice": 451,
+      "avgPrice": 379,
+      "medianPrice": 362,
       "availableCount": 3
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 29",
-      "month": "Julio",
-      "minPrice": 144,
-      "maxPrice": 268,
-      "avgPrice": 229,
-      "medianPrice": 231,
-      "availableCount": 16
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 29",
-      "month": "Julio",
-      "minPrice": 229,
-      "maxPrice": 466,
-      "avgPrice": 387,
-      "medianPrice": 387,
-      "availableCount": 2
     },
     {
       "location": "Los Gigantes",
@@ -2408,10 +2468,10 @@
       "beds": 1,
       "week": "Semana 30",
       "month": "Julio",
-      "minPrice": 174,
-      "maxPrice": 266,
-      "avgPrice": 236,
-      "medianPrice": 252,
+      "minPrice": 203,
+      "maxPrice": 274,
+      "avgPrice": 250,
+      "medianPrice": 256,
       "availableCount": 14
     },
     {
@@ -2420,10 +2480,10 @@
       "beds": 2,
       "week": "Semana 30",
       "month": "Julio",
-      "minPrice": 194,
-      "maxPrice": 333,
-      "avgPrice": 322,
-      "medianPrice": 260,
+      "minPrice": 322,
+      "maxPrice": 567,
+      "avgPrice": 454,
+      "medianPrice": 463,
       "availableCount": 4
     },
     {
@@ -2433,10 +2493,10 @@
       "week": "Semana 31",
       "month": "Julio",
       "minPrice": 205,
-      "maxPrice": 265,
+      "maxPrice": 266,
       "avgPrice": 240,
-      "medianPrice": 241,
-      "availableCount": 14
+      "medianPrice": 240,
+      "availableCount": 13
     },
     {
       "location": "Los Gigantes",
@@ -2444,10 +2504,10 @@
       "beds": 2,
       "week": "Semana 31",
       "month": "Julio",
-      "minPrice": 231,
-      "maxPrice": 383,
-      "avgPrice": 342,
-      "medianPrice": 293,
+      "minPrice": 528,
+      "maxPrice": 577,
+      "avgPrice": 559,
+      "medianPrice": 565,
       "availableCount": 3
     },
     {
@@ -2456,11 +2516,11 @@
       "beds": 1,
       "week": "Semana 32",
       "month": "Agosto",
-      "minPrice": 178,
-      "maxPrice": 267,
-      "avgPrice": 237,
-      "medianPrice": 255,
-      "availableCount": 12
+      "minPrice": 179,
+      "maxPrice": 281,
+      "avgPrice": 254,
+      "medianPrice": 265,
+      "availableCount": 13
     },
     {
       "location": "Los Gigantes",
@@ -2468,11 +2528,11 @@
       "beds": 2,
       "week": "Semana 32",
       "month": "Agosto",
-      "minPrice": 182,
-      "maxPrice": 245,
+      "minPrice": 177,
+      "maxPrice": 253,
       "avgPrice": 229,
-      "medianPrice": 231,
-      "availableCount": 5
+      "medianPrice": 233,
+      "availableCount": 4
     },
     {
       "location": "Los Gigantes",
@@ -2480,10 +2540,10 @@
       "beds": 1,
       "week": "Semana 33",
       "month": "Agosto",
-      "minPrice": 240,
-      "maxPrice": 275,
-      "avgPrice": 265,
-      "medianPrice": 272,
+      "minPrice": 238,
+      "maxPrice": 273,
+      "avgPrice": 262,
+      "medianPrice": 265,
       "availableCount": 11
     },
     {
@@ -2492,11 +2552,11 @@
       "beds": 2,
       "week": "Semana 33",
       "month": "Agosto",
-      "minPrice": 245,
-      "maxPrice": 381,
-      "avgPrice": 344,
-      "medianPrice": 341,
-      "availableCount": 4
+      "minPrice": 254,
+      "maxPrice": 457,
+      "avgPrice": 393,
+      "medianPrice": 370,
+      "availableCount": 5
     },
     {
       "location": "Los Gigantes",
@@ -2505,9 +2565,9 @@
       "week": "Semana 34",
       "month": "Agosto",
       "minPrice": 150,
-      "maxPrice": 248,
-      "avgPrice": 220,
-      "medianPrice": 247,
+      "maxPrice": 252,
+      "avgPrice": 223,
+      "medianPrice": 248,
       "availableCount": 14
     },
     {
@@ -2517,9 +2577,9 @@
       "week": "Semana 34",
       "month": "Agosto",
       "minPrice": 229,
-      "maxPrice": 412,
+      "maxPrice": 411,
       "avgPrice": 365,
-      "medianPrice": 294,
+      "medianPrice": 293,
       "availableCount": 3
     },
     {
@@ -2540,11 +2600,11 @@
       "beds": 1,
       "week": "Semana 35",
       "month": "Agosto",
-      "minPrice": 184,
+      "minPrice": 186,
       "maxPrice": 252,
-      "avgPrice": 231,
+      "avgPrice": 232,
       "medianPrice": 248,
-      "availableCount": 13
+      "availableCount": 14
     },
     {
       "location": "Los Gigantes",
@@ -2552,7 +2612,7 @@
       "beds": 2,
       "week": "Semana 35",
       "month": "Agosto",
-      "minPrice": 286,
+      "minPrice": 287,
       "maxPrice": 490,
       "avgPrice": 410,
       "medianPrice": 383,
@@ -2564,35 +2624,11 @@
       "beds": 1,
       "week": "Semana 36",
       "month": "Agosto",
-      "minPrice": 175,
-      "maxPrice": 227,
-      "avgPrice": 209,
-      "medianPrice": 202,
-      "availableCount": 13
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 36",
-      "month": "Agosto",
-      "minPrice": 287,
-      "maxPrice": 455,
-      "avgPrice": 389,
-      "medianPrice": 370,
-      "availableCount": 4
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 36",
-      "month": "Agosto",
-      "minPrice": 278,
-      "maxPrice": 278,
-      "avgPrice": 278,
-      "medianPrice": 278,
-      "availableCount": 1
+      "minPrice": 130,
+      "maxPrice": 219,
+      "avgPrice": 193,
+      "medianPrice": 196,
+      "availableCount": 18
     },
     {
       "location": "Los Gigantes",
@@ -2600,11 +2636,11 @@
       "beds": 1,
       "week": "Semana 37",
       "month": "Septiembre",
-      "minPrice": 188,
-      "maxPrice": 257,
-      "avgPrice": 239,
-      "medianPrice": 248,
-      "availableCount": 13
+      "minPrice": 172,
+      "maxPrice": 247,
+      "avgPrice": 209,
+      "medianPrice": 202,
+      "availableCount": 12
     },
     {
       "location": "Los Gigantes",
@@ -2612,11 +2648,11 @@
       "beds": 2,
       "week": "Semana 37",
       "month": "Septiembre",
-      "minPrice": 242,
-      "maxPrice": 403,
-      "avgPrice": 351,
-      "medianPrice": 302,
-      "availableCount": 5
+      "minPrice": 213,
+      "maxPrice": 365,
+      "avgPrice": 325,
+      "medianPrice": 285,
+      "availableCount": 6
     },
     {
       "location": "Los Gigantes",
@@ -2625,10 +2661,10 @@
       "week": "Semana 38",
       "month": "Septiembre",
       "minPrice": 183,
-      "maxPrice": 249,
-      "avgPrice": 224,
-      "medianPrice": 237,
-      "availableCount": 15
+      "maxPrice": 248,
+      "avgPrice": 220,
+      "medianPrice": 219,
+      "availableCount": 14
     },
     {
       "location": "Los Gigantes",
@@ -2636,11 +2672,11 @@
       "beds": 2,
       "week": "Semana 38",
       "month": "Septiembre",
-      "minPrice": 232,
-      "maxPrice": 357,
-      "avgPrice": 325,
-      "medianPrice": 276,
-      "availableCount": 3
+      "minPrice": 267,
+      "maxPrice": 484,
+      "avgPrice": 386,
+      "medianPrice": 377,
+      "availableCount": 4
     },
     {
       "location": "Los Gigantes",
@@ -2648,11 +2684,11 @@
       "beds": 1,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 184,
-      "maxPrice": 262,
-      "avgPrice": 234,
-      "medianPrice": 248,
-      "availableCount": 13
+      "minPrice": 182,
+      "maxPrice": 265,
+      "avgPrice": 230,
+      "medianPrice": 214,
+      "availableCount": 11
     },
     {
       "location": "Los Gigantes",
@@ -2660,11 +2696,11 @@
       "beds": 2,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 216,
-      "maxPrice": 438,
-      "avgPrice": 343,
-      "medianPrice": 276,
-      "availableCount": 5
+      "minPrice": 218,
+      "maxPrice": 384,
+      "avgPrice": 336,
+      "medianPrice": 279,
+      "availableCount": 7
     },
     {
       "location": "Los Gigantes",
@@ -2673,10 +2709,10 @@
       "week": "Semana 40",
       "month": "Septiembre",
       "minPrice": 197,
-      "maxPrice": 250,
-      "avgPrice": 236,
-      "medianPrice": 246,
-      "availableCount": 14
+      "maxPrice": 253,
+      "avgPrice": 234,
+      "medianPrice": 245,
+      "availableCount": 13
     },
     {
       "location": "Los Gigantes",
@@ -2684,11 +2720,11 @@
       "beds": 2,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 232,
-      "maxPrice": 281,
-      "avgPrice": 262,
-      "medianPrice": 278,
-      "availableCount": 3
+      "minPrice": 238,
+      "maxPrice": 293,
+      "avgPrice": 286,
+      "medianPrice": 282,
+      "availableCount": 4
     },
     {
       "location": "Los Gigantes",
@@ -2696,10 +2732,10 @@
       "beds": 1,
       "week": "Semana 41",
       "month": "Octubre",
-      "minPrice": 186,
+      "minPrice": 187,
       "maxPrice": 248,
       "avgPrice": 224,
-      "medianPrice": 227,
+      "medianPrice": 225,
       "availableCount": 14
     },
     {
@@ -2708,10 +2744,10 @@
       "beds": 2,
       "week": "Semana 41",
       "month": "Octubre",
-      "minPrice": 235,
+      "minPrice": 274,
       "maxPrice": 472,
-      "avgPrice": 360,
-      "medianPrice": 370,
+      "avgPrice": 376,
+      "medianPrice": 378,
       "availableCount": 4
     },
     {
@@ -2722,8 +2758,8 @@
       "month": "Octubre",
       "minPrice": 176,
       "maxPrice": 245,
-      "avgPrice": 212,
-      "medianPrice": 202,
+      "avgPrice": 211,
+      "medianPrice": 200,
       "availableCount": 14
     },
     {
@@ -2732,7 +2768,7 @@
       "beds": 2,
       "week": "Semana 42",
       "month": "Octubre",
-      "minPrice": 231,
+      "minPrice": 232,
       "maxPrice": 472,
       "avgPrice": 359,
       "medianPrice": 370,
@@ -2745,10 +2781,10 @@
       "week": "Semana 43",
       "month": "Octubre",
       "minPrice": 184,
-      "maxPrice": 245,
+      "maxPrice": 246,
       "avgPrice": 219,
-      "medianPrice": 213,
-      "availableCount": 14
+      "medianPrice": 202,
+      "availableCount": 13
     },
     {
       "location": "Los Gigantes",
@@ -2756,11 +2792,11 @@
       "beds": 2,
       "week": "Semana 43",
       "month": "Octubre",
-      "minPrice": 269,
-      "maxPrice": 390,
-      "avgPrice": 348,
-      "medianPrice": 326,
-      "availableCount": 4
+      "minPrice": 271,
+      "maxPrice": 376,
+      "avgPrice": 351,
+      "medianPrice": 358,
+      "availableCount": 5
     },
     {
       "location": "Los Gigantes",
@@ -2770,9 +2806,9 @@
       "month": "Octubre",
       "minPrice": 183,
       "maxPrice": 248,
-      "avgPrice": 222,
-      "medianPrice": 208,
-      "availableCount": 15
+      "avgPrice": 218,
+      "medianPrice": 205,
+      "availableCount": 14
     },
     {
       "location": "Los Gigantes",
@@ -2780,10 +2816,10 @@
       "beds": 2,
       "week": "Semana 44",
       "month": "Octubre",
-      "minPrice": 269,
-      "maxPrice": 365,
-      "avgPrice": 349,
-      "medianPrice": 270,
+      "minPrice": 287,
+      "maxPrice": 359,
+      "avgPrice": 329,
+      "medianPrice": 358,
       "availableCount": 3
     },
     {
@@ -2793,10 +2829,10 @@
       "week": "Semana 45",
       "month": "Octubre",
       "minPrice": 183,
-      "maxPrice": 243,
-      "avgPrice": 219,
-      "medianPrice": 208,
-      "availableCount": 15
+      "maxPrice": 242,
+      "avgPrice": 217,
+      "medianPrice": 205,
+      "availableCount": 14
     },
     {
       "location": "Los Gigantes",
@@ -2805,10 +2841,10 @@
       "week": "Semana 45",
       "month": "Octubre",
       "minPrice": 269,
-      "maxPrice": 293,
-      "avgPrice": 289,
-      "medianPrice": 269,
-      "availableCount": 3
+      "maxPrice": 331,
+      "avgPrice": 306,
+      "medianPrice": 298,
+      "availableCount": 4
     },
     {
       "location": "Los Gigantes",
@@ -2816,11 +2852,11 @@
       "beds": 1,
       "week": "Semana 46",
       "month": "Noviembre",
-      "minPrice": 177,
-      "maxPrice": 245,
-      "avgPrice": 219,
-      "medianPrice": 227,
-      "availableCount": 16
+      "minPrice": 189,
+      "maxPrice": 263,
+      "avgPrice": 240,
+      "medianPrice": 250,
+      "availableCount": 14
     },
     {
       "location": "Los Gigantes",
@@ -2828,11 +2864,11 @@
       "beds": 2,
       "week": "Semana 46",
       "month": "Noviembre",
-      "minPrice": 280,
-      "maxPrice": 280,
-      "avgPrice": 280,
-      "medianPrice": 280,
-      "availableCount": 1
+      "minPrice": 287,
+      "maxPrice": 364,
+      "avgPrice": 342,
+      "medianPrice": 343,
+      "availableCount": 4
     },
     {
       "location": "Los Gigantes",
@@ -2840,11 +2876,11 @@
       "beds": 1,
       "week": "Semana 47",
       "month": "Noviembre",
-      "minPrice": 180,
+      "minPrice": 182,
       "maxPrice": 249,
-      "avgPrice": 222,
-      "medianPrice": 235,
-      "availableCount": 13
+      "avgPrice": 221,
+      "medianPrice": 224,
+      "availableCount": 14
     },
     {
       "location": "Los Gigantes",
@@ -2852,11 +2888,11 @@
       "beds": 2,
       "week": "Semana 47",
       "month": "Noviembre",
-      "minPrice": 278,
-      "maxPrice": 395,
-      "avgPrice": 356,
-      "medianPrice": 328,
-      "availableCount": 5
+      "minPrice": 264,
+      "maxPrice": 343,
+      "avgPrice": 334,
+      "medianPrice": 298,
+      "availableCount": 4
     },
     {
       "location": "Los Gigantes",
@@ -2864,10 +2900,10 @@
       "beds": 1,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 189,
-      "maxPrice": 244,
+      "minPrice": 176,
+      "maxPrice": 248,
       "avgPrice": 220,
-      "medianPrice": 214,
+      "medianPrice": 228,
       "availableCount": 14
     },
     {
@@ -2876,10 +2912,10 @@
       "beds": 2,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 287,
-      "maxPrice": 433,
-      "avgPrice": 375,
-      "medianPrice": 378,
+      "minPrice": 231,
+      "maxPrice": 343,
+      "avgPrice": 322,
+      "medianPrice": 298,
       "availableCount": 4
     },
     {
@@ -2888,10 +2924,10 @@
       "beds": 1,
       "week": "Semana 49",
       "month": "Noviembre",
-      "minPrice": 181,
-      "maxPrice": 243,
-      "avgPrice": 221,
-      "medianPrice": 228,
+      "minPrice": 182,
+      "maxPrice": 241,
+      "avgPrice": 217,
+      "medianPrice": 212,
       "availableCount": 14
     },
     {
@@ -2913,10 +2949,10 @@
       "week": "Semana 50",
       "month": "Diciembre",
       "minPrice": 171,
-      "maxPrice": 248,
-      "avgPrice": 215,
-      "medianPrice": 219,
-      "availableCount": 14
+      "maxPrice": 247,
+      "avgPrice": 214,
+      "medianPrice": 220,
+      "availableCount": 12
     },
     {
       "location": "Los Gigantes",
@@ -2924,237 +2960,177 @@
       "beds": 2,
       "week": "Semana 50",
       "month": "Diciembre",
-      "minPrice": 235,
-      "maxPrice": 400,
-      "avgPrice": 361,
-      "medianPrice": 337,
+      "minPrice": 229,
+      "maxPrice": 378,
+      "avgPrice": 350,
+      "medianPrice": 315,
       "availableCount": 4
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 51",
-      "month": "Diciembre",
-      "minPrice": 180,
-      "maxPrice": 249,
-      "avgPrice": 222,
-      "medianPrice": 222,
-      "availableCount": 14
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 51",
-      "month": "Diciembre",
-      "minPrice": 241,
-      "maxPrice": 439,
-      "avgPrice": 376,
-      "medianPrice": 358,
-      "availableCount": 3
-    },
-    {
-      "location": "Los Gigantes",
-      "type": "Apartamento",
       "beds": 3,
-      "week": "Semana 51",
+      "week": "Semana 50",
       "month": "Diciembre",
-      "minPrice": 215,
-      "maxPrice": 215,
-      "avgPrice": 215,
-      "medianPrice": 215,
-      "availableCount": 1
+      "minPrice": 371,
+      "maxPrice": 395,
+      "avgPrice": 387,
+      "medianPrice": 387,
+      "availableCount": 2
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 52",
+      "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 144,
-      "maxPrice": 253,
+      "minPrice": 170,
+      "maxPrice": 248,
       "avgPrice": 216,
-      "medianPrice": 221,
-      "availableCount": 14
+      "medianPrice": 207,
+      "availableCount": 13
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 52",
+      "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 241,
-      "maxPrice": 439,
-      "avgPrice": 376,
-      "medianPrice": 358,
-      "availableCount": 3
+      "minPrice": 202,
+      "maxPrice": 378,
+      "avgPrice": 332,
+      "medianPrice": 285,
+      "availableCount": 4
     },
     {
       "location": "Los Gigantes",
       "type": "Apartamento",
       "beds": 3,
-      "week": "Semana 52",
+      "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 363,
-      "maxPrice": 363,
-      "avgPrice": 363,
-      "medianPrice": 363,
+      "minPrice": 328,
+      "maxPrice": 328,
+      "avgPrice": 328,
+      "medianPrice": 328,
       "availableCount": 1
     },
     {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 52",
+      "month": "Diciembre",
+      "minPrice": 198,
+      "maxPrice": 267,
+      "avgPrice": 240,
+      "medianPrice": 248,
+      "availableCount": 13
+    },
+    {
+      "location": "Los Gigantes",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 52",
+      "month": "Diciembre",
+      "minPrice": 359,
+      "maxPrice": 367,
+      "avgPrice": 365,
+      "medianPrice": 360,
+      "availableCount": 3
+    },
+    {
       "location": "El Médano",
       "type": "Apartamento",
       "beds": 1,
       "week": "Semana 1",
       "month": "Enero",
-      "minPrice": 60,
-      "maxPrice": 69,
-      "avgPrice": 66,
-      "medianPrice": 66,
-      "availableCount": 9
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 1",
-      "month": "Enero",
-      "minPrice": 63,
-      "maxPrice": 98,
-      "avgPrice": 86,
-      "medianPrice": 87,
-      "availableCount": 8
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 2",
-      "month": "Enero",
-      "minPrice": 96,
-      "maxPrice": 152,
-      "avgPrice": 135,
-      "medianPrice": 133,
-      "availableCount": 4
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 2",
-      "month": "Enero",
-      "minPrice": 104,
-      "maxPrice": 145,
-      "avgPrice": 131,
-      "medianPrice": 124,
-      "availableCount": 10
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 2",
-      "month": "Enero",
-      "minPrice": 146,
-      "maxPrice": 567,
-      "avgPrice": 448,
-      "medianPrice": 343,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 3",
-      "month": "Enero",
-      "minPrice": 123,
-      "maxPrice": 164,
-      "avgPrice": 151,
-      "medianPrice": 148,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 3",
-      "month": "Enero",
-      "minPrice": 104,
-      "maxPrice": 156,
-      "avgPrice": 133,
-      "medianPrice": 127,
-      "availableCount": 10
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 3",
-      "month": "Enero",
-      "minPrice": 129,
-      "maxPrice": 293,
-      "avgPrice": 233,
-      "medianPrice": 259,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 4",
-      "month": "Enero",
-      "minPrice": 96,
-      "maxPrice": 152,
-      "avgPrice": 135,
-      "medianPrice": 133,
-      "availableCount": 4
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 4",
-      "month": "Enero",
-      "minPrice": 104,
-      "maxPrice": 156,
-      "avgPrice": 135,
-      "medianPrice": 134,
-      "availableCount": 10
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 4",
-      "month": "Enero",
-      "minPrice": 129,
-      "maxPrice": 293,
-      "avgPrice": 233,
-      "medianPrice": 259,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 5",
-      "month": "Enero",
-      "minPrice": 79,
-      "maxPrice": 124,
+      "minPrice": 77,
+      "maxPrice": 136,
       "avgPrice": 114,
       "medianPrice": 87,
+      "availableCount": 5
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 1",
+      "month": "Enero",
+      "minPrice": 98,
+      "maxPrice": 158,
+      "avgPrice": 131,
+      "medianPrice": 130,
+      "availableCount": 10
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 1",
+      "month": "Enero",
+      "minPrice": 153,
+      "maxPrice": 589,
+      "avgPrice": 460,
+      "medianPrice": 379,
+      "availableCount": 3
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 2",
+      "month": "Enero",
+      "minPrice": 80,
+      "maxPrice": 152,
+      "avgPrice": 123,
+      "medianPrice": 118,
+      "availableCount": 4
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 2",
+      "month": "Enero",
+      "minPrice": 104,
+      "maxPrice": 142,
+      "avgPrice": 131,
+      "medianPrice": 129,
+      "availableCount": 10
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 2",
+      "month": "Enero",
+      "minPrice": 139,
+      "maxPrice": 317,
+      "avgPrice": 245,
+      "medianPrice": 308,
+      "availableCount": 3
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 3",
+      "month": "Enero",
+      "minPrice": 91,
+      "maxPrice": 160,
+      "avgPrice": 135,
+      "medianPrice": 149,
       "availableCount": 3
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 5",
+      "week": "Semana 3",
       "month": "Enero",
       "minPrice": 104,
-      "maxPrice": 148,
-      "avgPrice": 134,
+      "maxPrice": 158,
+      "avgPrice": 135,
       "medianPrice": 132,
       "availableCount": 10
     },
@@ -3162,13 +3138,85 @@
       "location": "El Médano",
       "type": "Apartamento",
       "beds": 3,
+      "week": "Semana 3",
+      "month": "Enero",
+      "minPrice": 311,
+      "maxPrice": 329,
+      "avgPrice": 324,
+      "medianPrice": 320,
+      "availableCount": 3
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 4",
+      "month": "Enero",
+      "minPrice": 80,
+      "maxPrice": 151,
+      "avgPrice": 123,
+      "medianPrice": 118,
+      "availableCount": 4
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 4",
+      "month": "Enero",
+      "minPrice": 106,
+      "maxPrice": 154,
+      "avgPrice": 135,
+      "medianPrice": 131,
+      "availableCount": 11
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 4",
+      "month": "Enero",
+      "minPrice": 140,
+      "maxPrice": 550,
+      "avgPrice": 438,
+      "medianPrice": 314,
+      "availableCount": 3
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 5",
+      "month": "Enero",
+      "minPrice": 96,
+      "maxPrice": 153,
+      "avgPrice": 135,
+      "medianPrice": 133,
+      "availableCount": 4
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 2,
       "week": "Semana 5",
       "month": "Enero",
       "minPrice": 106,
-      "maxPrice": 309,
-      "avgPrice": 212,
-      "medianPrice": 218,
-      "availableCount": 4
+      "maxPrice": 154,
+      "avgPrice": 140,
+      "medianPrice": 131,
+      "availableCount": 11
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 5",
+      "month": "Enero",
+      "minPrice": 119,
+      "maxPrice": 252,
+      "avgPrice": 208,
+      "medianPrice": 208,
+      "availableCount": 2
     },
     {
       "location": "El Médano",
@@ -3176,11 +3224,11 @@
       "beds": 1,
       "week": "Semana 6",
       "month": "Febrero",
-      "minPrice": 79,
-      "maxPrice": 125,
-      "avgPrice": 115,
-      "medianPrice": 87,
-      "availableCount": 3
+      "minPrice": 80,
+      "maxPrice": 152,
+      "avgPrice": 124,
+      "medianPrice": 118,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -3189,8 +3237,8 @@
       "week": "Semana 6",
       "month": "Febrero",
       "minPrice": 101,
-      "maxPrice": 144,
-      "avgPrice": 131,
+      "maxPrice": 148,
+      "avgPrice": 132,
       "medianPrice": 131,
       "availableCount": 9
     },
@@ -3200,35 +3248,35 @@
       "beds": 3,
       "week": "Semana 6",
       "month": "Febrero",
-      "minPrice": 109,
-      "maxPrice": 276,
-      "avgPrice": 199,
-      "medianPrice": 145,
+      "minPrice": 111,
+      "maxPrice": 310,
+      "avgPrice": 217,
+      "medianPrice": 227,
+      "availableCount": 4
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 7",
+      "month": "Febrero",
+      "minPrice": 81,
+      "maxPrice": 125,
+      "avgPrice": 111,
+      "medianPrice": 117,
       "availableCount": 5
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 7",
-      "month": "Febrero",
-      "minPrice": 79,
-      "maxPrice": 125,
-      "avgPrice": 116,
-      "medianPrice": 87,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
       "beds": 2,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 100,
-      "maxPrice": 148,
-      "avgPrice": 131,
-      "medianPrice": 135,
-      "availableCount": 10
+      "minPrice": 106,
+      "maxPrice": 161,
+      "avgPrice": 147,
+      "medianPrice": 139,
+      "availableCount": 9
     },
     {
       "location": "El Médano",
@@ -3236,11 +3284,11 @@
       "beds": 3,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 106,
-      "maxPrice": 171,
-      "avgPrice": 192,
-      "medianPrice": 137,
-      "availableCount": 4
+      "minPrice": 107,
+      "maxPrice": 545,
+      "avgPrice": 462,
+      "medianPrice": 145,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -3249,8 +3297,8 @@
       "week": "Semana 8",
       "month": "Febrero",
       "minPrice": 79,
-      "maxPrice": 125,
-      "avgPrice": 115,
+      "maxPrice": 111,
+      "avgPrice": 104,
       "medianPrice": 87,
       "availableCount": 3
     },
@@ -3260,46 +3308,46 @@
       "beds": 2,
       "week": "Semana 8",
       "month": "Febrero",
-      "minPrice": 104,
-      "maxPrice": 149,
+      "minPrice": 106,
+      "maxPrice": 154,
+      "avgPrice": 136,
+      "medianPrice": 140,
+      "availableCount": 11
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 8",
+      "month": "Febrero",
+      "minPrice": 111,
+      "maxPrice": 440,
+      "avgPrice": 437,
+      "medianPrice": 254,
+      "availableCount": 4
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 9",
+      "month": "Febrero",
+      "minPrice": 80,
+      "maxPrice": 152,
+      "avgPrice": 123,
+      "medianPrice": 118,
+      "availableCount": 4
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 9",
+      "month": "Febrero",
+      "minPrice": 86,
+      "maxPrice": 156,
       "avgPrice": 135,
-      "medianPrice": 136,
-      "availableCount": 10
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 8",
-      "month": "Febrero",
-      "minPrice": 106,
-      "maxPrice": 167,
-      "avgPrice": 183,
-      "medianPrice": 137,
-      "availableCount": 4
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 9",
-      "month": "Febrero",
-      "minPrice": 79,
-      "maxPrice": 124,
-      "avgPrice": 115,
-      "medianPrice": 87,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 9",
-      "month": "Febrero",
-      "minPrice": 84,
-      "maxPrice": 142,
-      "avgPrice": 125,
-      "medianPrice": 131,
+      "medianPrice": 140,
       "availableCount": 11
     },
     {
@@ -3308,10 +3356,10 @@
       "beds": 3,
       "week": "Semana 9",
       "month": "Febrero",
-      "minPrice": 104,
-      "maxPrice": 215,
-      "avgPrice": 190,
-      "medianPrice": 130,
+      "minPrice": 147,
+      "maxPrice": 700,
+      "avgPrice": 558,
+      "medianPrice": 345,
       "availableCount": 3
     },
     {
@@ -3320,11 +3368,11 @@
       "beds": 1,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 79,
-      "maxPrice": 124,
-      "avgPrice": 115,
-      "medianPrice": 87,
-      "availableCount": 3
+      "minPrice": 80,
+      "maxPrice": 152,
+      "avgPrice": 123,
+      "medianPrice": 118,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -3333,8 +3381,8 @@
       "week": "Semana 10",
       "month": "Marzo",
       "minPrice": 86,
-      "maxPrice": 146,
-      "avgPrice": 131,
+      "maxPrice": 150,
+      "avgPrice": 133,
       "medianPrice": 133,
       "availableCount": 10
     },
@@ -3344,11 +3392,11 @@
       "beds": 3,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 107,
-      "maxPrice": 312,
-      "avgPrice": 221,
-      "medianPrice": 219,
-      "availableCount": 4
+      "minPrice": 139,
+      "maxPrice": 326,
+      "avgPrice": 252,
+      "medianPrice": 308,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -3356,11 +3404,11 @@
       "beds": 1,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 74,
-      "maxPrice": 127,
-      "avgPrice": 111,
-      "medianPrice": 109,
-      "availableCount": 7
+      "minPrice": 124,
+      "maxPrice": 187,
+      "avgPrice": 163,
+      "medianPrice": 161,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -3368,10 +3416,10 @@
       "beds": 2,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 88,
-      "maxPrice": 131,
-      "avgPrice": 114,
-      "medianPrice": 109,
+      "minPrice": 109,
+      "maxPrice": 166,
+      "avgPrice": 145,
+      "medianPrice": 149,
       "availableCount": 8
     },
     {
@@ -3380,11 +3428,11 @@
       "beds": 3,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 114,
-      "maxPrice": 148,
-      "avgPrice": 137,
-      "medianPrice": 133,
-      "availableCount": 3
+      "minPrice": 1232,
+      "maxPrice": 1232,
+      "avgPrice": 1232,
+      "medianPrice": 1232,
+      "availableCount": 1
     },
     {
       "location": "El Médano",
@@ -3392,11 +3440,11 @@
       "beds": 1,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 71,
-      "maxPrice": 123,
-      "avgPrice": 108,
-      "medianPrice": 108,
-      "availableCount": 5
+      "minPrice": 69,
+      "maxPrice": 109,
+      "avgPrice": 96,
+      "medianPrice": 100,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -3405,10 +3453,10 @@
       "week": "Semana 12",
       "month": "Marzo",
       "minPrice": 103,
-      "maxPrice": 131,
-      "avgPrice": 134,
-      "medianPrice": 125,
-      "availableCount": 8
+      "maxPrice": 187,
+      "avgPrice": 155,
+      "medianPrice": 124,
+      "availableCount": 11
     },
     {
       "location": "El Médano",
@@ -3416,10 +3464,10 @@
       "beds": 3,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 107,
-      "maxPrice": 130,
-      "avgPrice": 122,
-      "medianPrice": 123,
+      "minPrice": 148,
+      "maxPrice": 289,
+      "avgPrice": 241,
+      "medianPrice": 248,
       "availableCount": 3
     },
     {
@@ -3440,10 +3488,10 @@
       "beds": 2,
       "week": "Semana 13",
       "month": "Marzo",
-      "minPrice": 111,
+      "minPrice": 110,
       "maxPrice": 176,
       "avgPrice": 152,
-      "medianPrice": 131,
+      "medianPrice": 130,
       "availableCount": 9
     },
     {
@@ -3452,11 +3500,11 @@
       "beds": 3,
       "week": "Semana 13",
       "month": "Marzo",
-      "minPrice": 122,
-      "maxPrice": 146,
-      "avgPrice": 144,
-      "medianPrice": 136,
-      "availableCount": 5
+      "minPrice": 131,
+      "maxPrice": 219,
+      "avgPrice": 191,
+      "medianPrice": 164,
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -3464,11 +3512,11 @@
       "beds": 1,
       "week": "Semana 14",
       "month": "Marzo",
-      "minPrice": 107,
-      "maxPrice": 187,
-      "avgPrice": 163,
-      "medianPrice": 167,
-      "availableCount": 6
+      "minPrice": 145,
+      "maxPrice": 194,
+      "avgPrice": 177,
+      "medianPrice": 163,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -3476,11 +3524,11 @@
       "beds": 2,
       "week": "Semana 14",
       "month": "Marzo",
-      "minPrice": 107,
-      "maxPrice": 163,
-      "avgPrice": 143,
-      "medianPrice": 139,
-      "availableCount": 9
+      "minPrice": 110,
+      "maxPrice": 178,
+      "avgPrice": 157,
+      "medianPrice": 162,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -3488,10 +3536,10 @@
       "beds": 3,
       "week": "Semana 14",
       "month": "Marzo",
-      "minPrice": 163,
-      "maxPrice": 196,
-      "avgPrice": 187,
-      "medianPrice": 178,
+      "minPrice": 118,
+      "maxPrice": 131,
+      "avgPrice": 127,
+      "medianPrice": 126,
       "availableCount": 3
     },
     {
@@ -3500,35 +3548,35 @@
       "beds": 1,
       "week": "Semana 15",
       "month": "Abril",
-      "minPrice": 83,
-      "maxPrice": 118,
-      "avgPrice": 106,
-      "medianPrice": 106,
-      "availableCount": 2
+      "minPrice": 95,
+      "maxPrice": 163,
+      "avgPrice": 138,
+      "medianPrice": 149,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
       "beds": 2,
+      "week": "Semana 15",
+      "month": "Abril",
+      "minPrice": 111,
+      "maxPrice": 121,
+      "avgPrice": 118,
+      "medianPrice": 121,
+      "availableCount": 7
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 3,
       "week": "Semana 15",
       "month": "Abril",
       "minPrice": 104,
-      "maxPrice": 120,
-      "avgPrice": 114,
-      "medianPrice": 114,
-      "availableCount": 8
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 15",
-      "month": "Abril",
-      "minPrice": 105,
-      "maxPrice": 139,
-      "avgPrice": 131,
-      "medianPrice": 121,
-      "availableCount": 6
+      "maxPrice": 148,
+      "avgPrice": 133,
+      "medianPrice": 117,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -3536,10 +3584,10 @@
       "beds": 1,
       "week": "Semana 16",
       "month": "Abril",
-      "minPrice": 95,
-      "maxPrice": 112,
-      "avgPrice": 107,
-      "medianPrice": 107,
+      "minPrice": 72,
+      "maxPrice": 105,
+      "avgPrice": 94,
+      "medianPrice": 94,
       "availableCount": 2
     },
     {
@@ -3549,10 +3597,10 @@
       "week": "Semana 16",
       "month": "Abril",
       "minPrice": 99,
-      "maxPrice": 120,
-      "avgPrice": 114,
-      "medianPrice": 110,
-      "availableCount": 9
+      "maxPrice": 114,
+      "avgPrice": 111,
+      "medianPrice": 107,
+      "availableCount": 11
     },
     {
       "location": "El Médano",
@@ -3560,11 +3608,11 @@
       "beds": 3,
       "week": "Semana 16",
       "month": "Abril",
-      "minPrice": 110,
-      "maxPrice": 146,
-      "avgPrice": 135,
-      "medianPrice": 132,
-      "availableCount": 6
+      "minPrice": 109,
+      "maxPrice": 157,
+      "avgPrice": 140,
+      "medianPrice": 146,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -3572,10 +3620,10 @@
       "beds": 1,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 69,
-      "maxPrice": 158,
+      "minPrice": 66,
+      "maxPrice": 142,
       "avgPrice": 128,
-      "medianPrice": 121,
+      "medianPrice": 123,
       "availableCount": 7
     },
     {
@@ -3584,10 +3632,10 @@
       "beds": 2,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 95,
-      "maxPrice": 136,
-      "avgPrice": 127,
-      "medianPrice": 121,
+      "minPrice": 117,
+      "maxPrice": 216,
+      "avgPrice": 179,
+      "medianPrice": 169,
       "availableCount": 6
     },
     {
@@ -3596,35 +3644,35 @@
       "beds": 3,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 117,
-      "maxPrice": 119,
-      "avgPrice": 118,
-      "medianPrice": 118,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 18",
-      "month": "Abril",
-      "minPrice": 102,
+      "minPrice": 105,
       "maxPrice": 154,
-      "avgPrice": 133,
-      "medianPrice": 129,
+      "avgPrice": 135,
+      "medianPrice": 119,
       "availableCount": 5
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 18",
+      "month": "Abril",
+      "minPrice": 101,
+      "maxPrice": 133,
+      "avgPrice": 126,
+      "medianPrice": 125,
+      "availableCount": 4
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
       "beds": 2,
       "week": "Semana 18",
       "month": "Abril",
-      "minPrice": 97,
-      "maxPrice": 168,
-      "avgPrice": 154,
-      "medianPrice": 142,
-      "availableCount": 6
+      "minPrice": 111,
+      "maxPrice": 205,
+      "avgPrice": 172,
+      "medianPrice": 165,
+      "availableCount": 9
     },
     {
       "location": "El Médano",
@@ -3632,11 +3680,11 @@
       "beds": 3,
       "week": "Semana 18",
       "month": "Abril",
-      "minPrice": 118,
-      "maxPrice": 170,
-      "avgPrice": 150,
+      "minPrice": 125,
+      "maxPrice": 172,
+      "avgPrice": 153,
       "medianPrice": 154,
-      "availableCount": 7
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -3644,11 +3692,11 @@
       "beds": 1,
       "week": "Semana 19",
       "month": "Mayo",
-      "minPrice": 85,
-      "maxPrice": 175,
-      "avgPrice": 142,
-      "medianPrice": 132,
-      "availableCount": 6
+      "minPrice": 68,
+      "maxPrice": 155,
+      "avgPrice": 133,
+      "medianPrice": 121,
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -3656,11 +3704,11 @@
       "beds": 2,
       "week": "Semana 19",
       "month": "Mayo",
-      "minPrice": 99,
-      "maxPrice": 127,
-      "avgPrice": 120,
-      "medianPrice": 119,
-      "availableCount": 8
+      "minPrice": 101,
+      "maxPrice": 178,
+      "avgPrice": 151,
+      "medianPrice": 154,
+      "availableCount": 9
     },
     {
       "location": "El Médano",
@@ -3680,11 +3728,11 @@
       "beds": 1,
       "week": "Semana 20",
       "month": "Mayo",
-      "minPrice": 61,
-      "maxPrice": 99,
-      "avgPrice": 87,
-      "medianPrice": 92,
-      "availableCount": 5
+      "minPrice": 94,
+      "maxPrice": 107,
+      "avgPrice": 103,
+      "medianPrice": 101,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -3692,11 +3740,11 @@
       "beds": 2,
       "week": "Semana 20",
       "month": "Mayo",
-      "minPrice": 110,
-      "maxPrice": 143,
-      "avgPrice": 131,
-      "medianPrice": 133,
-      "availableCount": 10
+      "minPrice": 116,
+      "maxPrice": 156,
+      "avgPrice": 155,
+      "medianPrice": 142,
+      "availableCount": 11
     },
     {
       "location": "El Médano",
@@ -3704,11 +3752,11 @@
       "beds": 3,
       "week": "Semana 20",
       "month": "Mayo",
-      "minPrice": 174,
-      "maxPrice": 174,
-      "avgPrice": 174,
-      "medianPrice": 174,
-      "availableCount": 1
+      "minPrice": 179,
+      "maxPrice": 250,
+      "avgPrice": 227,
+      "medianPrice": 227,
+      "availableCount": 2
     },
     {
       "location": "El Médano",
@@ -3728,11 +3776,11 @@
       "beds": 2,
       "week": "Semana 21",
       "month": "Mayo",
-      "minPrice": 106,
-      "maxPrice": 110,
-      "avgPrice": 109,
+      "minPrice": 92,
+      "maxPrice": 114,
+      "avgPrice": 114,
       "medianPrice": 107,
-      "availableCount": 3
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -3740,11 +3788,11 @@
       "beds": 3,
       "week": "Semana 21",
       "month": "Mayo",
-      "minPrice": 106,
-      "maxPrice": 145,
-      "avgPrice": 135,
-      "medianPrice": 135,
-      "availableCount": 4
+      "minPrice": 103,
+      "maxPrice": 146,
+      "avgPrice": 132,
+      "medianPrice": 128,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -3752,11 +3800,11 @@
       "beds": 1,
       "week": "Semana 22",
       "month": "Mayo",
-      "minPrice": 67,
-      "maxPrice": 156,
-      "avgPrice": 133,
-      "medianPrice": 121,
-      "availableCount": 9
+      "minPrice": 66,
+      "maxPrice": 143,
+      "avgPrice": 122,
+      "medianPrice": 118,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -3764,11 +3812,11 @@
       "beds": 2,
       "week": "Semana 22",
       "month": "Mayo",
-      "minPrice": 71,
-      "maxPrice": 91,
-      "avgPrice": 90,
-      "medianPrice": 86,
-      "availableCount": 4
+      "minPrice": 86,
+      "maxPrice": 152,
+      "avgPrice": 138,
+      "medianPrice": 121,
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -3776,11 +3824,11 @@
       "beds": 3,
       "week": "Semana 22",
       "month": "Mayo",
-      "minPrice": 104,
-      "maxPrice": 131,
-      "avgPrice": 124,
-      "medianPrice": 120,
-      "availableCount": 4
+      "minPrice": 116,
+      "maxPrice": 139,
+      "avgPrice": 132,
+      "medianPrice": 128,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -3789,9 +3837,9 @@
       "week": "Semana 23",
       "month": "Junio",
       "minPrice": 66,
-      "maxPrice": 106,
-      "avgPrice": 103,
-      "medianPrice": 99,
+      "maxPrice": 122,
+      "avgPrice": 108,
+      "medianPrice": 103,
       "availableCount": 6
     },
     {
@@ -3801,10 +3849,10 @@
       "week": "Semana 23",
       "month": "Junio",
       "minPrice": 115,
-      "maxPrice": 133,
-      "avgPrice": 130,
-      "medianPrice": 122,
-      "availableCount": 6
+      "maxPrice": 190,
+      "avgPrice": 175,
+      "medianPrice": 141,
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -3825,10 +3873,10 @@
       "week": "Semana 24",
       "month": "Junio",
       "minPrice": 77,
-      "maxPrice": 176,
-      "avgPrice": 150,
+      "maxPrice": 194,
+      "avgPrice": 154,
       "medianPrice": 132,
-      "availableCount": 5
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -3837,10 +3885,10 @@
       "week": "Semana 24",
       "month": "Junio",
       "minPrice": 115,
-      "maxPrice": 117,
-      "avgPrice": 116,
-      "medianPrice": 116,
-      "availableCount": 4
+      "maxPrice": 119,
+      "avgPrice": 121,
+      "medianPrice": 117,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -3860,11 +3908,11 @@
       "beds": 1,
       "week": "Semana 25",
       "month": "Junio",
-      "minPrice": 134,
-      "maxPrice": 203,
-      "avgPrice": 191,
-      "medianPrice": 151,
-      "availableCount": 7
+      "minPrice": 95,
+      "maxPrice": 148,
+      "avgPrice": 134,
+      "medianPrice": 139,
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -3872,10 +3920,10 @@
       "beds": 2,
       "week": "Semana 25",
       "month": "Junio",
-      "minPrice": 110,
-      "maxPrice": 191,
-      "avgPrice": 174,
-      "medianPrice": 165,
+      "minPrice": 88,
+      "maxPrice": 211,
+      "avgPrice": 173,
+      "medianPrice": 164,
       "availableCount": 10
     },
     {
@@ -3896,11 +3944,11 @@
       "beds": 1,
       "week": "Semana 26",
       "month": "Junio",
-      "minPrice": 79,
-      "maxPrice": 197,
-      "avgPrice": 163,
-      "medianPrice": 167,
-      "availableCount": 8
+      "minPrice": 72,
+      "maxPrice": 97,
+      "avgPrice": 97,
+      "medianPrice": 79,
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -3932,11 +3980,11 @@
       "beds": 1,
       "week": "Semana 27",
       "month": "Junio",
-      "minPrice": 63,
-      "maxPrice": 124,
-      "avgPrice": 109,
-      "medianPrice": 82,
-      "availableCount": 5
+      "minPrice": 66,
+      "maxPrice": 166,
+      "avgPrice": 144,
+      "medianPrice": 108,
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -3944,10 +3992,10 @@
       "beds": 2,
       "week": "Semana 27",
       "month": "Junio",
-      "minPrice": 76,
-      "maxPrice": 118,
-      "avgPrice": 102,
-      "medianPrice": 115,
+      "minPrice": 86,
+      "maxPrice": 119,
+      "avgPrice": 121,
+      "medianPrice": 119,
       "availableCount": 5
     },
     {
@@ -3956,11 +4004,11 @@
       "beds": 3,
       "week": "Semana 27",
       "month": "Junio",
-      "minPrice": 118,
-      "maxPrice": 190,
-      "avgPrice": 163,
-      "medianPrice": 160,
-      "availableCount": 6
+      "minPrice": 115,
+      "maxPrice": 169,
+      "avgPrice": 154,
+      "medianPrice": 147,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -3980,11 +4028,11 @@
       "beds": 2,
       "week": "Semana 28",
       "month": "Julio",
-      "minPrice": 129,
-      "maxPrice": 165,
-      "avgPrice": 152,
-      "medianPrice": 146,
-      "availableCount": 4
+      "minPrice": 135,
+      "maxPrice": 173,
+      "avgPrice": 160,
+      "medianPrice": 163,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -3992,11 +4040,11 @@
       "beds": 3,
       "week": "Semana 28",
       "month": "Julio",
-      "minPrice": 122,
-      "maxPrice": 154,
-      "avgPrice": 143,
-      "medianPrice": 151,
-      "availableCount": 6
+      "minPrice": 132,
+      "maxPrice": 191,
+      "avgPrice": 168,
+      "medianPrice": 154,
+      "availableCount": 9
     },
     {
       "location": "El Médano",
@@ -4004,11 +4052,11 @@
       "beds": 1,
       "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 115,
-      "maxPrice": 170,
-      "avgPrice": 153,
-      "medianPrice": 154,
-      "availableCount": 8
+      "minPrice": 131,
+      "maxPrice": 141,
+      "avgPrice": 138,
+      "medianPrice": 134,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -4016,11 +4064,11 @@
       "beds": 2,
       "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 87,
-      "maxPrice": 156,
-      "avgPrice": 133,
-      "medianPrice": 130,
-      "availableCount": 5
+      "minPrice": 93,
+      "maxPrice": 249,
+      "avgPrice": 222,
+      "medianPrice": 175,
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -4028,11 +4076,11 @@
       "beds": 3,
       "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 144,
-      "maxPrice": 161,
-      "avgPrice": 157,
-      "medianPrice": 157,
-      "availableCount": 4
+      "minPrice": 148,
+      "maxPrice": 213,
+      "avgPrice": 183,
+      "medianPrice": 174,
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -4040,11 +4088,11 @@
       "beds": 1,
       "week": "Semana 30",
       "month": "Julio",
-      "minPrice": 112,
-      "maxPrice": 165,
-      "avgPrice": 153,
-      "medianPrice": 150,
-      "availableCount": 7
+      "minPrice": 95,
+      "maxPrice": 147,
+      "avgPrice": 141,
+      "medianPrice": 137,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -4053,9 +4101,9 @@
       "week": "Semana 30",
       "month": "Julio",
       "minPrice": 85,
-      "maxPrice": 156,
-      "avgPrice": 132,
-      "medianPrice": 130,
+      "maxPrice": 178,
+      "avgPrice": 142,
+      "medianPrice": 163,
       "availableCount": 5
     },
     {
@@ -4064,11 +4112,11 @@
       "beds": 3,
       "week": "Semana 30",
       "month": "Julio",
-      "minPrice": 153,
-      "maxPrice": 156,
-      "avgPrice": 156,
-      "medianPrice": 154,
-      "availableCount": 3
+      "minPrice": 149,
+      "maxPrice": 208,
+      "avgPrice": 179,
+      "medianPrice": 167,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -4076,35 +4124,35 @@
       "beds": 1,
       "week": "Semana 31",
       "month": "Julio",
-      "minPrice": 148,
-      "maxPrice": 189,
-      "avgPrice": 177,
-      "medianPrice": 159,
-      "availableCount": 9
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 31",
-      "month": "Julio",
-      "minPrice": 122,
-      "maxPrice": 175,
-      "avgPrice": 153,
-      "medianPrice": 128,
+      "minPrice": 101,
+      "maxPrice": 153,
+      "avgPrice": 144,
+      "medianPrice": 140,
       "availableCount": 5
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 31",
+      "month": "Julio",
+      "minPrice": 117,
+      "maxPrice": 129,
+      "avgPrice": 134,
+      "medianPrice": 128,
+      "availableCount": 6
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
       "beds": 3,
       "week": "Semana 31",
       "month": "Julio",
-      "minPrice": 153,
-      "maxPrice": 154,
-      "avgPrice": 154,
+      "minPrice": 147,
+      "maxPrice": 208,
+      "avgPrice": 179,
       "medianPrice": 154,
-      "availableCount": 2
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4112,11 +4160,11 @@
       "beds": 1,
       "week": "Semana 32",
       "month": "Agosto",
-      "minPrice": 138,
-      "maxPrice": 214,
-      "avgPrice": 188,
-      "medianPrice": 185,
-      "availableCount": 10
+      "minPrice": 79,
+      "maxPrice": 244,
+      "avgPrice": 213,
+      "medianPrice": 147,
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -4124,58 +4172,58 @@
       "beds": 2,
       "week": "Semana 32",
       "month": "Agosto",
-      "minPrice": 123,
-      "maxPrice": 178,
-      "avgPrice": 160,
-      "medianPrice": 155,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 32",
-      "month": "Agosto",
-      "minPrice": 215,
-      "maxPrice": 222,
-      "avgPrice": 219,
-      "medianPrice": 221,
-      "availableCount": 3
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 33",
-      "month": "Agosto",
-      "minPrice": 146,
-      "maxPrice": 193,
-      "avgPrice": 183,
-      "medianPrice": 178,
-      "availableCount": 10
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 33",
-      "month": "Agosto",
-      "minPrice": 127,
-      "maxPrice": 163,
-      "avgPrice": 160,
-      "medianPrice": 156,
+      "minPrice": 150,
+      "maxPrice": 454,
+      "avgPrice": 336,
+      "medianPrice": 337,
       "availableCount": 4
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
       "beds": 3,
+      "week": "Semana 32",
+      "month": "Agosto",
+      "minPrice": 159,
+      "maxPrice": 223,
+      "avgPrice": 199,
+      "medianPrice": 221,
+      "availableCount": 7
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 1,
       "week": "Semana 33",
       "month": "Agosto",
-      "minPrice": 215,
-      "maxPrice": 222,
-      "avgPrice": 219,
-      "medianPrice": 221,
+      "minPrice": 120,
+      "maxPrice": 164,
+      "avgPrice": 151,
+      "medianPrice": 148,
+      "availableCount": 9
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 33",
+      "month": "Agosto",
+      "minPrice": 123,
+      "maxPrice": 179,
+      "avgPrice": 161,
+      "medianPrice": 158,
+      "availableCount": 3
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 33",
+      "month": "Agosto",
+      "minPrice": 221,
+      "maxPrice": 224,
+      "avgPrice": 223,
+      "medianPrice": 223,
       "availableCount": 3
     },
     {
@@ -4184,11 +4232,11 @@
       "beds": 1,
       "week": "Semana 34",
       "month": "Agosto",
-      "minPrice": 86,
-      "maxPrice": 131,
-      "avgPrice": 112,
-      "medianPrice": 117,
-      "availableCount": 4
+      "minPrice": 88,
+      "maxPrice": 134,
+      "avgPrice": 132,
+      "medianPrice": 130,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4208,11 +4256,11 @@
       "beds": 3,
       "week": "Semana 34",
       "month": "Agosto",
-      "minPrice": 145,
-      "maxPrice": 212,
-      "avgPrice": 182,
-      "medianPrice": 175,
-      "availableCount": 5
+      "minPrice": 143,
+      "maxPrice": 180,
+      "avgPrice": 172,
+      "medianPrice": 164,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -4220,11 +4268,11 @@
       "beds": 1,
       "week": "Semana 35",
       "month": "Agosto",
-      "minPrice": 83,
-      "maxPrice": 142,
-      "avgPrice": 130,
-      "medianPrice": 115,
-      "availableCount": 4
+      "minPrice": 85,
+      "maxPrice": 157,
+      "avgPrice": 136,
+      "medianPrice": 134,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4233,10 +4281,10 @@
       "week": "Semana 35",
       "month": "Agosto",
       "minPrice": 116,
-      "maxPrice": 141,
-      "avgPrice": 131,
-      "medianPrice": 134,
-      "availableCount": 5
+      "maxPrice": 135,
+      "avgPrice": 128,
+      "medianPrice": 126,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -4245,10 +4293,10 @@
       "week": "Semana 35",
       "month": "Agosto",
       "minPrice": 139,
-      "maxPrice": 184,
-      "avgPrice": 172,
+      "maxPrice": 165,
+      "avgPrice": 164,
       "medianPrice": 154,
-      "availableCount": 7
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -4256,11 +4304,11 @@
       "beds": 1,
       "week": "Semana 36",
       "month": "Agosto",
-      "minPrice": 102,
-      "maxPrice": 132,
-      "avgPrice": 120,
-      "medianPrice": 130,
-      "availableCount": 3
+      "minPrice": 109,
+      "maxPrice": 189,
+      "avgPrice": 163,
+      "medianPrice": 134,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4280,11 +4328,11 @@
       "beds": 3,
       "week": "Semana 36",
       "month": "Agosto",
-      "minPrice": 110,
-      "maxPrice": 145,
-      "avgPrice": 132,
-      "medianPrice": 139,
-      "availableCount": 5
+      "minPrice": 109,
+      "maxPrice": 147,
+      "avgPrice": 131,
+      "medianPrice": 132,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -4292,59 +4340,47 @@
       "beds": 1,
       "week": "Semana 37",
       "month": "Septiembre",
-      "minPrice": 79,
-      "maxPrice": 134,
-      "avgPrice": 118,
-      "medianPrice": 95,
+      "minPrice": 83,
+      "maxPrice": 112,
+      "avgPrice": 102,
+      "medianPrice": 105,
+      "availableCount": 10
+    },
+    {
+      "location": "El Médano",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 37",
+      "month": "Septiembre",
+      "minPrice": 86,
+      "maxPrice": 111,
+      "avgPrice": 105,
+      "medianPrice": 106,
       "availableCount": 7
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 37",
+      "beds": 1,
+      "week": "Semana 38",
       "month": "Septiembre",
-      "minPrice": 113,
-      "maxPrice": 118,
-      "avgPrice": 120,
-      "medianPrice": 117,
-      "availableCount": 6
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 37",
-      "month": "Septiembre",
-      "minPrice": 146,
-      "maxPrice": 276,
-      "avgPrice": 253,
-      "medianPrice": 154,
+      "minPrice": 86,
+      "maxPrice": 109,
+      "avgPrice": 103,
+      "medianPrice": 95,
       "availableCount": 3
     },
     {
       "location": "El Médano",
       "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 38",
-      "month": "Septiembre",
-      "minPrice": 108,
-      "maxPrice": 195,
-      "avgPrice": 167,
-      "medianPrice": 172,
-      "availableCount": 8
-    },
-    {
-      "location": "El Médano",
-      "type": "Apartamento",
       "beds": 2,
       "week": "Semana 38",
       "month": "Septiembre",
-      "minPrice": 101,
-      "maxPrice": 129,
-      "avgPrice": 122,
-      "medianPrice": 122,
-      "availableCount": 6
+      "minPrice": 88,
+      "maxPrice": 181,
+      "avgPrice": 152,
+      "medianPrice": 126,
+      "availableCount": 13
     },
     {
       "location": "El Médano",
@@ -4364,11 +4400,11 @@
       "beds": 1,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 83,
-      "maxPrice": 186,
-      "avgPrice": 138,
+      "minPrice": 76,
+      "maxPrice": 195,
+      "avgPrice": 137,
       "medianPrice": 97,
-      "availableCount": 5
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -4376,10 +4412,10 @@
       "beds": 2,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 108,
-      "maxPrice": 116,
-      "avgPrice": 113,
-      "medianPrice": 113,
+      "minPrice": 89,
+      "maxPrice": 118,
+      "avgPrice": 120,
+      "medianPrice": 116,
       "availableCount": 6
     },
     {
@@ -4400,11 +4436,11 @@
       "beds": 1,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 76,
-      "maxPrice": 182,
-      "avgPrice": 133,
-      "medianPrice": 93,
-      "availableCount": 5
+      "minPrice": 77,
+      "maxPrice": 148,
+      "avgPrice": 124,
+      "medianPrice": 88,
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -4412,11 +4448,11 @@
       "beds": 2,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 116,
-      "maxPrice": 145,
-      "avgPrice": 138,
+      "minPrice": 105,
+      "maxPrice": 179,
+      "avgPrice": 147,
       "medianPrice": 126,
-      "availableCount": 7
+      "availableCount": 9
     },
     {
       "location": "El Médano",
@@ -4424,11 +4460,11 @@
       "beds": 3,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 125,
-      "maxPrice": 333,
-      "avgPrice": 261,
-      "medianPrice": 161,
-      "availableCount": 5
+      "minPrice": 115,
+      "maxPrice": 244,
+      "avgPrice": 212,
+      "medianPrice": 154,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -4436,9 +4472,9 @@
       "beds": 1,
       "week": "Semana 41",
       "month": "Octubre",
-      "minPrice": 96,
+      "minPrice": 82,
       "maxPrice": 184,
-      "avgPrice": 147,
+      "avgPrice": 142,
       "medianPrice": 131,
       "availableCount": 6
     },
@@ -4448,11 +4484,11 @@
       "beds": 2,
       "week": "Semana 41",
       "month": "Octubre",
-      "minPrice": 108,
-      "maxPrice": 174,
-      "avgPrice": 153,
-      "medianPrice": 128,
-      "availableCount": 10
+      "minPrice": 98,
+      "maxPrice": 135,
+      "avgPrice": 128,
+      "medianPrice": 117,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -4460,11 +4496,11 @@
       "beds": 3,
       "week": "Semana 41",
       "month": "Octubre",
-      "minPrice": 143,
-      "maxPrice": 151,
-      "avgPrice": 148,
-      "medianPrice": 148,
-      "availableCount": 2
+      "minPrice": 145,
+      "maxPrice": 243,
+      "avgPrice": 224,
+      "medianPrice": 154,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -4472,11 +4508,11 @@
       "beds": 1,
       "week": "Semana 42",
       "month": "Octubre",
-      "minPrice": 92,
-      "maxPrice": 158,
-      "avgPrice": 131,
+      "minPrice": 82,
+      "maxPrice": 161,
+      "avgPrice": 127,
       "medianPrice": 131,
-      "availableCount": 4
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -4484,11 +4520,11 @@
       "beds": 2,
       "week": "Semana 42",
       "month": "Octubre",
-      "minPrice": 86,
-      "maxPrice": 137,
-      "avgPrice": 123,
-      "medianPrice": 122,
-      "availableCount": 10
+      "minPrice": 107,
+      "maxPrice": 162,
+      "avgPrice": 139,
+      "medianPrice": 131,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -4497,9 +4533,9 @@
       "week": "Semana 42",
       "month": "Octubre",
       "minPrice": 117,
-      "maxPrice": 415,
-      "avgPrice": 412,
-      "medianPrice": 243,
+      "maxPrice": 417,
+      "avgPrice": 413,
+      "medianPrice": 244,
       "availableCount": 4
     },
     {
@@ -4508,11 +4544,11 @@
       "beds": 1,
       "week": "Semana 43",
       "month": "Octubre",
-      "minPrice": 79,
-      "maxPrice": 178,
-      "avgPrice": 146,
-      "medianPrice": 170,
-      "availableCount": 7
+      "minPrice": 81,
+      "maxPrice": 174,
+      "avgPrice": 149,
+      "medianPrice": 167,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -4521,9 +4557,9 @@
       "week": "Semana 43",
       "month": "Octubre",
       "minPrice": 106,
-      "maxPrice": 144,
-      "avgPrice": 131,
-      "medianPrice": 137,
+      "maxPrice": 153,
+      "avgPrice": 138,
+      "medianPrice": 142,
       "availableCount": 7
     },
     {
@@ -4533,9 +4569,9 @@
       "week": "Semana 43",
       "month": "Octubre",
       "minPrice": 161,
-      "maxPrice": 279,
-      "avgPrice": 239,
-      "medianPrice": 239,
+      "maxPrice": 281,
+      "avgPrice": 241,
+      "medianPrice": 241,
       "availableCount": 2
     },
     {
@@ -4544,10 +4580,10 @@
       "beds": 1,
       "week": "Semana 44",
       "month": "Octubre",
-      "minPrice": 72,
-      "maxPrice": 96,
-      "avgPrice": 90,
-      "medianPrice": 86,
+      "minPrice": 81,
+      "maxPrice": 152,
+      "avgPrice": 120,
+      "medianPrice": 99,
       "availableCount": 5
     },
     {
@@ -4556,11 +4592,11 @@
       "beds": 2,
       "week": "Semana 44",
       "month": "Octubre",
-      "minPrice": 110,
-      "maxPrice": 147,
-      "avgPrice": 137,
-      "medianPrice": 137,
-      "availableCount": 9
+      "minPrice": 87,
+      "maxPrice": 151,
+      "avgPrice": 134,
+      "medianPrice": 139,
+      "availableCount": 10
     },
     {
       "location": "El Médano",
@@ -4581,10 +4617,10 @@
       "week": "Semana 45",
       "month": "Octubre",
       "minPrice": 86,
-      "maxPrice": 89,
-      "avgPrice": 88,
-      "medianPrice": 86,
-      "availableCount": 3
+      "maxPrice": 152,
+      "avgPrice": 125,
+      "medianPrice": 117,
+      "availableCount": 4
     },
     {
       "location": "El Médano",
@@ -4593,8 +4629,8 @@
       "week": "Semana 45",
       "month": "Octubre",
       "minPrice": 84,
-      "maxPrice": 131,
-      "avgPrice": 114,
+      "maxPrice": 137,
+      "avgPrice": 117,
       "medianPrice": 115,
       "availableCount": 11
     },
@@ -4605,7 +4641,7 @@
       "week": "Semana 45",
       "month": "Octubre",
       "minPrice": 106,
-      "maxPrice": 429,
+      "maxPrice": 430,
       "avgPrice": 366,
       "medianPrice": 143,
       "availableCount": 3
@@ -4616,11 +4652,11 @@
       "beds": 1,
       "week": "Semana 46",
       "month": "Noviembre",
-      "minPrice": 86,
-      "maxPrice": 89,
-      "avgPrice": 88,
-      "medianPrice": 86,
-      "availableCount": 3
+      "minPrice": 76,
+      "maxPrice": 137,
+      "avgPrice": 117,
+      "medianPrice": 93,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4628,11 +4664,11 @@
       "beds": 2,
       "week": "Semana 46",
       "month": "Noviembre",
-      "minPrice": 83,
-      "maxPrice": 132,
-      "avgPrice": 117,
-      "medianPrice": 117,
-      "availableCount": 10
+      "minPrice": 81,
+      "maxPrice": 141,
+      "avgPrice": 119,
+      "medianPrice": 134,
+      "availableCount": 8
     },
     {
       "location": "El Médano",
@@ -4641,9 +4677,9 @@
       "week": "Semana 46",
       "month": "Noviembre",
       "minPrice": 111,
-      "maxPrice": 379,
-      "avgPrice": 356,
-      "medianPrice": 234,
+      "maxPrice": 328,
+      "avgPrice": 227,
+      "medianPrice": 235,
       "availableCount": 4
     },
     {
@@ -4652,11 +4688,11 @@
       "beds": 1,
       "week": "Semana 47",
       "month": "Noviembre",
-      "minPrice": 88,
-      "maxPrice": 152,
-      "avgPrice": 127,
-      "medianPrice": 120,
-      "availableCount": 4
+      "minPrice": 86,
+      "maxPrice": 111,
+      "avgPrice": 107,
+      "medianPrice": 86,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -4664,11 +4700,11 @@
       "beds": 2,
       "week": "Semana 47",
       "month": "Noviembre",
-      "minPrice": 82,
-      "maxPrice": 134,
-      "avgPrice": 116,
-      "medianPrice": 113,
-      "availableCount": 9
+      "minPrice": 83,
+      "maxPrice": 138,
+      "avgPrice": 119,
+      "medianPrice": 122,
+      "availableCount": 10
     },
     {
       "location": "El Médano",
@@ -4678,7 +4714,7 @@
       "month": "Noviembre",
       "minPrice": 111,
       "maxPrice": 172,
-      "avgPrice": 181,
+      "avgPrice": 182,
       "medianPrice": 148,
       "availableCount": 4
     },
@@ -4688,11 +4724,11 @@
       "beds": 1,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 80,
-      "maxPrice": 87,
-      "avgPrice": 85,
+      "minPrice": 81,
+      "maxPrice": 136,
+      "avgPrice": 116,
       "medianPrice": 86,
-      "availableCount": 4
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4700,11 +4736,11 @@
       "beds": 2,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 84,
-      "maxPrice": 129,
-      "avgPrice": 118,
-      "medianPrice": 119,
-      "availableCount": 9
+      "minPrice": 85,
+      "maxPrice": 132,
+      "avgPrice": 122,
+      "medianPrice": 123,
+      "availableCount": 10
     },
     {
       "location": "El Médano",
@@ -4712,10 +4748,10 @@
       "beds": 3,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 169,
-      "maxPrice": 305,
-      "avgPrice": 256,
-      "medianPrice": 275,
+      "minPrice": 184,
+      "maxPrice": 554,
+      "avgPrice": 451,
+      "medianPrice": 351,
       "availableCount": 3
     },
     {
@@ -4724,10 +4760,10 @@
       "beds": 1,
       "week": "Semana 49",
       "month": "Noviembre",
-      "minPrice": 86,
-      "maxPrice": 137,
-      "avgPrice": 118,
-      "medianPrice": 93,
+      "minPrice": 89,
+      "maxPrice": 144,
+      "avgPrice": 128,
+      "medianPrice": 124,
       "availableCount": 5
     },
     {
@@ -4736,10 +4772,10 @@
       "beds": 2,
       "week": "Semana 49",
       "month": "Noviembre",
-      "minPrice": 82,
-      "maxPrice": 141,
-      "avgPrice": 118,
-      "medianPrice": 109,
+      "minPrice": 83,
+      "maxPrice": 144,
+      "avgPrice": 123,
+      "medianPrice": 124,
       "availableCount": 8
     },
     {
@@ -4749,8 +4785,8 @@
       "week": "Semana 49",
       "month": "Noviembre",
       "minPrice": 112,
-      "maxPrice": 175,
-      "avgPrice": 190,
+      "maxPrice": 173,
+      "avgPrice": 185,
       "medianPrice": 151,
       "availableCount": 4
     },
@@ -4761,10 +4797,10 @@
       "week": "Semana 50",
       "month": "Diciembre",
       "minPrice": 77,
-      "maxPrice": 86,
-      "avgPrice": 82,
-      "medianPrice": 81,
-      "availableCount": 4
+      "maxPrice": 118,
+      "avgPrice": 110,
+      "medianPrice": 86,
+      "availableCount": 6
     },
     {
       "location": "El Médano",
@@ -4773,8 +4809,8 @@
       "week": "Semana 50",
       "month": "Diciembre",
       "minPrice": 86,
-      "maxPrice": 137,
-      "avgPrice": 124,
+      "maxPrice": 151,
+      "avgPrice": 127,
       "medianPrice": 113,
       "availableCount": 9
     },
@@ -4784,10 +4820,10 @@
       "beds": 3,
       "week": "Semana 50",
       "month": "Diciembre",
-      "minPrice": 144,
-      "maxPrice": 338,
-      "avgPrice": 259,
-      "medianPrice": 330,
+      "minPrice": 148,
+      "maxPrice": 546,
+      "avgPrice": 429,
+      "medianPrice": 352,
       "availableCount": 3
     },
     {
@@ -4796,11 +4832,11 @@
       "beds": 1,
       "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 79,
-      "maxPrice": 86,
-      "avgPrice": 83,
-      "medianPrice": 86,
-      "availableCount": 3
+      "minPrice": 81,
+      "maxPrice": 136,
+      "avgPrice": 116,
+      "medianPrice": 87,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4809,8 +4845,8 @@
       "week": "Semana 51",
       "month": "Diciembre",
       "minPrice": 85,
-      "maxPrice": 140,
-      "avgPrice": 123,
+      "maxPrice": 151,
+      "avgPrice": 125,
       "medianPrice": 113,
       "availableCount": 9
     },
@@ -4820,11 +4856,11 @@
       "beds": 3,
       "week": "Semana 51",
       "month": "Diciembre",
-      "minPrice": 160,
-      "maxPrice": 357,
-      "avgPrice": 309,
-      "medianPrice": 325,
-      "availableCount": 4
+      "minPrice": 139,
+      "maxPrice": 323,
+      "avgPrice": 250,
+      "medianPrice": 308,
+      "availableCount": 3
     },
     {
       "location": "El Médano",
@@ -4832,11 +4868,11 @@
       "beds": 1,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 79,
-      "maxPrice": 90,
-      "avgPrice": 86,
-      "medianPrice": 87,
-      "availableCount": 3
+      "minPrice": 81,
+      "maxPrice": 138,
+      "avgPrice": 112,
+      "medianPrice": 95,
+      "availableCount": 5
     },
     {
       "location": "El Médano",
@@ -4844,11 +4880,11 @@
       "beds": 2,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 101,
-      "maxPrice": 162,
+      "minPrice": 97,
+      "maxPrice": 168,
       "avgPrice": 141,
-      "medianPrice": 156,
-      "availableCount": 8
+      "medianPrice": 155,
+      "availableCount": 7
     },
     {
       "location": "El Médano",
@@ -4856,10 +4892,10 @@
       "beds": 3,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 106,
-      "maxPrice": 550,
-      "avgPrice": 429,
-      "medianPrice": 320,
+      "minPrice": 113,
+      "maxPrice": 551,
+      "avgPrice": 473,
+      "medianPrice": 445,
       "availableCount": 6
     },
     {
@@ -4868,11 +4904,11 @@
       "beds": 1,
       "week": "Semana 1",
       "month": "Enero",
-      "minPrice": 76,
-      "maxPrice": 80,
-      "avgPrice": 79,
-      "medianPrice": 79,
-      "availableCount": 2
+      "minPrice": 75,
+      "maxPrice": 75,
+      "avgPrice": 75,
+      "medianPrice": 75,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -4881,9 +4917,9 @@
       "week": "Semana 1",
       "month": "Enero",
       "minPrice": 148,
-      "maxPrice": 189,
-      "avgPrice": 180,
-      "medianPrice": 177,
+      "maxPrice": 190,
+      "avgPrice": 181,
+      "medianPrice": 178,
       "availableCount": 13
     },
     {
@@ -4892,11 +4928,11 @@
       "beds": 3,
       "week": "Semana 1",
       "month": "Enero",
-      "minPrice": 219,
-      "maxPrice": 381,
-      "avgPrice": 327,
-      "medianPrice": 327,
-      "availableCount": 2
+      "minPrice": 236,
+      "maxPrice": 432,
+      "avgPrice": 355,
+      "medianPrice": 412,
+      "availableCount": 3
     },
     {
       "location": "Abades",
@@ -4918,8 +4954,8 @@
       "month": "Enero",
       "minPrice": 119,
       "maxPrice": 175,
-      "avgPrice": 159,
-      "medianPrice": 153,
+      "avgPrice": 157,
+      "medianPrice": 150,
       "availableCount": 13
     },
     {
@@ -4937,12 +4973,24 @@
     {
       "location": "Abades",
       "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 3",
+      "month": "Enero",
+      "minPrice": 53,
+      "maxPrice": 68,
+      "avgPrice": 63,
+      "medianPrice": 63,
+      "availableCount": 2
+    },
+    {
+      "location": "Abades",
+      "type": "Apartamento",
       "beds": 2,
       "week": "Semana 3",
       "month": "Enero",
-      "minPrice": 116,
-      "maxPrice": 174,
-      "avgPrice": 154,
+      "minPrice": 113,
+      "maxPrice": 185,
+      "avgPrice": 160,
       "medianPrice": 150,
       "availableCount": 14
     },
@@ -4952,11 +5000,11 @@
       "beds": 3,
       "week": "Semana 3",
       "month": "Enero",
-      "minPrice": 117,
-      "maxPrice": 239,
-      "avgPrice": 200,
-      "medianPrice": 192,
-      "availableCount": 3
+      "minPrice": 108,
+      "maxPrice": 164,
+      "avgPrice": 145,
+      "medianPrice": 145,
+      "availableCount": 2
     },
     {
       "location": "Abades",
@@ -4978,8 +5026,8 @@
       "month": "Enero",
       "minPrice": 113,
       "maxPrice": 182,
-      "avgPrice": 162,
-      "medianPrice": 153,
+      "avgPrice": 163,
+      "medianPrice": 154,
       "availableCount": 15
     },
     {
@@ -5013,9 +5061,9 @@
       "week": "Semana 5",
       "month": "Enero",
       "minPrice": 123,
-      "maxPrice": 188,
-      "avgPrice": 163,
-      "medianPrice": 166,
+      "maxPrice": 184,
+      "avgPrice": 161,
+      "medianPrice": 147,
       "availableCount": 15
     },
     {
@@ -5049,9 +5097,9 @@
       "week": "Semana 6",
       "month": "Febrero",
       "minPrice": 121,
-      "maxPrice": 192,
-      "avgPrice": 164,
-      "medianPrice": 171,
+      "maxPrice": 189,
+      "avgPrice": 162,
+      "medianPrice": 162,
       "availableCount": 14
     },
     {
@@ -5072,11 +5120,11 @@
       "beds": 1,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 56,
-      "maxPrice": 109,
-      "avgPrice": 95,
-      "medianPrice": 75,
-      "availableCount": 3
+      "minPrice": 160,
+      "maxPrice": 160,
+      "avgPrice": 160,
+      "medianPrice": 160,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -5084,11 +5132,11 @@
       "beds": 2,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 120,
-      "maxPrice": 178,
-      "avgPrice": 157,
-      "medianPrice": 156,
-      "availableCount": 14
+      "minPrice": 118,
+      "maxPrice": 177,
+      "avgPrice": 156,
+      "medianPrice": 147,
+      "availableCount": 15
     },
     {
       "location": "Abades",
@@ -5096,11 +5144,11 @@
       "beds": 3,
       "week": "Semana 7",
       "month": "Febrero",
-      "minPrice": 99,
-      "maxPrice": 99,
-      "avgPrice": 99,
-      "medianPrice": 99,
-      "availableCount": 1
+      "minPrice": 121,
+      "maxPrice": 258,
+      "avgPrice": 213,
+      "medianPrice": 213,
+      "availableCount": 2
     },
     {
       "location": "Abades",
@@ -5122,8 +5170,8 @@
       "month": "Febrero",
       "minPrice": 118,
       "maxPrice": 181,
-      "avgPrice": 158,
-      "medianPrice": 167,
+      "avgPrice": 157,
+      "medianPrice": 157,
       "availableCount": 12
     },
     {
@@ -5158,8 +5206,8 @@
       "month": "Febrero",
       "minPrice": 116,
       "maxPrice": 181,
-      "avgPrice": 157,
-      "medianPrice": 166,
+      "avgPrice": 154,
+      "medianPrice": 156,
       "availableCount": 12
     },
     {
@@ -5180,11 +5228,11 @@
       "beds": 1,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 56,
-      "maxPrice": 106,
-      "avgPrice": 93,
-      "medianPrice": 75,
-      "availableCount": 3
+      "minPrice": 154,
+      "maxPrice": 154,
+      "avgPrice": 154,
+      "medianPrice": 154,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -5192,10 +5240,10 @@
       "beds": 2,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 116,
+      "minPrice": 117,
       "maxPrice": 180,
       "avgPrice": 153,
-      "medianPrice": 154,
+      "medianPrice": 143,
       "availableCount": 13
     },
     {
@@ -5204,23 +5252,11 @@
       "beds": 3,
       "week": "Semana 10",
       "month": "Marzo",
-      "minPrice": 178,
-      "maxPrice": 187,
-      "avgPrice": 184,
+      "minPrice": 122,
+      "maxPrice": 201,
+      "avgPrice": 187,
       "medianPrice": 184,
-      "availableCount": 2
-    },
-    {
-      "location": "Abades",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 11",
-      "month": "Marzo",
-      "minPrice": 56,
-      "maxPrice": 93,
-      "avgPrice": 82,
-      "medianPrice": 74,
-      "availableCount": 3
+      "availableCount": 4
     },
     {
       "location": "Abades",
@@ -5228,11 +5264,11 @@
       "beds": 2,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 108,
-      "maxPrice": 151,
-      "avgPrice": 141,
-      "medianPrice": 137,
-      "availableCount": 13
+      "minPrice": 117,
+      "maxPrice": 177,
+      "avgPrice": 160,
+      "medianPrice": 170,
+      "availableCount": 12
     },
     {
       "location": "Abades",
@@ -5240,11 +5276,11 @@
       "beds": 3,
       "week": "Semana 11",
       "month": "Marzo",
-      "minPrice": 136,
-      "maxPrice": 144,
-      "avgPrice": 142,
-      "medianPrice": 142,
-      "availableCount": 2
+      "minPrice": 130,
+      "maxPrice": 279,
+      "avgPrice": 218,
+      "medianPrice": 192,
+      "availableCount": 5
     },
     {
       "location": "Abades",
@@ -5252,47 +5288,59 @@
       "beds": 1,
       "week": "Semana 12",
       "month": "Marzo",
-      "minPrice": 78,
-      "maxPrice": 147,
-      "avgPrice": 129,
-      "medianPrice": 141,
+      "minPrice": 130,
+      "maxPrice": 140,
+      "avgPrice": 136,
+      "medianPrice": 136,
+      "availableCount": 4
+    },
+    {
+      "location": "Abades",
+      "type": "Apartamento",
+      "beds": 2,
+      "week": "Semana 12",
+      "month": "Marzo",
+      "minPrice": 102,
+      "maxPrice": 145,
+      "avgPrice": 134,
+      "medianPrice": 115,
+      "availableCount": 10
+    },
+    {
+      "location": "Abades",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 12",
+      "month": "Marzo",
+      "minPrice": 230,
+      "maxPrice": 232,
+      "avgPrice": 231,
+      "medianPrice": 231,
+      "availableCount": 2
+    },
+    {
+      "location": "Abades",
+      "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 13",
+      "month": "Marzo",
+      "minPrice": 98,
+      "maxPrice": 110,
+      "avgPrice": 110,
+      "medianPrice": 101,
       "availableCount": 7
     },
     {
       "location": "Abades",
       "type": "Apartamento",
       "beds": 2,
-      "week": "Semana 12",
-      "month": "Marzo",
-      "minPrice": 95,
-      "maxPrice": 200,
-      "avgPrice": 154,
-      "medianPrice": 143,
-      "availableCount": 11
-    },
-    {
-      "location": "Abades",
-      "type": "Apartamento",
-      "beds": 1,
       "week": "Semana 13",
       "month": "Marzo",
-      "minPrice": 97,
-      "maxPrice": 115,
-      "avgPrice": 121,
-      "medianPrice": 106,
-      "availableCount": 6
-    },
-    {
-      "location": "Abades",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 13",
-      "month": "Marzo",
-      "minPrice": 96,
-      "maxPrice": 142,
+      "minPrice": 92,
+      "maxPrice": 140,
       "avgPrice": 129,
       "medianPrice": 136,
-      "availableCount": 9
+      "availableCount": 7
     },
     {
       "location": "Abades",
@@ -5300,11 +5348,11 @@
       "beds": 3,
       "week": "Semana 13",
       "month": "Marzo",
-      "minPrice": 155,
-      "maxPrice": 155,
-      "avgPrice": 155,
-      "medianPrice": 155,
-      "availableCount": 1
+      "minPrice": 98,
+      "maxPrice": 136,
+      "avgPrice": 123,
+      "medianPrice": 123,
+      "availableCount": 2
     },
     {
       "location": "Abades",
@@ -5312,11 +5360,11 @@
       "beds": 1,
       "week": "Semana 14",
       "month": "Marzo",
-      "minPrice": 64,
-      "maxPrice": 93,
-      "avgPrice": 83,
-      "medianPrice": 87,
-      "availableCount": 3
+      "minPrice": 59,
+      "maxPrice": 115,
+      "avgPrice": 113,
+      "medianPrice": 81,
+      "availableCount": 4
     },
     {
       "location": "Abades",
@@ -5325,9 +5373,9 @@
       "week": "Semana 14",
       "month": "Marzo",
       "minPrice": 106,
-      "maxPrice": 173,
-      "avgPrice": 152,
-      "medianPrice": 141,
+      "maxPrice": 179,
+      "avgPrice": 154,
+      "medianPrice": 146,
       "availableCount": 14
     },
     {
@@ -5351,7 +5399,7 @@
       "minPrice": 100,
       "maxPrice": 162,
       "avgPrice": 141,
-      "medianPrice": 128,
+      "medianPrice": 130,
       "availableCount": 15
     },
     {
@@ -5385,10 +5433,10 @@
       "week": "Semana 16",
       "month": "Abril",
       "minPrice": 95,
-      "maxPrice": 137,
-      "avgPrice": 125,
-      "medianPrice": 119,
-      "availableCount": 15
+      "maxPrice": 139,
+      "avgPrice": 127,
+      "medianPrice": 127,
+      "availableCount": 16
     },
     {
       "location": "Abades",
@@ -5396,11 +5444,11 @@
       "beds": 1,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 170,
-      "maxPrice": 176,
-      "avgPrice": 174,
-      "medianPrice": 176,
-      "availableCount": 3
+      "minPrice": 51,
+      "maxPrice": 51,
+      "avgPrice": 51,
+      "medianPrice": 51,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -5408,11 +5456,11 @@
       "beds": 2,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 107,
-      "maxPrice": 127,
-      "avgPrice": 127,
-      "medianPrice": 122,
-      "availableCount": 12
+      "minPrice": 96,
+      "maxPrice": 148,
+      "avgPrice": 133,
+      "medianPrice": 127,
+      "availableCount": 16
     },
     {
       "location": "Abades",
@@ -5420,10 +5468,10 @@
       "beds": 3,
       "week": "Semana 17",
       "month": "Abril",
-      "minPrice": 162,
-      "maxPrice": 162,
-      "avgPrice": 162,
-      "medianPrice": 162,
+      "minPrice": 90,
+      "maxPrice": 90,
+      "avgPrice": 90,
+      "medianPrice": 90,
       "availableCount": 1
     },
     {
@@ -5432,11 +5480,11 @@
       "beds": 1,
       "week": "Semana 18",
       "month": "Abril",
-      "minPrice": 64,
-      "maxPrice": 144,
-      "avgPrice": 117,
-      "medianPrice": 117,
-      "availableCount": 3
+      "minPrice": 49,
+      "maxPrice": 102,
+      "avgPrice": 81,
+      "medianPrice": 72,
+      "availableCount": 9
     },
     {
       "location": "Abades",
@@ -5444,11 +5492,11 @@
       "beds": 2,
       "week": "Semana 18",
       "month": "Abril",
-      "minPrice": 106,
-      "maxPrice": 149,
-      "avgPrice": 133,
-      "medianPrice": 126,
-      "availableCount": 15
+      "minPrice": 90,
+      "maxPrice": 141,
+      "avgPrice": 122,
+      "medianPrice": 124,
+      "availableCount": 9
     },
     {
       "location": "Abades",
@@ -5457,9 +5505,9 @@
       "week": "Semana 19",
       "month": "Mayo",
       "minPrice": 76,
-      "maxPrice": 110,
-      "avgPrice": 104,
-      "medianPrice": 81,
+      "maxPrice": 112,
+      "avgPrice": 105,
+      "medianPrice": 86,
       "availableCount": 5
     },
     {
@@ -5468,11 +5516,11 @@
       "beds": 2,
       "week": "Semana 19",
       "month": "Mayo",
-      "minPrice": 96,
-      "maxPrice": 127,
-      "avgPrice": 120,
-      "medianPrice": 124,
-      "availableCount": 10
+      "minPrice": 111,
+      "maxPrice": 168,
+      "avgPrice": 146,
+      "medianPrice": 128,
+      "availableCount": 12
     },
     {
       "location": "Abades",
@@ -5489,26 +5537,14 @@
     {
       "location": "Abades",
       "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 20",
-      "month": "Mayo",
-      "minPrice": 54,
-      "maxPrice": 72,
-      "avgPrice": 66,
-      "medianPrice": 66,
-      "availableCount": 2
-    },
-    {
-      "location": "Abades",
-      "type": "Apartamento",
       "beds": 2,
       "week": "Semana 20",
       "month": "Mayo",
       "minPrice": 107,
-      "maxPrice": 126,
-      "avgPrice": 126,
-      "medianPrice": 124,
-      "availableCount": 14
+      "maxPrice": 124,
+      "avgPrice": 118,
+      "medianPrice": 121,
+      "availableCount": 12
     },
     {
       "location": "Abades",
@@ -5516,11 +5552,11 @@
       "beds": 3,
       "week": "Semana 20",
       "month": "Mayo",
-      "minPrice": 132,
-      "maxPrice": 132,
-      "avgPrice": 132,
-      "medianPrice": 132,
-      "availableCount": 1
+      "minPrice": 102,
+      "maxPrice": 122,
+      "avgPrice": 115,
+      "medianPrice": 115,
+      "availableCount": 2
     },
     {
       "location": "Abades",
@@ -5541,10 +5577,10 @@
       "week": "Semana 21",
       "month": "Mayo",
       "minPrice": 112,
-      "maxPrice": 124,
-      "avgPrice": 119,
-      "medianPrice": 119,
-      "availableCount": 9
+      "maxPrice": 163,
+      "avgPrice": 140,
+      "medianPrice": 124,
+      "availableCount": 15
     },
     {
       "location": "Abades",
@@ -5552,11 +5588,11 @@
       "beds": 3,
       "week": "Semana 21",
       "month": "Mayo",
-      "minPrice": 105,
-      "maxPrice": 133,
-      "avgPrice": 122,
+      "minPrice": 132,
+      "maxPrice": 132,
+      "avgPrice": 132,
       "medianPrice": 132,
-      "availableCount": 3
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -5564,11 +5600,11 @@
       "beds": 1,
       "week": "Semana 22",
       "month": "Mayo",
-      "minPrice": 77,
-      "maxPrice": 101,
-      "avgPrice": 93,
-      "medianPrice": 93,
-      "availableCount": 2
+      "minPrice": 75,
+      "maxPrice": 121,
+      "avgPrice": 113,
+      "medianPrice": 96,
+      "availableCount": 4
     },
     {
       "location": "Abades",
@@ -5576,11 +5612,11 @@
       "beds": 2,
       "week": "Semana 22",
       "month": "Mayo",
-      "minPrice": 116,
-      "maxPrice": 126,
-      "avgPrice": 122,
-      "medianPrice": 125,
-      "availableCount": 10
+      "minPrice": 92,
+      "maxPrice": 138,
+      "avgPrice": 135,
+      "medianPrice": 127,
+      "availableCount": 13
     },
     {
       "location": "Abades",
@@ -5588,11 +5624,11 @@
       "beds": 3,
       "week": "Semana 22",
       "month": "Mayo",
-      "minPrice": 127,
-      "maxPrice": 130,
-      "avgPrice": 129,
-      "medianPrice": 129,
-      "availableCount": 2
+      "minPrice": 132,
+      "maxPrice": 132,
+      "avgPrice": 132,
+      "medianPrice": 132,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -5600,11 +5636,11 @@
       "beds": 1,
       "week": "Semana 23",
       "month": "Junio",
-      "minPrice": 58,
-      "maxPrice": 99,
-      "avgPrice": 86,
-      "medianPrice": 86,
-      "availableCount": 2
+      "minPrice": 65,
+      "maxPrice": 146,
+      "avgPrice": 119,
+      "medianPrice": 120,
+      "availableCount": 3
     },
     {
       "location": "Abades",
@@ -5612,11 +5648,11 @@
       "beds": 2,
       "week": "Semana 23",
       "month": "Junio",
-      "minPrice": 116,
-      "maxPrice": 127,
-      "avgPrice": 126,
-      "medianPrice": 124,
-      "availableCount": 11
+      "minPrice": 92,
+      "maxPrice": 128,
+      "avgPrice": 125,
+      "medianPrice": 126,
+      "availableCount": 12
     },
     {
       "location": "Abades",
@@ -5648,11 +5684,11 @@
       "beds": 2,
       "week": "Semana 24",
       "month": "Junio",
-      "minPrice": 112,
-      "maxPrice": 131,
-      "avgPrice": 131,
-      "medianPrice": 124,
-      "availableCount": 15
+      "minPrice": 113,
+      "maxPrice": 143,
+      "avgPrice": 138,
+      "medianPrice": 125,
+      "availableCount": 16
     },
     {
       "location": "Abades",
@@ -5673,9 +5709,9 @@
       "week": "Semana 25",
       "month": "Junio",
       "minPrice": 113,
-      "maxPrice": 158,
-      "avgPrice": 145,
-      "medianPrice": 127,
+      "maxPrice": 173,
+      "avgPrice": 147,
+      "medianPrice": 128,
       "availableCount": 17
     },
     {
@@ -5696,10 +5732,10 @@
       "beds": 2,
       "week": "Semana 26",
       "month": "Junio",
-      "minPrice": 112,
-      "maxPrice": 142,
-      "avgPrice": 136,
-      "medianPrice": 127,
+      "minPrice": 115,
+      "maxPrice": 134,
+      "avgPrice": 133,
+      "medianPrice": 126,
       "availableCount": 15
     },
     {
@@ -5724,7 +5760,7 @@
       "maxPrice": 51,
       "avgPrice": 51,
       "medianPrice": 51,
-      "availableCount": 2
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -5732,11 +5768,11 @@
       "beds": 2,
       "week": "Semana 27",
       "month": "Junio",
-      "minPrice": 116,
-      "maxPrice": 163,
-      "avgPrice": 142,
-      "medianPrice": 135,
-      "availableCount": 14
+      "minPrice": 117,
+      "maxPrice": 161,
+      "avgPrice": 144,
+      "medianPrice": 143,
+      "availableCount": 15
     },
     {
       "location": "Abades",
@@ -5768,11 +5804,11 @@
       "beds": 2,
       "week": "Semana 28",
       "month": "Julio",
-      "minPrice": 103,
-      "maxPrice": 169,
-      "avgPrice": 144,
-      "medianPrice": 132,
-      "availableCount": 15
+      "minPrice": 102,
+      "maxPrice": 165,
+      "avgPrice": 139,
+      "medianPrice": 128,
+      "availableCount": 14
     },
     {
       "location": "Abades",
@@ -5780,11 +5816,11 @@
       "beds": 3,
       "week": "Semana 28",
       "month": "Julio",
-      "minPrice": 132,
-      "maxPrice": 132,
-      "avgPrice": 132,
-      "medianPrice": 132,
-      "availableCount": 1
+      "minPrice": 102,
+      "maxPrice": 122,
+      "avgPrice": 115,
+      "medianPrice": 115,
+      "availableCount": 2
     },
     {
       "location": "Abades",
@@ -5794,7 +5830,7 @@
       "month": "Julio",
       "minPrice": 78,
       "maxPrice": 251,
-      "avgPrice": 195,
+      "avgPrice": 196,
       "medianPrice": 185,
       "availableCount": 3
     },
@@ -5804,11 +5840,11 @@
       "beds": 2,
       "week": "Semana 29",
       "month": "Julio",
-      "minPrice": 121,
-      "maxPrice": 185,
-      "avgPrice": 169,
-      "medianPrice": 171,
-      "availableCount": 14
+      "minPrice": 120,
+      "maxPrice": 177,
+      "avgPrice": 154,
+      "medianPrice": 143,
+      "availableCount": 13
     },
     {
       "location": "Abades",
@@ -5828,7 +5864,7 @@
       "beds": 1,
       "week": "Semana 30",
       "month": "Julio",
-      "minPrice": 64,
+      "minPrice": 65,
       "maxPrice": 145,
       "avgPrice": 118,
       "medianPrice": 118,
@@ -5840,10 +5876,10 @@
       "beds": 2,
       "week": "Semana 30",
       "month": "Julio",
-      "minPrice": 108,
-      "maxPrice": 176,
-      "avgPrice": 151,
-      "medianPrice": 149,
+      "minPrice": 110,
+      "maxPrice": 165,
+      "avgPrice": 144,
+      "medianPrice": 138,
       "availableCount": 14
     },
     {
@@ -5866,7 +5902,7 @@
       "month": "Julio",
       "minPrice": 51,
       "maxPrice": 85,
-      "avgPrice": 79,
+      "avgPrice": 80,
       "medianPrice": 51,
       "availableCount": 3
     },
@@ -5876,11 +5912,23 @@
       "beds": 2,
       "week": "Semana 31",
       "month": "Julio",
-      "minPrice": 136,
-      "maxPrice": 174,
-      "avgPrice": 159,
-      "medianPrice": 163,
-      "availableCount": 12
+      "minPrice": 128,
+      "maxPrice": 176,
+      "avgPrice": 160,
+      "medianPrice": 172,
+      "availableCount": 13
+    },
+    {
+      "location": "Abades",
+      "type": "Apartamento",
+      "beds": 3,
+      "week": "Semana 31",
+      "month": "Julio",
+      "minPrice": 266,
+      "maxPrice": 266,
+      "avgPrice": 266,
+      "medianPrice": 266,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -5900,8 +5948,8 @@
       "beds": 2,
       "week": "Semana 32",
       "month": "Agosto",
-      "minPrice": 135,
-      "maxPrice": 169,
+      "minPrice": 136,
+      "maxPrice": 165,
       "avgPrice": 160,
       "medianPrice": 155,
       "availableCount": 13
@@ -5925,8 +5973,8 @@
       "week": "Semana 33",
       "month": "Agosto",
       "minPrice": 147,
-      "maxPrice": 185,
-      "avgPrice": 175,
+      "maxPrice": 184,
+      "avgPrice": 173,
       "medianPrice": 177,
       "availableCount": 14
     },
@@ -5936,11 +5984,11 @@
       "beds": 1,
       "week": "Semana 34",
       "month": "Agosto",
-      "minPrice": 51,
-      "maxPrice": 51,
-      "avgPrice": 51,
-      "medianPrice": 51,
-      "availableCount": 2
+      "minPrice": 60,
+      "maxPrice": 93,
+      "avgPrice": 84,
+      "medianPrice": 81,
+      "availableCount": 15
     },
     {
       "location": "Abades",
@@ -5948,11 +5996,11 @@
       "beds": 2,
       "week": "Semana 34",
       "month": "Agosto",
-      "minPrice": 134,
-      "maxPrice": 180,
-      "avgPrice": 169,
-      "medianPrice": 171,
-      "availableCount": 15
+      "minPrice": 128,
+      "maxPrice": 143,
+      "avgPrice": 140,
+      "medianPrice": 133,
+      "availableCount": 3
     },
     {
       "location": "Abades",
@@ -5972,7 +6020,7 @@
       "beds": 2,
       "week": "Semana 35",
       "month": "Agosto",
-      "minPrice": 136,
+      "minPrice": 137,
       "maxPrice": 181,
       "avgPrice": 173,
       "medianPrice": 171,
@@ -6008,10 +6056,10 @@
       "beds": 2,
       "week": "Semana 36",
       "month": "Agosto",
-      "minPrice": 125,
-      "maxPrice": 187,
-      "avgPrice": 162,
-      "medianPrice": 154,
+      "minPrice": 114,
+      "maxPrice": 172,
+      "avgPrice": 155,
+      "medianPrice": 143,
       "availableCount": 15
     },
     {
@@ -6045,10 +6093,10 @@
       "week": "Semana 37",
       "month": "Septiembre",
       "minPrice": 127,
-      "maxPrice": 181,
-      "avgPrice": 157,
-      "medianPrice": 144,
-      "availableCount": 14
+      "maxPrice": 164,
+      "avgPrice": 155,
+      "medianPrice": 143,
+      "availableCount": 13
     },
     {
       "location": "Abades",
@@ -6082,7 +6130,7 @@
       "month": "Septiembre",
       "minPrice": 120,
       "maxPrice": 155,
-      "avgPrice": 149,
+      "avgPrice": 147,
       "medianPrice": 130,
       "availableCount": 14
     },
@@ -6116,11 +6164,11 @@
       "beds": 2,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 120,
-      "maxPrice": 153,
-      "avgPrice": 145,
-      "medianPrice": 130,
-      "availableCount": 14
+      "minPrice": 119,
+      "maxPrice": 128,
+      "avgPrice": 128,
+      "medianPrice": 127,
+      "availableCount": 11
     },
     {
       "location": "Abades",
@@ -6128,11 +6176,11 @@
       "beds": 3,
       "week": "Semana 39",
       "month": "Septiembre",
-      "minPrice": 138,
-      "maxPrice": 174,
-      "avgPrice": 162,
-      "medianPrice": 162,
-      "availableCount": 2
+      "minPrice": 105,
+      "maxPrice": 156,
+      "avgPrice": 141,
+      "medianPrice": 132,
+      "availableCount": 3
     },
     {
       "location": "Abades",
@@ -6140,11 +6188,11 @@
       "beds": 1,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 58,
-      "maxPrice": 101,
-      "avgPrice": 87,
-      "medianPrice": 87,
-      "availableCount": 2
+      "minPrice": 123,
+      "maxPrice": 123,
+      "avgPrice": 123,
+      "medianPrice": 123,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -6152,10 +6200,10 @@
       "beds": 2,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 125,
-      "maxPrice": 134,
-      "avgPrice": 134,
-      "medianPrice": 130,
+      "minPrice": 127,
+      "maxPrice": 138,
+      "avgPrice": 133,
+      "medianPrice": 132,
       "availableCount": 12
     },
     {
@@ -6164,11 +6212,11 @@
       "beds": 3,
       "week": "Semana 40",
       "month": "Septiembre",
-      "minPrice": 138,
-      "maxPrice": 174,
-      "avgPrice": 162,
-      "medianPrice": 162,
-      "availableCount": 2
+      "minPrice": 105,
+      "maxPrice": 156,
+      "avgPrice": 141,
+      "medianPrice": 132,
+      "availableCount": 3
     },
     {
       "location": "Abades",
@@ -6190,8 +6238,8 @@
       "month": "Octubre",
       "minPrice": 119,
       "maxPrice": 150,
-      "avgPrice": 140,
-      "medianPrice": 138,
+      "avgPrice": 139,
+      "medianPrice": 133,
       "availableCount": 14
     },
     {
@@ -6224,11 +6272,11 @@
       "beds": 2,
       "week": "Semana 42",
       "month": "Octubre",
-      "minPrice": 125,
-      "maxPrice": 146,
+      "minPrice": 121,
+      "maxPrice": 150,
       "avgPrice": 140,
-      "medianPrice": 132,
-      "availableCount": 13
+      "medianPrice": 131,
+      "availableCount": 14
     },
     {
       "location": "Abades",
@@ -6248,11 +6296,11 @@
       "beds": 1,
       "week": "Semana 43",
       "month": "Octubre",
-      "minPrice": 126,
-      "maxPrice": 126,
-      "avgPrice": 126,
-      "medianPrice": 126,
-      "availableCount": 1
+      "minPrice": 59,
+      "maxPrice": 104,
+      "avgPrice": 89,
+      "medianPrice": 89,
+      "availableCount": 2
     },
     {
       "location": "Abades",
@@ -6260,11 +6308,11 @@
       "beds": 2,
       "week": "Semana 43",
       "month": "Octubre",
-      "minPrice": 121,
-      "maxPrice": 150,
+      "minPrice": 127,
+      "maxPrice": 148,
       "avgPrice": 140,
       "medianPrice": 132,
-      "availableCount": 14
+      "availableCount": 12
     },
     {
       "location": "Abades",
@@ -6296,11 +6344,11 @@
       "beds": 2,
       "week": "Semana 44",
       "month": "Octubre",
-      "minPrice": 123,
-      "maxPrice": 160,
-      "avgPrice": 152,
-      "medianPrice": 146,
-      "availableCount": 16
+      "minPrice": 127,
+      "maxPrice": 151,
+      "avgPrice": 145,
+      "medianPrice": 140,
+      "availableCount": 14
     },
     {
       "location": "Abades",
@@ -6317,13 +6365,25 @@
     {
       "location": "Abades",
       "type": "Apartamento",
+      "beds": 1,
+      "week": "Semana 45",
+      "month": "Octubre",
+      "minPrice": 51,
+      "maxPrice": 51,
+      "avgPrice": 51,
+      "medianPrice": 51,
+      "availableCount": 1
+    },
+    {
+      "location": "Abades",
+      "type": "Apartamento",
       "beds": 2,
       "week": "Semana 45",
       "month": "Octubre",
       "minPrice": 122,
-      "maxPrice": 164,
-      "avgPrice": 146,
-      "medianPrice": 143,
+      "maxPrice": 166,
+      "avgPrice": 149,
+      "medianPrice": 149,
       "availableCount": 15
     },
     {
@@ -6332,22 +6392,10 @@
       "beds": 3,
       "week": "Semana 45",
       "month": "Octubre",
-      "minPrice": 102,
-      "maxPrice": 122,
-      "avgPrice": 115,
-      "medianPrice": 115,
-      "availableCount": 2
-    },
-    {
-      "location": "Abades",
-      "type": "Apartamento",
-      "beds": 1,
-      "week": "Semana 46",
-      "month": "Noviembre",
-      "minPrice": 51,
-      "maxPrice": 51,
-      "avgPrice": 51,
-      "medianPrice": 51,
+      "minPrice": 132,
+      "maxPrice": 132,
+      "avgPrice": 132,
+      "medianPrice": 132,
       "availableCount": 1
     },
     {
@@ -6355,42 +6403,18 @@
       "type": "Apartamento",
       "beds": 2,
       "week": "Semana 46",
-      "month": "Noviembre",
-      "minPrice": 118,
-      "maxPrice": 175,
-      "avgPrice": 160,
-      "medianPrice": 153,
-      "availableCount": 16
-    },
-    {
-      "location": "Abades",
-      "type": "Apartamento",
-      "beds": 3,
-      "week": "Semana 46",
-      "month": "Noviembre",
-      "minPrice": 99,
-      "maxPrice": 99,
-      "avgPrice": 99,
-      "medianPrice": 99,
-      "availableCount": 1
-    },
-    {
-      "location": "Abades",
-      "type": "Apartamento",
-      "beds": 2,
-      "week": "Semana 47",
       "month": "Noviembre",
       "minPrice": 123,
-      "maxPrice": 176,
-      "avgPrice": 162,
-      "medianPrice": 162,
+      "maxPrice": 177,
+      "avgPrice": 161,
+      "medianPrice": 157,
       "availableCount": 17
     },
     {
       "location": "Abades",
       "type": "Apartamento",
       "beds": 3,
-      "week": "Semana 47",
+      "week": "Semana 46",
       "month": "Noviembre",
       "minPrice": 99,
       "maxPrice": 99,
@@ -6402,7 +6426,7 @@
       "location": "Abades",
       "type": "Apartamento",
       "beds": 1,
-      "week": "Semana 48",
+      "week": "Semana 47",
       "month": "Noviembre",
       "minPrice": 51,
       "maxPrice": 51,
@@ -6414,13 +6438,25 @@
       "location": "Abades",
       "type": "Apartamento",
       "beds": 2,
+      "week": "Semana 47",
+      "month": "Noviembre",
+      "minPrice": 118,
+      "maxPrice": 171,
+      "avgPrice": 159,
+      "medianPrice": 149,
+      "availableCount": 17
+    },
+    {
+      "location": "Abades",
+      "type": "Apartamento",
+      "beds": 2,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 117,
-      "maxPrice": 167,
-      "avgPrice": 145,
-      "medianPrice": 138,
-      "availableCount": 14
+      "minPrice": 118,
+      "maxPrice": 184,
+      "avgPrice": 161,
+      "medianPrice": 149,
+      "availableCount": 17
     },
     {
       "location": "Abades",
@@ -6428,11 +6464,11 @@
       "beds": 3,
       "week": "Semana 48",
       "month": "Noviembre",
-      "minPrice": 102,
-      "maxPrice": 122,
-      "avgPrice": 115,
-      "medianPrice": 115,
-      "availableCount": 2
+      "minPrice": 132,
+      "maxPrice": 132,
+      "avgPrice": 132,
+      "medianPrice": 132,
+      "availableCount": 1
     },
     {
       "location": "Abades",
@@ -6466,7 +6502,7 @@
       "month": "Diciembre",
       "minPrice": 78,
       "maxPrice": 189,
-      "avgPrice": 143,
+      "avgPrice": 144,
       "medianPrice": 185,
       "availableCount": 3
     },
@@ -6478,8 +6514,8 @@
       "month": "Diciembre",
       "minPrice": 121,
       "maxPrice": 179,
-      "avgPrice": 155,
-      "medianPrice": 146,
+      "avgPrice": 157,
+      "medianPrice": 156,
       "availableCount": 14
     },
     {
@@ -6548,11 +6584,11 @@
       "beds": 2,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 178,
+      "minPrice": 165,
       "maxPrice": 273,
-      "avgPrice": 245,
-      "medianPrice": 233,
-      "availableCount": 15
+      "avgPrice": 235,
+      "medianPrice": 228,
+      "availableCount": 14
     },
     {
       "location": "Abades",
@@ -6560,11 +6596,11 @@
       "beds": 3,
       "week": "Semana 52",
       "month": "Diciembre",
-      "minPrice": 193,
-      "maxPrice": 193,
-      "avgPrice": 193,
-      "medianPrice": 193,
-      "availableCount": 1
+      "minPrice": 224,
+      "maxPrice": 407,
+      "avgPrice": 346,
+      "medianPrice": 346,
+      "availableCount": 2
     }
   ]
 }
