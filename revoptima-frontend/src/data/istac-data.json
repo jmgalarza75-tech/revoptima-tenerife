@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-03-18T05:31:55.922Z",
+  "lastUpdate": "2026-03-19T05:28:29.505Z",
   "adr": {
     "2019": {
       "Enero": 62.49,
@@ -72,18 +72,18 @@
       "Diciembre": 105.71
     },
     "2024": {
-      "Julio": 95.36,
-      "Agosto": 96.79,
-      "Septiembre": 95.8,
-      "Octubre": 99.35,
-      "Noviembre": 107.23,
-      "Diciembre": 120.22,
       "Enero": 101.79,
       "Febrero": 121,
       "Marzo": 101.65,
       "Abril": 94.34,
       "Mayo": 90.06,
-      "Junio": 91.84
+      "Junio": 91.84,
+      "Julio": 95.36,
+      "Agosto": 96.79,
+      "Septiembre": 95.8,
+      "Octubre": 99.35,
+      "Noviembre": 107.23,
+      "Diciembre": 120.22
     },
     "2025": {
       "Enero": 122.63,
@@ -100,7 +100,8 @@
       "Diciembre": 117.23
     },
     "2026": {
-      "Enero": 118.28
+      "Enero": 118.28,
+      "Febrero": 130.94
     }
   },
   "occupancy": {
@@ -133,7 +134,6 @@
       "Diciembre": 89.96
     },
     "2021": {
-      "Diciembre": 96.99,
       "Enero": 87.05,
       "Febrero": 84.74,
       "Marzo": 91.63,
@@ -144,7 +144,8 @@
       "Agosto": 94.14,
       "Septiembre": 93.43,
       "Octubre": 94.6,
-      "Noviembre": 95.48
+      "Noviembre": 95.48,
+      "Diciembre": 96.99
     },
     "2022": {
       "Enero": 95.99,
@@ -161,18 +162,18 @@
       "Diciembre": 96.53
     },
     "2023": {
+      "Agosto": 88.51,
+      "Septiembre": 90.65,
+      "Octubre": 91.24,
+      "Noviembre": 97.17,
+      "Diciembre": 95.91,
       "Enero": 97.58,
       "Febrero": 96,
       "Marzo": 91.35,
       "Abril": 90.39,
       "Mayo": 91.33,
       "Junio": 92.59,
-      "Julio": 93.13,
-      "Agosto": 88.51,
-      "Septiembre": 90.65,
-      "Octubre": 91.24,
-      "Noviembre": 97.17,
-      "Diciembre": 95.91
+      "Julio": 93.13
     },
     "2024": {
       "Enero": 97,
@@ -203,7 +204,8 @@
       "Diciembre": 96.7
     },
     "2026": {
-      "Enero": 97.81
+      "Enero": 97.81,
+      "Febrero": 95.99
     }
   }
 }
